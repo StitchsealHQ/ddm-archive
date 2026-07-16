@@ -77,14 +77,15 @@ def parse_date(s):
 
 
 def title_tokens(title, source=""):
-    """유사 판정용 토큰 집합 (매체명 접미 제거 후 단어 단위)."""
+    """유사 판정용 토큰 집합 (매체명 접미 제거, 구분자로 복합어 분리)."""
     t = title
     if " - " in t:
         t = re.sub(r"\s*-\s*[^-]{1,25}$", "", t)
+    # 특수문자를 공백으로 치환해 '공예·한복' 같은 복합어를 분리
+    t = re.sub(r"[^0-9a-zA-Z가-힣]", " ", t)
     toks = set()
-    for w in re.split(r"\s+", t):
-        w = re.sub(r"[^0-9a-zA-Z가-힣]", "", w).lower()
-        w = w.replace("동대문디자인플라자", "ddp")  # 동의어 통일
+    for w in t.split():
+        w = w.lower().replace("동대문디자인플라자", "ddp")  # 동의어 통일
         # 말단 조사 제거 (DDP에서→DDP)
         m = re.match(r"^(.{2,}?)(에서|에게|으로|부터|까지|서|는|은|이|가|을|를|의|와|과|로|에|도)$", w)
         if m:
@@ -92,6 +93,22 @@ def title_tokens(title, source=""):
         if w:
             toks.add(w)
     return toks
+
+
+def shared_tokens(a, b):
+    """두 토큰 집합의 공유 토큰 수 (접두 일치 허용: 세계유산위↔세계유산위원회)."""
+    small, big = (a, b) if len(a) <= len(b) else (b, a)
+    used, n = set(), 0
+    for x in small:
+        for y in big:
+            if y in used:
+                continue
+            if x == y or (len(x) >= 2 and len(y) >= 2
+                          and (x.startswith(y) or y.startswith(x))):
+                used.add(y)
+                n += 1
+                break
+    return n
 
 
 REL = re.compile(r"동대문|DDP|디디피|두타|밀리오레|평화시장|창신동", re.I)
@@ -139,15 +156,17 @@ def dedup_similar(items):
             passthrough.append(it)
             continue
         toks = title_tokens(it["title"], it.get("source", ""))
+        # 뉴스는 통신사발 동일 사건 변주가 많아 더 공격적으로(0.5), 블로그는 보수적으로(0.6)
+        threshold = 0.5 if it["kind"] == "뉴스" else 0.6
         dup = None
         for k, ktoks in kept:
             if k["kind"] != it["kind"]:
                 continue
-            shared = len(toks & ktoks)
+            shared = shared_tokens(toks, ktoks)
             need = 2 if min(len(toks), len(ktoks)) <= 3 else 3
             if shared < need:
                 continue
-            if shared / max(1, min(len(toks), len(ktoks))) < 0.6:
+            if shared / max(1, min(len(toks), len(ktoks))) < threshold:
                 continue
             if days_between(it.get("date"), k.get("date")) > 5:
                 continue
