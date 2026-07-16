@@ -40,6 +40,12 @@ jobs:
           SUM_PER_RUN: '200'   # 일일 레이트리밋까지 최대한 소진 (429는 다음 실행이 이어감)
         run: python summarize.py
 
+      - name: Search trend (네이버 데이터랩)
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+        run: python trend.py
+
       - name: Weekly briefing (월요일만 생성)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

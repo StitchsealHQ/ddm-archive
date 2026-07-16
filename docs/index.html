@@ -37,6 +37,23 @@ header h1 span{color:var(--blue)}
 .chip.bkchip.on{background:#FFF6E5;border-color:#F5D9A8;color:#B26A00}
 .copybtn{padding:12px 18px;border-radius:12px;border:1px solid var(--line);background:#fff;font-size:13.5px;font-weight:600;color:var(--sub);cursor:pointer;font-family:inherit;white-space:nowrap}
 .copybtn:hover{color:var(--blue);border-color:#BCCDF8}
+.trend{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 24px;margin-bottom:24px}
+.trend h2{font-size:15px;font-weight:800;margin-bottom:4px}
+.trend .tsub{font-size:11.5px;color:var(--sub);margin-bottom:14px}
+.trend .legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:10px}
+.trend .legend span{font-size:12px;color:var(--sub);display:flex;align-items:center;gap:6px}
+.trend .legend i{width:10px;height:10px;border-radius:99px;display:inline-block}
+.tchart{position:relative}
+.tchart svg{width:100%;height:auto;display:block}
+.ttip{position:absolute;pointer-events:none;background:var(--ink);color:#fff;border-radius:10px;padding:9px 12px;font-size:11.5px;line-height:1.7;display:none;z-index:5;white-space:nowrap;box-shadow:0 6px 20px rgba(14,21,38,.25)}
+.ttip b{font-weight:700}
+.ttip .trow{display:flex;align-items:center;gap:6px}
+.ttip i{width:8px;height:8px;border-radius:99px;display:inline-block}
+.trend details{margin-top:10px}
+.trend summary{font-size:12px;color:var(--sub);cursor:pointer}
+.trend table{width:100%;border-collapse:collapse;font-size:11.5px;margin-top:8px}
+.trend th,.trend td{padding:4px 8px;border-bottom:1px solid var(--line);text-align:right;color:var(--sub)}
+.trend th:first-child,.trend td:first-child{text-align:left}
 .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
 input[type=search]{flex:1;min-width:220px;padding:11px 16px;border:1px solid var(--line);border-radius:12px;font-size:14px;font-family:inherit;outline:none}
 input[type=search]:focus{border-color:var(--blue)}
@@ -106,6 +123,14 @@ footer{margin-top:48px;font-size:12px;color:var(--sub);text-align:center}
   <div class="brief" id="brief" style="display:none">
     <h2>📌 주간 브리핑 <span id="brange"></span></h2>
     <ol id="bpoints"></ol>
+  </div>
+
+  <div class="trend" id="trend" style="display:none">
+    <h2>검색 트렌드</h2>
+    <div class="tsub" id="tsub"></div>
+    <div class="legend" id="tlegend"></div>
+    <div class="tchart" id="tchart"></div>
+    <details><summary>표로 보기</summary><div id="ttable"></div></details>
   </div>
 
   <div class="controls">
@@ -181,9 +206,64 @@ fetch('data.json').then(r=>r.json()).then(d=>{
     render();
   };
   renderBrief(d.briefing);
+  renderTrend(d.trend);
   render();
   openFromHash();
 });
+
+const TCOLORS=['#2657E8','#B0326B','#1B7F3B','#B26A00']; // 검증된 팔레트 (고정 순서)
+function renderTrend(t){
+  if(!t||!t.groups||!t.groups.length)return;
+  const W=800,H=230,L=34,R=96,T=14,B=26,pw=W-L-R,ph=H-T-B;
+  const gs=t.groups.slice(0,4), n=gs[0].data.length;
+  const x=i=>L+pw*i/(n-1), y=v=>T+ph*(1-v/100);
+  $('tsub').textContent=`최근 6개월 주간 네이버 검색량 (상대지수 0~100) · ${t.start} ~ ${t.end}`;
+  $('tlegend').innerHTML=gs.map((g,gi)=>`<span><i style="background:${TCOLORS[gi]}"></i>${esc(g.name)}</span>`).join('');
+  // 그리드 + y축
+  let svg='';
+  for(const v of [0,50,100]){
+    svg+=`<line x1="${L}" y1="${y(v)}" x2="${W-R}" y2="${y(v)}" stroke="#E8EBF0" stroke-width="1"/>`;
+    svg+=`<text x="${L-6}" y="${y(v)+3.5}" text-anchor="end" font-size="10" fill="#8C94A3">${v}</text>`;
+  }
+  // x축 월 라벨 (월이 바뀌는 지점)
+  let prevM='';
+  gs[0].data.forEach((d,i)=>{
+    const m=d.p.slice(5,7);
+    if(m!==prevM){prevM=m;svg+=`<text x="${x(i)}" y="${H-8}" text-anchor="middle" font-size="10" fill="#8C94A3">${+m}월</text>`;}
+  });
+  // 라인
+  gs.forEach((g,gi)=>{
+    const pts=g.data.map((d,i)=>`${x(i).toFixed(1)},${y(d.v).toFixed(1)}`).join(' ');
+    svg+=`<polyline points="${pts}" fill="none" stroke="${TCOLORS[gi]}" stroke-width="2" stroke-linejoin="round"/>`;
+  });
+  // 직접 라벨 (끝점, 겹침 방지)
+  const ends=gs.map((g,gi)=>({gi,yv:y(g.data[n-1].v)})).sort((a,b)=>a.yv-b.yv);
+  for(let i=1;i<ends.length;i++)if(ends[i].yv-ends[i-1].yv<13)ends[i].yv=ends[i-1].yv+13;
+  ends.forEach(e=>{
+    svg+=`<circle cx="${W-R+4}" cy="${y(gs[e.gi].data[n-1].v)}" r="3" fill="${TCOLORS[e.gi]}"/>`;
+    svg+=`<text x="${W-R+11}" y="${e.yv+3.5}" font-size="11" fill="#5B6472">${esc(gs[e.gi].name)}</text>`;
+  });
+  svg+=`<line id="tcross" x1="0" y1="${T}" x2="0" y2="${T+ph}" stroke="#B9C0CC" stroke-width="1" visibility="hidden"/>`;
+  $('tchart').innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="동대문 관련 키워드 검색 트렌드">${svg}</svg><div class="ttip" id="ttip"></div>`;
+  // 호버: 크로스헤어 + 툴팁
+  const svgEl=$('tchart').querySelector('svg'), cross=$('tchart').querySelector('#tcross'), tip=$('ttip');
+  svgEl.addEventListener('pointermove',ev=>{
+    const r=svgEl.getBoundingClientRect(), sx=(ev.clientX-r.left)*W/r.width;
+    const i=Math.max(0,Math.min(n-1,Math.round((sx-L)/(pw/(n-1)))));
+    cross.setAttribute('x1',x(i));cross.setAttribute('x2',x(i));cross.setAttribute('visibility','visible');
+    tip.innerHTML=`<b>${gs[0].data[i].p} 주</b>`+gs.map((g,gi)=>
+      `<div class="trow"><i style="background:${TCOLORS[gi]}"></i>${esc(g.name)} <b>${g.data[i].v.toFixed(1)}</b></div>`).join('');
+    tip.style.display='block';
+    const px=(ev.clientX-r.left), flip=px>r.width*0.6;
+    tip.style.left=flip?'':px+14+'px'; tip.style.right=flip?(r.width-px+14)+'px':'';
+    tip.style.top=Math.max(0,(ev.clientY-r.top)-20)+'px';
+  });
+  svgEl.addEventListener('pointerleave',()=>{cross.setAttribute('visibility','hidden');tip.style.display='none'});
+  // 표 보기
+  $('ttable').innerHTML=`<table><tr><th>주</th>${gs.map(g=>`<th>${esc(g.name)}</th>`).join('')}</tr>`+
+    gs[0].data.map((d,i)=>`<tr><td>${d.p}</td>${gs.map(g=>`<td>${g.data[i].v.toFixed(1)}</td>`).join('')}</tr>`).join('')+'</table>';
+  $('trend').style.display='';
+}
 
 function renderBrief(b){
   if(!b||!b.points||!b.points.length)return;
