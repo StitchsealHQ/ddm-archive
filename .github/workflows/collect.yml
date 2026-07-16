@@ -40,6 +40,11 @@ jobs:
           SUM_PER_RUN: '200'   # 일일 레이트리밋까지 최대한 소진 (429는 다음 실행이 이어감)
         run: python summarize.py
 
+      - name: Weekly briefing (월요일만 생성)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python briefing.py
+
       - name: Commit & push
         run: |
           git config user.name "ddm-archive-bot"
