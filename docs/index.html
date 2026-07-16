@@ -141,6 +141,8 @@ const DEF=['#F5F7FA','#E2E7EE','#5B6472'];
 
 fetch('data.json').then(r=>r.json()).then(d=>{
   DATA=d.items||[];
+  // 검색 인덱스: 제목+출처+AI요약+키워드
+  DATA.forEach(i=>{i._search=[i.title,i.source,...(i.summary||[]),i.comment||'',...(i.keywords||[])].join(' ').toLowerCase()});
   $('updated').textContent=(d.generated_at||'').slice(0,10);
   const tags=[...new Set(DATA.flatMap(i=>i.tags))].sort();
   $('chips').innerHTML=['<button class="chip on" data-t="">전체</button>',
@@ -179,7 +181,7 @@ function card(i){
 
 function render(){
   let rows=DATA.filter(i=>
-    (!state.q||i.title.toLowerCase().includes(state.q)||i.source.toLowerCase().includes(state.q))&&
+    (!state.q||i._search.includes(state.q))&&
     (!state.tag||i.tags.includes(state.tag))&&
     (!state.kind||i.kind===state.kind));
   rows.sort((a,b)=>{
