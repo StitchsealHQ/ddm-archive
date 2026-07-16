@@ -19,7 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 DATA = ROOT / "docs" / "data.json"
 
-PER_RUN = 30      # 실행 1회당 요약 대상 상한
+PER_RUN = int(os.environ.get("SUM_PER_RUN", "30"))  # 실행 1회당 요약 대상 상한
 PER_CALL = 5      # API 1회 호출당 기사 수 (레이트리밋 절약)
 MODEL = "openai/gpt-4.1"
 API = "https://models.github.ai/inference/chat/completions"
@@ -27,8 +27,8 @@ API = "https://models.github.ai/inference/chat/completions"
 CTX = ssl.create_default_context()
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 
-PROMPT = """다음은 동대문 관련 수집 기사들이다. 각 기사를 팀 내부 공유용으로 정리하라.
-각 기사마다:
+PROMPT = """다음은 동대문 관련 수집 기사/블로그 글이다. 각 글을 팀 내부 공유용으로 정리하라.
+각 글마다:
 - summary: 핵심 내용 3~4개 불릿 (각 한 문장, 사실 위주)
 - keywords: 핵심 키워드 3~5개
 - comment: 동대문(패션·상권·관광) 관점에서 왜 주목할 만한지 한 문장
@@ -44,7 +44,11 @@ def http_get(url, timeout=15):
 
 
 def extract_text(url):
-    """기사 본문 텍스트 추출 (간이 휴리스틱)."""
+    """기사/블로그 본문 텍스트 추출 (간이 휴리스틱)."""
+    # 네이버 블로그는 iframe 래퍼라 PostView URL로 변환해야 본문이 나옴
+    m = re.match(r"https?://blog\.naver\.com/([^/?]+)/(\d+)", url)
+    if m:
+        url = f"https://blog.naver.com/PostView.naver?blogId={m.group(1)}&logNo={m.group(2)}"
     try:
         html = http_get(url).decode("utf-8", "ignore")
     except Exception:
@@ -94,8 +98,8 @@ def main():
     items = data["items"]
     targets = [i for i in items
                if not i.get("summary") and not i.get("sum_failed")
-               and "news.google.com" not in i["link"]
-               and i["kind"] == "뉴스"][:PER_RUN]
+               and "news.google.com" not in i["link"] and "msn.com" not in i["link"]
+               and i["kind"] in ("뉴스", "블로그")][:PER_RUN]
     print(f"targets: {len(targets)}")
 
     with_text = []

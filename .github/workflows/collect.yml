@@ -37,6 +37,7 @@ jobs:
       - name: AI summarize (문서형 요약)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SUM_PER_RUN: '200'   # 일일 레이트리밋까지 최대한 소진 (429는 다음 실행이 이어감)
         run: python summarize.py
 
       - name: Commit & push

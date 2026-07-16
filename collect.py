@@ -2,11 +2,11 @@
 """동대문 아카이브 수집기.
 
 소스:
-  1. 구글 뉴스 RSS (키 불필요) — 커버리지 넓음, 썸네일 없음
-  2. Bing 뉴스 RSS (키 불필요) — 원문 URL 제공 → og:image 썸네일 보강 가능
-  3. 네이버 검색 API (뉴스/블로그/이미지) — NAVER_CLIENT_ID / NAVER_CLIENT_SECRET
+  1. Bing 뉴스 RSS (키 불필요) — 원문 URL 제공 → og:image 썸네일·AI 요약 가능
+  2. 네이버 검색 API (뉴스/블로그/이미지) — NAVER_CLIENT_ID / NAVER_CLIENT_SECRET
      환경변수가 있을 때만 동작. 없으면 건너뜀.
 
+원문 접근이 불가능한 소스(구글 뉴스 리다이렉트, MSN)는 AI 요약을 만들 수 없어 제외.
 결과는 docs/data.json 에 누적 저장 (링크·제목 기준 중복 제거).
 """
 import json
@@ -94,6 +94,25 @@ def title_tokens(title, source=""):
     return toks
 
 
+REL = re.compile(r"동대문|DDP|디디피|두타|밀리오레|평화시장|창신동", re.I)
+
+
+def enforce_relevance(items):
+    """기업/산업 태그는 제목에 동대문 관련 언급이 있어야 유지.
+
+    '동대문 기업' 검색이 시상식·무관 기업 기사를 끌고 오는 것을 차단.
+    태그 제거 후 남는 태그가 없으면 항목 자체를 제외.
+    """
+    out = []
+    for it in items:
+        if "기업/산업" in it["tags"] and not REL.search(it["title"]):
+            it["tags"] = [t for t in it["tags"] if t != "기업/산업"]
+            if not it["tags"]:
+                continue
+        out.append(it)
+    return out
+
+
 def days_between(d1, d2):
     if not d1 or not d2:
         return 0  # 날짜 없으면 날짜 조건은 통과
@@ -141,34 +160,6 @@ def dedup_similar(items):
     return [k for k, _ in kept] + passthrough
 
 
-def collect_google_news():
-    items = []
-    for query, tag in QUERIES:
-        q = urllib.parse.quote(query)
-        url = f"https://news.google.com/rss/search?q={q}&hl=ko&gl=KR&ceid=KR:ko"
-        try:
-            root = ET.fromstring(http_get(url))
-        except Exception as e:
-            print(f"[google] {query}: FAILED {e}")
-            continue
-        n = 0
-        for it in root.iter("item"):
-            title = strip_tags(it.findtext("title", ""))
-            link = it.findtext("link", "").strip()
-            src = strip_tags(it.findtext("source", "") or "")
-            if not title or not link:
-                continue
-            items.append({
-                "title": title, "link": link,
-                "date": parse_date(it.findtext("pubDate", "")),
-                "source": src or "Google News",
-                "kind": "뉴스", "tags": [tag],
-            })
-            n += 1
-        print(f"[google] {query}: {n}")
-    return items
-
-
 def collect_bing_news():
     items = []
     for query, tag in QUERIES:
@@ -189,6 +180,8 @@ def collect_bing_news():
             m = re.search(r"[?&]url=([^&]+)", raw_link)
             link = urllib.parse.unquote(m.group(1)) if m else raw_link
             if not title or not link:
+                continue
+            if "msn.com" in link:  # JS 렌더링이라 본문 추출·요약 불가
                 continue
             img = unescape(f("News:Image"))
             rec = {
@@ -288,7 +281,7 @@ def main():
     if OUT.exists():
         existing = json.loads(OUT.read_text(encoding="utf-8")).get("items", [])
 
-    fresh = collect_bing_news() + collect_naver() + collect_google_news()
+    fresh = collect_bing_news() + collect_naver()
 
     # 1차: 링크 기준 병합, 2차: 정규화 제목 기준(썸네일 있는 쪽 우선)
     by_link = {}
@@ -309,7 +302,7 @@ def main():
             if it.get("thumbnail") and not prev.get("thumbnail"):
                 prev["thumbnail"] = it["thumbnail"]
                 prev["link"] = it["link"]
-    items = dedup_similar(list(by_title.values()))
+    items = enforce_relevance(dedup_similar(list(by_title.values())))
     items.sort(key=lambda x: x.get("date", ""), reverse=True)
 
     enrich_thumbnails(items)
