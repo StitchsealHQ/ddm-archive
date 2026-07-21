@@ -250,13 +250,15 @@ def collect_naver():
         print("[naver] no API key, skipped")
         return []
     headers = {"X-Naver-Client-Id": cid, "X-Naver-Client-Secret": sec}
-    endpoints = [("news", "뉴스"), ("blog", "블로그"), ("image", "이미지")]
+    # 이미지는 발행일이 없어 목록 최하단에 고정되고 AI 요약도 불가 →
+    # 수집량을 줄여 노이즈·파일크기를 낮춘다 (260721, 전체의 35% 차지하던 문제)
+    endpoints = [("news", "뉴스", 30), ("blog", "블로그", 30), ("image", "이미지", 10)]
     items = []
     for query, tag in QUERIES:
         q = urllib.parse.quote(query)
-        for ep, kind in endpoints:
+        for ep, kind, display in endpoints:
             sort = "" if ep == "image" else "&sort=date"
-            url = f"https://openapi.naver.com/v1/search/{ep}.json?query={q}&display=30{sort}"
+            url = f"https://openapi.naver.com/v1/search/{ep}.json?query={q}&display={display}{sort}"
             try:
                 data = json.loads(http_get(url, headers))
             except Exception as e:
