@@ -149,6 +149,7 @@ footer{margin-top:48px;font-size:12px;color:var(--sub);text-align:center}
   <div class="grid" id="list"></div>
   <div class="empty" id="empty" style="display:none">조건에 맞는 자료가 없습니다</div>
   <button class="more" id="more" style="display:none">더 보기</button>
+  <button class="more" id="lall" style="display:none">지난 자료 불러오기</button>
 
   <footer>동대문 아카이브 · 팀 내부 공유용 (noindex)</footer>
 </div>
@@ -170,7 +171,7 @@ footer{margin-top:48px;font-size:12px;color:var(--sub);text-align:center}
 </div>
 
 <script>
-let DATA=[], shown=48;
+let DATA=[], shown=48, ARCH=[], archCount=0, archPromise=null;
 const $=id=>document.getElementById(id);
 const state={q:'',tag:'',kind:'',sort:'date',bkOnly:false};
 
@@ -189,10 +190,31 @@ const GRAD={
 };
 const DEF=['#F5F7FA','#E2E7EE','#5B6472'];
 
+// 검색 인덱스: 제목+출처+AI요약+키워드 / 안정 ID
+function indexItem(i){i._search=[i.title,i.source,...(i.summary||[]),i.comment||'',...(i.keywords||[])].join(' ').toLowerCase();i._id=hid(i.link)}
+
+// 연도별 아카이브 lazy-load (검색·북마크·딥링크·버튼 클릭 시에만)
+function loadArchives(){
+  if(!ARCH.length||!archCount)return Promise.resolve();
+  if(archPromise)return archPromise;
+  archPromise=Promise.all(ARCH.map(a=>fetch(a.file).then(r=>r.json()).catch(()=>null)))
+    .then(files=>{
+      const seen=new Set(DATA.map(i=>i._id));
+      files.forEach(f=>{if(!f)return;(f.items||[]).forEach(i=>{
+        indexItem(i);
+        if(!seen.has(i._id)){seen.add(i._id);DATA.push(i);}
+      })});
+      archCount=0;
+      render();
+    });
+  return archPromise;
+}
+
 fetch('data.json').then(r=>r.json()).then(d=>{
   DATA=d.items||[];
-  // 검색 인덱스: 제목+출처+AI요약+키워드 / 안정 ID
-  DATA.forEach(i=>{i._search=[i.title,i.source,...(i.summary||[]),i.comment||'',...(i.keywords||[])].join(' ').toLowerCase();i._id=hid(i.link)});
+  DATA.forEach(indexItem);
+  ARCH=d.archives||[];
+  archCount=ARCH.reduce((s,a)=>s+(a.count||0),0);
   $('updated').textContent=(d.generated_at||'').slice(0,10);
   const tags=[...new Set(DATA.flatMap(i=>i.tags))].sort();
   $('chips').innerHTML=['<button class="chip on" data-t="">전체</button>',
@@ -200,7 +222,7 @@ fetch('data.json').then(r=>r.json()).then(d=>{
     '<button class="chip bkchip" id="bkchip">⭐ 북마크</button>'].join('');
   $('chips').onclick=e=>{
     const b=e.target.closest('.chip'); if(!b)return;
-    if(b.id==='bkchip'){state.bkOnly=!state.bkOnly;b.classList.toggle('on',state.bkOnly);shown=48;render();return;}
+    if(b.id==='bkchip'){state.bkOnly=!state.bkOnly;b.classList.toggle('on',state.bkOnly);shown=48;if(state.bkOnly)loadArchives();render();return;}
     state.tag=b.dataset.t; shown=48;
     document.querySelectorAll('.chip:not(.bkchip)').forEach(c=>c.classList.toggle('on',c===b));
     render();
@@ -279,13 +301,16 @@ function openFromHash(e,id){
   if(e)e.preventDefault();
   if(!id){const m=location.hash.match(/#i=([a-z0-9]+)/);if(!m)return;id=m[1];}
   const item=DATA.find(i=>i._id===id);
-  if(item)openDoc(item);
+  if(item){openDoc(item);return;}
+  // 라이브에 없으면 아카이브까지 찾아본다 (오래된 딥링크·북마크)
+  loadArchives().then(()=>{const it=DATA.find(i=>i._id===id);if(it)openDoc(it);});
 }
 window.addEventListener('hashchange',()=>openFromHash());
-$('q').oninput=e=>{state.q=e.target.value.toLowerCase();shown=48;render()};
+$('q').oninput=e=>{state.q=e.target.value.toLowerCase();shown=48;if(state.q)loadArchives();render()};
 $('kind').onchange=e=>{state.kind=e.target.value;shown=48;render()};
 $('sort').onchange=e=>{state.sort=e.target.value;render()};
 $('more').onclick=()=>{shown+=48;render()};
+$('lall').onclick=()=>{$('lall').textContent='불러오는 중…';loadArchives()};
 
 function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}
 
@@ -319,12 +344,14 @@ function render(){
     return (b.date||'').localeCompare(a.date||'');
   });
   const week=new Date(Date.now()-7*864e5).toISOString().slice(0,10);
-  $('st-total').textContent=DATA.length.toLocaleString();
+  $('st-total').textContent=(DATA.length+archCount).toLocaleString();
   $('st-week').textContent=DATA.filter(i=>i.date>=week).length.toLocaleString();
   $('st-src').textContent=new Set(DATA.map(i=>i.source)).size;
   $('list').innerHTML=rows.slice(0,shown).map(card).join('');
   $('empty').style.display=rows.length?'none':'block';
   $('more').style.display=rows.length>shown?'block':'none';
+  $('lall').style.display=archCount>0?'block':'none';
+  if(archCount>0&&!archPromise)$('lall').textContent=`지난 자료 ${archCount.toLocaleString()}건 불러오기`;
 }
 
 // 카드 클릭=원문 이동, "AI 요약" 뱃지=요약 모달, ★=북마크 토글

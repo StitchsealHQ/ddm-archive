@@ -18,7 +18,7 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from html import unescape
 from pathlib import Path
@@ -295,12 +295,43 @@ def enrich_thumbnails(items):
     print(f"[og] enriched {got}/{len(targets)}")
 
 
+def load_archived_keys():
+    """연도별 아카이브 파일의 링크·정규화 제목 집합 (재수집 방지용)."""
+    links, titles = set(), set()
+    for p in (ROOT / "docs").glob("data-*.json"):
+        try:
+            arch = json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        for it in arch.get("items", []):
+            links.add(it["link"])
+            titles.add(it["kind"] + norm_title(it["title"], it.get("source", "")))
+    return links, titles
+
+
 def main():
-    existing = []
+    data = {}
     if OUT.exists():
-        existing = json.loads(OUT.read_text(encoding="utf-8")).get("items", [])
+        data = json.loads(OUT.read_text(encoding="utf-8"))
+    existing = data.get("items", [])
 
     fresh = collect_bing_news() + collect_naver()
+
+    # 아카이브로 이동한 자료는 다시 추가하지 않음 (이미지 API 등이 옛 자료를 재반환)
+    arch_links, arch_titles = load_archived_keys()
+    if arch_links:
+        before = len(fresh)
+        fresh = [it for it in fresh
+                 if it["link"] not in arch_links
+                 and it["kind"] + norm_title(it["title"], it.get("source", ""))
+                 not in arch_titles]
+        if before != len(fresh):
+            print(f"[archive] skipped {before - len(fresh)} already-archived items")
+
+    # 수집일 스탬프 (archive.py가 90일 보존 판정에 사용)
+    today = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
+    for it in fresh:
+        it["added"] = today
 
     # 1차: 링크 기준 병합, 2차: 정규화 제목 기준(썸네일 있는 쪽 우선)
     by_link = {}
@@ -326,10 +357,10 @@ def main():
 
     enrich_thumbnails(items)
 
-    OUT.write_text(json.dumps({
-        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "items": items,
-    }, ensure_ascii=False, indent=1), encoding="utf-8")
+    # 다른 필드(trend·briefing·archives)는 보존하고 items만 갱신
+    data["generated_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    data["items"] = items
+    OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     thumbs = sum(1 for i in items if i.get("thumbnail"))
     print(f"total: {len(items)} items ({thumbs} with thumbnail) -> {OUT}")
 
