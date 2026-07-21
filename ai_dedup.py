@@ -92,8 +92,9 @@ def call_model(token, lines, model=None, system=None):
 def filter_relevance(token, data):
     """동대문 무관 자료 제거 (뉴스·블로그, 미판정분만)."""
     items = data["items"]
+    # 영상은 youtube.py가 판정하지만, AI 실패로 무판정 유입된 것은 여기서 재검사
     targets = [(idx, it) for idx, it in enumerate(items)
-               if it["kind"] in ("뉴스", "블로그") and not it.get("rel_checked")]
+               if it["kind"] in ("뉴스", "블로그", "영상") and not it.get("rel_checked")]
     if not targets:
         print("[rel] nothing to check")
         return

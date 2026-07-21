@@ -29,6 +29,12 @@ jobs:
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
         run: python collect.py
 
+      - name: YouTube (영상 수집·AI 판정·요약)
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python youtube.py
+
       - name: AI dedup (사건 클러스터링)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
