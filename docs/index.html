@@ -18,6 +18,8 @@ body{font-family:'Pretendard',-apple-system,sans-serif;background:var(--bg);colo
 header h1{font-size:28px;font-weight:800;letter-spacing:-.5px}
 header h1 span{color:var(--blue)}
 .meta{font-size:13px;color:var(--sub);margin-top:6px}
+.meta a,footer a{color:var(--blue);text-decoration:none;font-weight:600}
+.meta a:hover,footer a:hover{text-decoration:underline}
 .stats{display:flex;gap:12px;margin:24px 0;flex-wrap:wrap}
 .stat{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:14px 20px;min-width:120px}
 .stat b{display:block;font-size:22px;font-weight:800;color:var(--blue)}
@@ -126,7 +128,7 @@ footer{margin-top:48px;font-size:12px;color:var(--sub);text-align:center}
 <div class="wrap">
   <header>
     <h1>동대문 <span>아카이브</span></h1>
-    <div class="meta">동대문 관련 뉴스·블로그·이미지 자료 모음 · 자동 수집 · 팀 내부 공유용 · 마지막 갱신 <span id="updated">—</span></div>
+    <div class="meta">동대문 관련 뉴스·영상·블로그·이미지 자료 모음 · 자동 수집 · 팀 내부 공유용 · 마지막 갱신 <span id="updated">—</span> · <a href="guide.html">이용안내</a></div>
   </header>
 
   <div class="stats">
@@ -169,7 +171,7 @@ footer{margin-top:48px;font-size:12px;color:var(--sub);text-align:center}
   <button class="more" id="more" style="display:none">더 보기</button>
   <button class="more" id="lall" style="display:none">지난 자료 불러오기</button>
 
-  <footer>동대문 아카이브 · 팀 내부 공유용 (noindex)</footer>
+  <footer>동대문 아카이브 · 팀 내부 공유용 (noindex) · <a href="guide.html">이용안내</a></footer>
 </div>
 
 <div class="overlay" id="overlay">
