@@ -29,6 +29,7 @@ GROUPS = [
     {"groupName": "DDP", "keywords": ["DDP", "동대문디자인플라자"]},
     {"groupName": "동대문 맛집", "keywords": ["동대문 맛집", "동대문 닭한마리"]},
     {"groupName": "동대문 도매", "keywords": ["동대문 도매", "동대문 사입"]},
+    {"groupName": "말랑이·왁뿌볼", "keywords": ["말랑이", "왁뿌볼"]},
 ]
 
 CTX = ssl.create_default_context()

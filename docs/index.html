@@ -187,6 +187,8 @@ const GRAD={
   'F&B':['#FFF0EB','#FBD2C2','#B2431F'],
   '기업/산업':['#EDF1F7','#D2DBE8','#3D5471'],
   '외국인':['#F3E8FD','#E0C8FA','#7C3AED'],
+  '완구/트렌드':['#E0F5F9','#BEE4EF','#0E7490'],
+  '인근상권':['#F0F4E3','#DBE5BC','#5B7313'],
 };
 const DEF=['#F5F7FA','#E2E7EE','#5B6472'];
 
@@ -233,11 +235,11 @@ fetch('data.json').then(r=>r.json()).then(d=>{
   openFromHash();
 });
 
-const TCOLORS=['#2657E8','#B0326B','#1B7F3B','#B26A00']; // 검증된 팔레트 (고정 순서)
+const TCOLORS=['#2657E8','#B0326B','#1B7F3B','#B26A00','#7C3AED']; // 검증된 팔레트 (고정 순서)
 function renderTrend(t){
   if(!t||!t.groups||!t.groups.length)return;
   const W=800,H=230,L=34,R=96,T=14,B=26,pw=W-L-R,ph=H-T-B;
-  const gs=t.groups.slice(0,4), n=gs[0].data.length;
+  const gs=t.groups.slice(0,5), n=gs[0].data.length;
   const x=i=>L+pw*i/(n-1), y=v=>T+ph*(1-v/100);
   $('tsub').textContent=`최근 6개월 주간 네이버 검색량 (상대지수 0~100) · ${t.start} ~ ${t.end}`;
   $('tlegend').innerHTML=gs.map((g,gi)=>`<span><i style="background:${TCOLORS[gi]}"></i>${esc(g.name)}</span>`).join('');
