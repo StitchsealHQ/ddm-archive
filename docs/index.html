@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
 <title>동대문 아카이브</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#2657E8">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="DDM 아카이브">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
@@ -447,6 +455,9 @@ function closeDoc(){
   $('overlay').classList.remove('open');document.body.style.overflow='';
   history.replaceState(null,'',location.pathname+location.search);
 }
+if('serviceWorker' in navigator)
+  addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+
 $('mclose').onclick=closeDoc;
 $('overlay').onclick=e=>{if(e.target===$('overlay'))closeDoc();};
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDoc();});

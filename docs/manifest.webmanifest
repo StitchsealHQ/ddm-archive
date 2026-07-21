@@ -1,0 +1,17 @@
+{
+  "name": "동대문 아카이브",
+  "short_name": "DDM 아카이브",
+  "description": "동대문 일대 뉴스·영상·블로그·이미지를 매일 자동 수집하는 팀 내부 자료실",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FFFFFF",
+  "theme_color": "#2657E8",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
