@@ -58,9 +58,14 @@ header h1 span{color:var(--blue)}
 input[type=search]{flex:1;min-width:220px;padding:11px 16px;border:1px solid var(--line);border-radius:12px;font-size:14px;font-family:inherit;outline:none}
 input[type=search]:focus{border-color:var(--blue)}
 select{padding:11px 14px;border:1px solid var(--line);border-radius:12px;font-size:13px;font-family:inherit;background:#fff;color:var(--ink)}
-.chips{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 24px}
+.chiprow{display:flex;align-items:flex-start;gap:10px;margin:8px 0}
+.chiprow:last-of-type{margin-bottom:24px}
+.clabel{flex:none;font-size:11.5px;font-weight:700;color:var(--sub);padding:7px 0;letter-spacing:.5px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;flex:1}
 .chip{font-size:12.5px;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer;color:var(--sub);font-family:inherit}
 .chip.on{background:#EAF0FE;border-color:#BCCDF8;color:var(--blue);font-weight:600}
+.chip .cnt{font-size:10.5px;color:#9AA3B0;margin-left:5px;font-weight:600}
+.chip.on .cnt{color:var(--blue);opacity:.7}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:16px}
 .card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .15s,transform .15s,box-shadow .15s;text-decoration:none;color:inherit}
@@ -136,17 +141,15 @@ footer{margin-top:48px;font-size:12px;color:var(--sub);text-align:center}
 
   <div class="controls">
     <input type="search" id="q" placeholder="검색 (제목·출처·요약·키워드)">
-    <select id="kind">
-      <option value="">전체 유형</option>
-      <option>뉴스</option><option>블로그</option><option>이미지</option><option>영상</option>
-    </select>
     <select id="sort">
       <option value="date">최신순</option>
+      <option value="summary">AI 요약 우선</option>
       <option value="thumb">썸네일 우선</option>
       <option value="source">출처순</option>
     </select>
   </div>
-  <div class="chips" id="chips"></div>
+  <div class="chiprow"><span class="clabel">유형</span><div class="chips" id="kchips"></div></div>
+  <div class="chiprow"><span class="clabel">분류</span><div class="chips" id="chips"></div></div>
   <div class="grid" id="list"></div>
   <div class="empty" id="empty" style="display:none">조건에 맞는 자료가 없습니다</div>
   <button class="more" id="more" style="display:none">더 보기</button>
@@ -310,8 +313,20 @@ function openFromHash(e,id){
 }
 window.addEventListener('hashchange',()=>openFromHash());
 $('q').oninput=e=>{state.q=e.target.value.toLowerCase();shown=48;if(state.q)loadArchives();render()};
-$('kind').onchange=e=>{state.kind=e.target.value;shown=48;render()};
 $('sort').onchange=e=>{state.sort=e.target.value;render()};
+$('kchips').onclick=e=>{
+  const b=e.target.closest('.chip'); if(!b)return;
+  state.kind=b.dataset.k; shown=48; render();
+};
+
+// 유형 칩 — 건수는 현재 검색·분류·북마크 선택 안에서 센다
+const KINDS=['뉴스','영상','블로그','이미지'];
+function renderKindChips(counts){
+  const chip=(k,label,n)=>`<button class="chip${state.kind===k?' on':''}" data-k="${k}">${label}`
+    +(n!=null?`<span class="cnt">${n.toLocaleString()}</span>`:'')+'</button>';
+  $('kchips').innerHTML=[chip('','전체'),
+    ...KINDS.filter(k=>counts[k]).map(k=>chip(k,k,counts[k]))].join('');
+}
 $('more').onclick=()=>{shown+=48;render()};
 $('lall').onclick=()=>{$('lall').textContent='불러오는 중…';loadArchives()};
 
@@ -335,16 +350,24 @@ function card(i){
   </a>`;
 }
 
+// 같은 날짜 안에서의 우선순위 — 네이버 블로그가 하루 수십 건씩 들어와
+// 뉴스·영상을 첫 화면 밖으로 밀어내던 문제를 막는다
+const KPRI={'뉴스':0,'영상':1,'블로그':2,'이미지':3};
 function render(){
-  let rows=DATA.filter(i=>
+  const base=DATA.filter(i=>
     (!state.q||i._search.includes(state.q))&&
     (!state.tag||i.tags.includes(state.tag))&&
-    (!state.kind||i.kind===state.kind)&&
     (!state.bkOnly||BK.has(i._id)));
+  const counts={};
+  base.forEach(i=>counts[i.kind]=(counts[i.kind]||0)+1);
+  if(state.kind&&!counts[state.kind])state.kind='';  // 남은 자료가 없는 유형이면 해제
+  renderKindChips(counts);
+  const rows=state.kind?base.filter(i=>i.kind===state.kind):base;
   rows.sort((a,b)=>{
     if(state.sort==='source')return a.source.localeCompare(b.source,'ko');
     if(state.sort==='thumb')return (b.thumbnail?1:0)-(a.thumbnail?1:0)||(b.date||'').localeCompare(a.date||'');
-    return (b.date||'').localeCompare(a.date||'');
+    if(state.sort==='summary')return (b.summary?1:0)-(a.summary?1:0)||(b.date||'').localeCompare(a.date||'')||KPRI[a.kind]-KPRI[b.kind];
+    return (b.date||'').localeCompare(a.date||'')||KPRI[a.kind]-KPRI[b.kind];
   });
   const week=new Date(Date.now()-7*864e5).toISOString().slice(0,10);
   $('st-total').textContent=(DATA.length+archCount).toLocaleString();
