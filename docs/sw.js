@@ -7,7 +7,8 @@
 //
 // 배포 파일을 바꿔도 VERSION을 올릴 필요는 없다 (네트워크 우선이라 자동 반영).
 // 캐시 구조 자체를 바꿀 때만 올린다.
-const VERSION = 'v1';
+// v2: 아이콘 교체(청·적·황) — 옛 아이콘 캐시를 확실히 비우기 위해 올림
+const VERSION = 'v2';
 const CACHE = `ddm-archive-${VERSION}`;
 const SHELL = [
   './', 'index.html', 'guide.html', 'manifest.webmanifest',
