@@ -33,7 +33,7 @@ AI_BATCH = 8
 # 채널 모니터링 — 검색이 못 잡는 채널의 업로드를 직접 훑어 AI가 엄선 (260723)
 # 업로드 재생목록 조회는 1유닛/페이지 (search의 1/100)
 CHANNELS = [("UC7uDyFIqExDnfXAIZqumFrQ", "셜록현준")]
-CH_SEED = 400         # 최초 스캔 시 검토할 업로드 수 (260723 조사: 전 346편 중 관련작은 22~24년에 분포)
+CH_SEED = 120         # 스캔할 최근 업로드 수 (올해분 커버용 — 연 60~70편 채널)
 CH_AI_BATCH = 20      # 채널 판정 배치 (제목+설명뿐이라 크게 묶어 호출 수 절약)
 CH_SEEN_CAP = 800     # 판정 이력(ch_seen) 보존 상한
 
@@ -269,10 +269,12 @@ def collect_channels(key, token, data, existing_links):
         except Exception as e:
             print(f"[yt/ch] {name}: FAILED {e}")
             continue
-        # 미판정 영상은 날짜와 무관하게 후보 — 시드가 레이트리밋으로 부분 완료돼도
-        # 다음 실행이 잔여분을 이어서 판정한다 (judged_ids가 재작업을 막음, 260723)
+        # 올해 업로드만 타겟 (260723 사용자 결정 — 과거 영상은 시의성이 없음).
+        # 미판정분은 날짜 조건 안에서 매 실행 이어서 판정 (judged_ids가 재작업을 막음)
+        since = f"{datetime.now(KST).year}-01-01"
         cands = [vid for vid, pub in uploads
-                 if vid not in judged_ids
+                 if pub >= since
+                 and vid not in judged_ids
                  and f"https://www.youtube.com/watch?v={vid}" not in existing_links]
         if not cands:
             print(f"[yt/ch] {name}: no new uploads")

@@ -43,6 +43,24 @@ header h1 span{color:var(--blue)}
 .fortune .fzo{margin-top:12px;padding-top:12px;border-top:1px dashed #F0DCAE;display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap}
 .fortune .fzo select{padding:7px 10px;border:1px solid #F0DCAE;border-radius:10px;font-size:12.5px;font-family:inherit;background:#fff;color:#8A6D1A;font-weight:600}
 .fortune .fzo p{flex:1;min-width:200px;font-size:13px;line-height:1.6;margin-top:4px}
+.fme{margin-top:12px;padding-top:12px;border-top:1px dashed #F0DCAE}
+.fme summary{font-size:12.5px;font-weight:700;color:#8A6D1A;cursor:pointer;list-style:none}
+.fme summary::-webkit-details-marker{display:none}
+.fme summary::after{content:' ▾';font-size:10px}
+.fme[open] summary::after{content:' ▴'}
+.fmeform{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.fmeform input,.fmeform select{padding:8px 12px;border:1px solid #F0DCAE;border-radius:10px;font-size:12.5px;font-family:inherit;background:#fff;color:var(--ink)}
+.fmeform input:focus{outline:none;border-color:#D9B856}
+.fmeform #fmname{width:110px}
+.fmeform #fmbirth{width:170px}
+.fmeform button{padding:8px 18px;border:none;border-radius:10px;background:#8A6D1A;color:#fff;font-size:12.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.fmeform button:hover{background:#6E5613}
+.fmeres{margin-top:10px;background:rgba(255,255,255,.7);border:1px solid #F0DCAE;border-radius:12px;padding:12px 16px}
+.fmeres .fmescore{font-size:12px;font-weight:700;color:#8A6D1A;margin-bottom:8px}
+.fmeres .fmescore b{font-size:15px}
+.fmeres p{font-size:13px;line-height:1.6;margin-bottom:5px}
+.fmeres p b{color:#8A6D1A;font-size:11.5px;margin-right:6px}
+.fmenote{font-size:10px;color:#C4AE6E;margin-top:8px}
 .fortune .fnote{font-size:10px;color:#C4AE6E;margin-top:8px}
 .brief{background:linear-gradient(135deg,#F7F9FE,#EAF0FE);border:1px solid #BCCDF8;border-radius:16px;padding:20px 24px;margin-bottom:24px}
 .brief h2{font-size:15px;font-weight:800;color:var(--blue);margin-bottom:12px;display:flex;align-items:center;gap:8px}
@@ -169,6 +187,18 @@ footer{margin-top:48px;font-size:12px;color:var(--sub);text-align:center}
         <select id="fzsel" aria-label="띠 선택"></select>
         <p id="fztext"></p>
       </div>
+      <details class="fme" id="fme" style="display:none">
+        <summary>🔮 내 정보로 보는 오늘의 운세</summary>
+        <div class="fmeform">
+          <input id="fmname" type="text" placeholder="이름" maxlength="12">
+          <select id="fmgender"><option value="남">남자</option><option value="여">여자</option></select>
+          <input id="fmbirth" type="text" inputmode="numeric" placeholder="생년월일 8자리 (19900101)" maxlength="8">
+          <select id="fmhour"></select>
+          <button type="button" id="fmgo">운세 확인하기</button>
+        </div>
+        <div class="fmeres" id="fmeres" style="display:none"></div>
+        <div class="fmenote">입력 정보는 이 기기에만 저장되며 어디에도 전송되지 않습니다</div>
+      </details>
       <div class="fnote">AI가 생성한 재미용 콘텐츠입니다</div>
     </div>
   </div>
@@ -367,7 +397,48 @@ function renderFortune(f){
     $('fzsel').onchange=e=>{localStorage.setItem('ddm_zodiac',e.target.value);show(e.target.value)};
     $('fzo').style.display='';
   }
+  renderMe(f);
   $('fortune').style.display='';
+}
+
+// 개인 운세 — 매일 생성되는 문장 풀에서 입력정보+날짜 해시로 조합 결정
+// (같은 사람은 하루 동안 동일, 사람·날짜가 바뀌면 달라짐. 정보는 localStorage에만 저장)
+const HOURS=['모름','자시 (23~01)','축시 (01~03)','인시 (03~05)','묘시 (05~07)','진시 (07~09)',
+  '사시 (09~11)','오시 (11~13)','미시 (13~15)','신시 (15~17)','유시 (17~19)','술시 (19~21)','해시 (21~23)'];
+function hn(s){let h=5381;for(let i=0;i<s.length;i++)h=(h*33)^s.charCodeAt(i);return h>>>0}
+function renderMe(f){
+  if(!f.pool||!f.pool.total||!f.pool.total.length)return;
+  $('fmhour').innerHTML=HOURS.map(h=>`<option>${h}</option>`).join('');
+  const saved=JSON.parse(localStorage.getItem('ddm_me')||'null');
+  if(saved){
+    $('fmname').value=saved.name||'';$('fmgender').value=saved.g||'남';
+    $('fmbirth').value=saved.b||'';$('fmhour').value=saved.h||'모름';
+    showMe(f,saved);$('fme').open=true;
+  }
+  $('fmgo').onclick=()=>{
+    const me={name:$('fmname').value.trim(),g:$('fmgender').value,
+              b:$('fmbirth').value.trim(),h:$('fmhour').value};
+    if(!/^(19|20)\d{6}$/.test(me.b)){alert('생년월일 8자리를 확인해 주세요 (예: 19900101)');return;}
+    localStorage.setItem('ddm_me',JSON.stringify(me));
+    showMe(f,me);
+  };
+  $('fme').style.display='';
+}
+function showMe(f,me){
+  const key=[me.name,me.g,me.b,me.h].join('|'), P=f.pool;
+  const pick=(arr,salt)=>arr[hn(key+'|'+f.date+'|'+salt)%arr.length];
+  const score=60+hn(key+'|'+f.date+'|score')%40;
+  const z=ZODIAC[(+me.b.slice(0,4)-4)%12];
+  const zline=me.name?`${esc(me.name)} 님 · `:'';
+  $('fmeres').innerHTML=`<div class="fmescore">${zline}${z[1]} ${z[0]}띠 · 오늘의 운세 지수 <b>${score}점</b></div>
+    <p><b>총운</b>${esc(pick(P.total,'t'))}</p>
+    <p><b>장사운</b>${esc(pick(P.biz,'b'))}</p>
+    <p><b>한마디</b>${esc(pick(P.tip,'p'))}</p>`;
+  $('fmeres').style.display='';
+  if(f.zodiac&&f.zodiac[z[0]]){  // 생년으로 띠 자동 연동
+    localStorage.setItem('ddm_zodiac',z[0]);
+    $('fzsel').value=z[0];$('fztext').textContent=f.zodiac[z[0]];
+  }
 }
 
 function renderBrief(b){
