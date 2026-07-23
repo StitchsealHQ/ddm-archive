@@ -84,6 +84,7 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add docs/*.json
           git diff --cached --quiet || git commit -m "data: auto collect $(date -u +%Y-%m-%d)"
+          git pull --rebase origin main   # 실행 중 코드 push와의 경합 방지 (260723 실사례)
           git push
 
       - name: Close failure issue (정상 복구 시 자동 종료)
