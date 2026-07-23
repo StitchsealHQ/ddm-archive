@@ -32,6 +32,15 @@ header h1 span{color:var(--blue)}
 .stat{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:14px 20px;min-width:120px}
 .stat b{display:block;font-size:22px;font-weight:800;color:var(--blue)}
 .stat span{font-size:12px;color:var(--sub)}
+.fortune{background:linear-gradient(135deg,#FFFBF2,#FFF3DC);border:1px solid #F0DCAE;border-radius:16px;padding:16px 22px;margin-bottom:16px;display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap}
+.fortune .fico{font-size:22px;line-height:1.3}
+.fortune .fbody{flex:1;min-width:220px}
+.fortune h2{font-size:13.5px;font-weight:800;color:#8A6D1A;margin-bottom:4px}
+.fortune h2 span{font-size:11px;font-weight:600;color:#B29A55;margin-left:6px}
+.fortune p{font-size:13.5px;line-height:1.6}
+.fortune .flucky{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.fortune .flucky span{font-size:11px;font-weight:600;padding:4px 11px;border-radius:999px;background:#fff;border:1px solid #F0DCAE;color:#8A6D1A}
+.fortune .fnote{font-size:10px;color:#C4AE6E;margin-top:8px}
 .brief{background:linear-gradient(135deg,#F7F9FE,#EAF0FE);border:1px solid #BCCDF8;border-radius:16px;padding:20px 24px;margin-bottom:24px}
 .brief h2{font-size:15px;font-weight:800;color:var(--blue);margin-bottom:12px;display:flex;align-items:center;gap:8px}
 .brief h2 span{font-size:11.5px;font-weight:600;color:var(--sub)}
@@ -97,6 +106,8 @@ select{padding:11px 14px;border:1px solid var(--line);border-radius:12px;font-si
 .kind-블로그{background:rgba(255,243,224,.92);color:#B26A00}
 .kind-이미지{background:rgba(243,232,253,.92);color:#7C3AED}
 .kind-영상{background:rgba(253,232,232,.92);color:#B91C1C}
+.kind-커뮤니티{background:rgba(224,242,241,.92);color:#0F766E}
+.kind-SNS{background:rgba(252,231,243,.92);color:#BE185D}
 .body{padding:14px 16px 15px;display:flex;flex-direction:column;gap:9px;flex:1}
 .title{font-size:14px;font-weight:700;line-height:1.45;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .card:hover .title{color:var(--blue)}
@@ -143,6 +154,16 @@ footer{margin-top:48px;font-size:12px;color:var(--sub);text-align:center}
     <div class="stat"><b id="st-total">0</b><span>전체 자료</span></div>
     <div class="stat"><b id="st-week">0</b><span>최근 7일</span></div>
     <div class="stat"><b id="st-src">0</b><span>출처 수</span></div>
+  </div>
+
+  <div class="fortune" id="fortune" style="display:none">
+    <div class="fico">🧧</div>
+    <div class="fbody">
+      <h2>오늘의 동대문 장사운 <span id="fdate"></span></h2>
+      <p id="ftext"></p>
+      <div class="flucky" id="flucky"></div>
+      <div class="fnote">AI가 생성한 재미용 콘텐츠입니다</div>
+    </div>
   </div>
 
   <div class="brief" id="brief" style="display:none">
@@ -217,6 +238,9 @@ const GRAD={
   '외국인':['#F3E8FD','#E0C8FA','#7C3AED'],
   '완구/트렌드':['#E0F5F9','#BEE4EF','#0E7490'],
   '인근상권':['#F0F4E3','#DBE5BC','#5B7313'],
+  '원부자재/제조':['#FFF8E1','#F0E1A6','#8A6D1A'],
+  '상인/단체':['#F4ECE4','#E3D0BC','#7A5230'],
+  '행정/정책':['#ECEEF8','#CBD2EE','#3B4CA8'],
 };
 const DEF=['#F5F7FA','#E2E7EE','#5B6472'];
 
@@ -257,6 +281,7 @@ fetch('data.json').then(r=>r.json()).then(d=>{
     document.querySelectorAll('.chip:not(.bkchip)').forEach(c=>c.classList.toggle('on',c===b));
     render();
   };
+  renderFortune(d.fortune);
   renderBrief(d.briefing);
   renderTrend(d.trend);
   render();
@@ -318,6 +343,15 @@ function renderTrend(t){
   $('trend').style.display='';
 }
 
+function renderFortune(f){
+  if(!f||!f.text)return;
+  $('fdate').textContent=f.date||'';
+  $('ftext').textContent=f.text;
+  const lucky=[['컬러',f.color],['아이템',f.item],['숫자',f.number]].filter(x=>x[1]);
+  $('flucky').innerHTML=lucky.map(([k,v])=>`<span>럭키 ${k} · ${esc(String(v))}</span>`).join('');
+  $('fortune').style.display='';
+}
+
 function renderBrief(b){
   if(!b||!b.points||!b.points.length)return;
   $('brange').textContent=b.range||'';
@@ -351,7 +385,7 @@ $('kchips').onclick=e=>{
 };
 
 // 유형 칩 — 건수는 현재 검색·분류·북마크 선택 안에서 센다
-const KINDS=['뉴스','영상','블로그','이미지'];
+const KINDS=['뉴스','영상','블로그','커뮤니티','SNS','이미지'];
 function renderKindChips(counts){
   const chip=(k,label,n)=>`<button class="chip${state.kind===k?' on':''}" data-k="${k}">${label}`
     +(n!=null?`<span class="cnt">${n.toLocaleString()}</span>`:'')+'</button>';
@@ -383,7 +417,7 @@ function card(i){
 
 // 같은 날짜 안에서의 우선순위 — 네이버 블로그가 하루 수십 건씩 들어와
 // 뉴스·영상을 첫 화면 밖으로 밀어내던 문제를 막는다
-const KPRI={'뉴스':0,'영상':1,'블로그':2,'이미지':3};
+const KPRI={'뉴스':0,'영상':1,'SNS':2,'블로그':3,'커뮤니티':4,'이미지':5};
 function render(){
   const base=DATA.filter(i=>
     (!state.q||i._search.includes(state.q))&&

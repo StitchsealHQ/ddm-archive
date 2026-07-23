@@ -1,0 +1,47 @@
+name: SNS 자료 제출
+description: 인스타그램·쓰레드 등 SNS 게시물을 아카이브에 추가합니다
+title: "[SNS] 자료 제출"
+labels: ["sns"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        게시물 링크를 넣고 제출하면 자동으로 아카이브에 카드가 추가됩니다.
+        인스타그램은 제목·썸네일 자동 추출이 안 될 수 있으니 제목을 함께 적어주면 좋습니다.
+  - type: input
+    id: link
+    attributes:
+      label: 게시물 링크
+      placeholder: "https://www.instagram.com/p/..."
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: 제목 (선택)
+      description: 비우면 페이지에서 자동 추출을 시도합니다
+  - type: dropdown
+    id: tag
+    attributes:
+      label: 분류
+      options:
+        - 패션
+        - 도매시장
+        - DDP
+        - 쇼핑/관광
+        - F&B
+        - 기업/산업
+        - 외국인
+        - 완구/트렌드
+        - 인근상권
+        - 원부자재/제조
+        - 상인/단체
+        - 행정/정책
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: note
+    attributes:
+      label: 한줄 코멘트 (선택)
+      description: 왜 볼만한지 — 카드의 '동대문 관점'에 들어갑니다

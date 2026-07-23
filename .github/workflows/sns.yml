@@ -1,0 +1,64 @@
+name: sns-submit
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: collect        # collect 크론과 같은 그룹 — data.json 동시 push 충돌 방지
+  cancel-in-progress: false
+
+jobs:
+  add:
+    # 공개 저장소라 아무나 이슈를 열 수 있음 — 팀 계정만 처리
+    if: >
+      contains(github.event.issue.labels.*.name, 'sns') &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Add SNS item
+        id: add
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          set +e
+          OUT=$(python sns_submit.py 2>/dev/null)
+          CODE=$?
+          echo "result=${OUT}" >> "$GITHUB_OUTPUT"
+          exit $CODE
+
+      - name: Commit & push
+        run: |
+          git config user.name "ddm-archive-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/data.json
+          git diff --cached --quiet || git commit -m "data: SNS submit (#${{ github.event.issue.number }})"
+          git pull --rebase origin main
+          git push
+
+      - name: Close issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --repo ${{ github.repository }} \
+            --body "✅ 아카이브에 추가했습니다 — ${{ steps.add.outputs.result }}
+          https://stitchsealhq.github.io/ddm-archive/ (반영까지 1~2분)"
+          gh issue close ${{ github.event.issue.number }} --repo ${{ github.repository }}
+
+      - name: Report failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --repo ${{ github.repository }} \
+            --body "❌ 추가 실패 — ${{ steps.add.outputs.result || '처리 중 오류가 났습니다. 링크를 확인해 주세요.' }}"

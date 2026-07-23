@@ -14,6 +14,7 @@ import os
 import re
 import ssl
 import sys
+import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -54,9 +55,41 @@ QUERIES = [
     ("을지로 상권", "인근상권"),
     ("힙당동", "인근상권"),
     ("명동 쇼핑", "인근상권"),
+    # 도매 생태계 심화 (260723 확장)
+    ("동대문 도매시장", "도매시장"),
+    ("동대문 APM", "도매시장"),
+    ("동대문 사입", "도매시장"),
+    ("동대문 소매", "도매시장"),
+    ("동대문 관광특구", "쇼핑/관광"),
+    ("동대문 디자이너", "패션"),
+    # 무역·물류 — 동대문 앵커 없는 제목은 enforce_relevance가 기업/산업 규칙으로 거름
+    ("동대문 수출", "기업/산업"),
+    ("동대문 중국", "기업/산업"),
+    ("동대문 물류", "기업/산업"),
+    # 원부자재/제조 — 동대문종합시장 원단·부자재, 창신동 봉제
+    ("동대문 원단", "원부자재/제조"),
+    ("동대문 부자재", "원부자재/제조"),
+    ("동대문종합시장", "원부자재/제조"),
+    ("창신동 봉제", "원부자재/제조"),
+    # 상인/단체
+    ("동대문 상인", "상인/단체"),
+    ("동대문연합상인회", "상인/단체"),
+    # 행정/정책 — 구 단위는 상권 결합형 ('중구'는 전국 공통 지명이라 서울 앵커 필수)
+    ("종로구 상권", "행정/정책"),
+    ("서울 중구 상권", "행정/정책"),
+    ("성북구 상권", "행정/정책"),
+    ("동대문 세금", "행정/정책"),
+    ("동대문 부동산", "행정/정책"),
 ]
 
 OG_ENRICH_LIMIT = 60  # 실행 1회당 og:image 조회 상한
+
+# 카페글은 커뮤니티성 대화가 실제로 있는 쿼리만 (260723 dry-run: 광역 쿼리는 스팸 유입)
+CAFE_QUERIES = {"동대문 사입", "동대문 도매시장", "동대문시장 도매",
+                "동대문 원단", "동대문 부자재", "창신동 봉제", "동대문 키링"}
+# 커뮤니티 글은 제목에 앵커어 필수 (구인·홍보·무관 카페글 차단 1차 방어, 2차는 AI 필터)
+CAFE_ANCHOR = re.compile(
+    r"동대문|사입|도매|원단|부자재|봉제|창신동|평화시장|신상마켓|완구|키링|APM", re.I)
 
 CTX = ssl.create_default_context()
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
@@ -132,6 +165,11 @@ AREA_ANCHOR = {
         r"동대문|창신동|동묘|완구|문구|말랑이|왁뿌볼|슬랑이|키링|키캡|촉감|키덜트|장난감|피젯", re.I),
     "인근상권": re.compile(
         r"동대문|광장시장|경동시장|청량리|청계|세운|을지로|신당|힙당동|중앙시장|명동|왕십리|종로|전통시장", re.I),
+    "원부자재/제조": re.compile(
+        r"동대문|창신동|원단|부자재|봉제|종합시장|의류|패션|자재", re.I),
+    "상인/단체": re.compile(r"동대문|상인|시장|점포|상가", re.I),
+    "행정/정책": re.compile(
+        r"동대문|종로|중구|성북|상권|시장|재개발|세금|부동산|전통시장", re.I),
 }
 
 
@@ -147,6 +185,8 @@ def enforce_relevance(items):
     for it in items:
         if "기업/산업" in it["tags"] and not REL.search(it["title"]):
             it["tags"] = [t for t in it["tags"] if t != "기업/산업"]
+        if it["kind"] == "커뮤니티" and not CAFE_ANCHOR.search(it["title"]):
+            continue
         if it["kind"] == "이미지":
             it["tags"] = [t for t in it["tags"]
                           if t not in AREA_ANCHOR or AREA_ANCHOR[t].search(it["title"])]
@@ -252,14 +292,19 @@ def collect_naver():
     headers = {"X-Naver-Client-Id": cid, "X-Naver-Client-Secret": sec}
     # 이미지는 발행일이 없어 목록 최하단에 고정되고 AI 요약도 불가 →
     # 수집량을 줄여 노이즈·파일크기를 낮춘다 (260721, 전체의 35% 차지하던 문제)
-    endpoints = [("news", "뉴스", 30), ("blog", "블로그", 30), ("image", "이미지", 10)]
+    # 카페글도 API가 발행일을 안 줘 같은 문제 — 소량만 (260723 커뮤니티 추가)
+    endpoints = [("news", "뉴스", 30), ("blog", "블로그", 30),
+                 ("cafearticle", "커뮤니티", 10), ("image", "이미지", 10)]
     items = []
     for query, tag in QUERIES:
         q = urllib.parse.quote(query)
         for ep, kind, display in endpoints:
+            if ep == "cafearticle" and query not in CAFE_QUERIES:
+                continue
             sort = "" if ep == "image" else "&sort=date"
             url = f"https://openapi.naver.com/v1/search/{ep}.json?query={q}&display={display}{sort}"
             try:
+                time.sleep(0.12)  # 초당 호출 제한 대비 (쿼리 확장 후 429 관측, 260723)
                 data = json.loads(http_get(url, headers))
             except Exception as e:
                 print(f"[naver/{ep}] {query}: FAILED {e}")
@@ -276,7 +321,8 @@ def collect_naver():
                     "title": strip_tags(it.get("title", "")),
                     "link": it.get("originallink") or it.get("link", ""),
                     "date": date,
-                    "source": strip_tags(it.get("bloggername", "")) or "네이버",
+                    "source": strip_tags(it.get("bloggername", "")
+                                         or it.get("cafename", "")) or "네이버",
                     "kind": kind, "tags": [tag],
                 }
                 if kind == "이미지":

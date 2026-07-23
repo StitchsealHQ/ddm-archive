@@ -60,6 +60,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python briefing.py
 
+      - name: Daily fortune (오늘의 장사운)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python fortune.py
+
       - name: Commit & push
         run: |
           git config user.name "ddm-archive-bot"
