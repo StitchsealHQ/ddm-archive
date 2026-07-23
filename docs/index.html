@@ -81,6 +81,8 @@ header h1 span{color:var(--blue)}
 .bk{position:absolute;top:10px;right:10px;width:30px;height:30px;border-radius:99px;border:none;background:rgba(255,255,255,.9);color:#B9C0CC;font-size:15px;cursor:pointer;line-height:1}
 .bk.on{color:#F5A623}
 .bk:hover{background:#fff}
+.shp{position:absolute;top:46px;right:10px;width:30px;height:30px;border-radius:99px;border:none;background:rgba(255,255,255,.9);color:#8C94A3;font-size:13px;cursor:pointer;line-height:1}
+.shp:hover{background:#fff;color:var(--blue)}
 .chip.bkchip.on{background:#FFF6E5;border-color:#F5D9A8;color:#B26A00}
 .copybtn{padding:12px 18px;border-radius:12px;border:1px solid var(--line);background:#fff;font-size:13.5px;font-weight:600;color:var(--sub);cursor:pointer;font-family:inherit;white-space:nowrap}
 .copybtn:hover{color:var(--blue);border-color:#BCCDF8}
@@ -194,6 +196,7 @@ footer{margin-top:48px;font-size:12px;color:var(--sub);text-align:center}
   .kindpill{font-size:10px;padding:3px 9px;top:8px;left:8px}
   .aibadge{font-size:9.5px;padding:4px 10px;right:8px;bottom:8px}
   .bk{width:26px;height:26px;font-size:13px;top:8px;right:8px}
+  .shp{width:26px;height:26px;font-size:11px;top:40px;right:8px}
   .stats{gap:8px;margin:16px 0}
   .stat{flex:1;min-width:0;padding:9px 8px;text-align:center}
   .stat b{font-size:16px}
@@ -305,7 +308,7 @@ footer{margin-top:48px;font-size:12px;color:var(--sub);text-align:center}
     <div class="label">동대문 관점</div>
     <div class="cmt" id="mcomment"></div>
     <div class="kws" id="mkws"></div>
-    <div class="actions"><a class="go" id="mgo" href="#" target="_blank" rel="noopener">원문 보기 ↗</a><button class="copybtn" id="mcopy" type="button">🔗 링크 복사</button></div>
+    <div class="actions"><a class="go" id="mgo" href="#" target="_blank" rel="noopener">원문 보기 ↗</a><button class="copybtn" id="mshare" type="button">💬 광장에 공유</button><button class="copybtn" id="mcopy" type="button">🔗 링크 복사</button></div>
     <div class="note">AI가 생성한 요약으로 부정확할 수 있습니다 · 내부 공유용</div>
   </div>
 </div>
@@ -551,8 +554,9 @@ function card(i){
   const img=i.thumbnail?`<img src="${esc(i.thumbnail)}" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.remove()">`:'';
   const ai=i.summary?`<button class="aibadge" type="button">AI 요약</button>`:'';
   const bk=`<button class="bk${BK.has(i._id)?' on':''}" type="button" title="북마크">★</button>`;
+  const shp=`<button class="shp" type="button" title="광장에 공유">💬</button>`;
   return `<a class="card" href="${esc(i.link)}" target="_blank" rel="noopener" data-idx="${DATA.indexOf(i)}">
-    <div class="imgwrap">${ph}${img}<span class="kindpill kind-${i.kind}">${i.kind}</span>${ai}${bk}</div>
+    <div class="imgwrap">${ph}${img}<span class="kindpill kind-${i.kind}">${i.kind}</span>${ai}${bk}${shp}</div>
     <div class="body">
       <div class="title">${esc(i.title)}</div>
       <div class="foot">
@@ -593,8 +597,21 @@ function render(){
   if(archCount>0&&!archPromise)$('lall').textContent=`지난 자료 ${archCount.toLocaleString()}건 불러오기`;
 }
 
-// 카드 클릭=원문 이동, "AI 요약" 뱃지=요약 모달, ★=북마크 토글
+// 광장에 공유 — 제목·딥링크를 넘겨 광장 글쓰기 화면을 미리 채워서 연다
+function sharePlaza(i){
+  localStorage.setItem('ddm_share',JSON.stringify(
+    {t:i.title,u:location.origin+location.pathname.replace(/[^/]*$/,'')+'#i='+i._id}));
+  location.href='plaza.html?share=1';
+}
+
+// 카드 클릭=원문 이동, "AI 요약" 뱃지=요약 모달, ★=북마크 토글, 💬=광장 공유
 $('list').addEventListener('click',e=>{
+  const sh=e.target.closest('.shp');
+  if(sh){
+    e.preventDefault(); e.stopPropagation();
+    sharePlaza(DATA[+sh.closest('.card').dataset.idx]);
+    return;
+  }
   const star=e.target.closest('.bk');
   if(star){
     e.preventDefault(); e.stopPropagation();
@@ -624,6 +641,7 @@ function openDoc(i){
   $('mcomment').style.display=i.comment?'':'none';
   $('mkws').innerHTML=(i.keywords||[]).map(k=>`<span class="kw">#${esc(k)}</span>`).join('');
   $('mgo').href=i.link;
+  $('mshare').onclick=()=>sharePlaza(i);
   $('mcopy').textContent='🔗 링크 복사';
   $('mcopy').onclick=()=>{
     const url=location.origin+location.pathname+'#i='+i._id;

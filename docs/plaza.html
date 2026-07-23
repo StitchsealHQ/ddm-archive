@@ -174,6 +174,8 @@ const $=id=>document.getElementById(id);
 const PAGE=30;
 let ME=null,cursor=null,imgBlob=null,TOPIC='',FILTER='전체';
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+const linkify=s=>esc(s).replace(/(https?:\/\/[^\s<]+)/g,
+  '<a href="$1" target="_blank" rel="noopener" style="color:var(--blue);word-break:break-all">$1</a>');
 const AVC=['#2657E8','#B0326B','#1B7F3B','#B26A00','#7C3AED','#0E7490','#7A5230','#3B4CA8'];
 const avatar=n=>`<span class="avatar" style="background:${AVC[[...n].reduce((a,c)=>a+c.charCodeAt(0),0)%AVC.length]}">${esc(n[0]||'?')}</span>`;
 function ago(t){const s=(Date.now()-new Date(t))/1e3;
@@ -221,7 +223,7 @@ function rowHtml(p){
       ${p.image_url?`<img class="pthumb" src="${esc(p.image_url)}" loading="lazy" alt="">`:''}
     </div>
     <div class="pfull" hidden>
-      <div class="fbody">${esc(p.body)}</div>
+      <div class="fbody">${linkify(p.body)}</div>
       ${p.image_url?`<img class="fimg" src="${esc(p.image_url)}" loading="lazy" alt="">`:''}
       <div class="pacts">
         <button class="plike${liked?' liked':''}">${liked?'♥':'♡'} 좋아요 <span>${likes.length}</span></button>
@@ -418,6 +420,21 @@ function subscribe(){
   renderFilters();
   try{ME=await ensureAuth()}
   catch(e){notice('글쓰기 연결 실패 — 관리자가 익명 로그인 설정을 켜면 열립니다. (읽기는 가능)')}
+  // 아카이브에서 '광장에 공유'로 넘어온 경우 — 글쓰기 화면을 미리 채워서 연다
+  if(new URLSearchParams(location.search).get('share')==='1'){
+    history.replaceState(null,'',location.pathname);
+    try{
+      const s=JSON.parse(localStorage.getItem('ddm_share')||'null');
+      if(s&&s.t){
+        localStorage.removeItem('ddm_share');
+        $('fab').click();
+        $('ctitle').value=String(s.t).slice(0,100);
+        $('cbody').value=`\n\n📚 ${s.t}\n🔗 ${s.u}`;
+        checkReady();
+        setTimeout(()=>{$('cbody').focus();$('cbody').setSelectionRange(0,0)},150);
+      }
+    }catch(e){}
+  }
   await loadFeed();
   subscribe();
   const m=location.hash.match(/#p=([0-9a-f-]+)/);
