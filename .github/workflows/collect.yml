@@ -66,6 +66,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python fortune.py
 
+      - name: Storage cleanup (광장 고아 이미지 — Secret 없으면 건너뜀)
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python cleanup_images.py
+
       - name: Supabase keep-alive (무료 티어 휴면 방지)
         run: |
           curl -s -o /dev/null -w "supabase ping %{http_code}\n" \
