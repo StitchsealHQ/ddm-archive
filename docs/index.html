@@ -44,14 +44,16 @@ header h1 span{color:var(--blue)}
 .fortune p{font-size:13.5px;line-height:1.6}
 .fortune .flucky{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
 .fortune .flucky span{font-size:11px;font-weight:600;padding:4px 11px;border-radius:999px;background:#fff;border:1px solid #F0DCAE;color:#8A6D1A}
-.fortune .fzo{margin-top:12px;padding-top:12px;border-top:1px dashed #F0DCAE;display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap}
-.fortune .fzo select{padding:7px 10px;border:1px solid #F0DCAE;border-radius:10px;font-size:12.5px;font-family:inherit;background:#fff;color:#8A6D1A;font-weight:600}
-.fortune .fzo p{flex:1;min-width:200px;font-size:13px;line-height:1.6;margin-top:4px}
+.fortune .fzo{margin-top:12px;padding-top:12px;border-top:1px dashed #F0DCAE}
+.fortune .fzo summary{font-size:12.5px;font-weight:700;color:#8A6D1A;cursor:pointer;list-style:none}
+.fortune .fzo summary::-webkit-details-marker{display:none}
+.fortune .fzo summary::after{content:' ▾';font-size:10px}
+.fortune .fzo[open] summary::after{content:' ▴'}
+.fzbody{display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap;margin-top:10px}
+.fzbody select{padding:7px 10px;border:1px solid #F0DCAE;border-radius:10px;font-size:12.5px;font-family:inherit;background:#fff;color:#8A6D1A;font-weight:600}
+.fzbody p{flex:1;min-width:200px;font-size:13px;line-height:1.6;margin-top:4px}
 .fme{margin-top:12px;padding-top:12px;border-top:1px dashed #F0DCAE}
-.fme summary{font-size:12.5px;font-weight:700;color:#8A6D1A;cursor:pointer;list-style:none}
-.fme summary::-webkit-details-marker{display:none}
-.fme summary::after{content:' ▾';font-size:10px}
-.fme[open] summary::after{content:' ▴'}
+.fme .fmet{font-size:12.5px;font-weight:700;color:#8A6D1A}
 .fmeform{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
 .fmeform input,.fmeform select{padding:8px 12px;border:1px solid #F0DCAE;border-radius:10px;font-size:12.5px;font-family:inherit;background:#fff;color:var(--ink)}
 .fmeform input:focus{outline:none;border-color:#D9B856}
@@ -172,10 +174,11 @@ footer{margin-top:48px;font-size:12px;color:var(--sub);text-align:center}
 <div class="wrap">
   <header>
     <h1>동대문 <span>아카이브</span></h1>
-    <div class="meta">동대문 관련 뉴스·영상·블로그·이미지 자료 모음 · 자동 수집 · 팀 내부 공유용 · 마지막 갱신 <span id="updated">—</span> · <a href="guide.html">이용안내</a></div>
+    <div class="meta">동대문 관련 뉴스·영상·블로그·이미지 자료 모음 · 자동 수집 · 팀 내부 공유용 · 마지막 갱신 <span id="updated">—</span></div>
     <nav class="topnav">
       <a class="tn on" href="./">📚 아카이브</a>
       <a class="tn" href="plaza.html">💬 광장</a>
+      <a class="tn" href="guide.html">📖 이용안내</a>
     </nav>
   </header>
 
@@ -191,12 +194,8 @@ footer{margin-top:48px;font-size:12px;color:var(--sub);text-align:center}
       <h2>오늘의 동대문 장사운 <span id="fdate"></span></h2>
       <p id="ftext"></p>
       <div class="flucky" id="flucky"></div>
-      <div class="fzo" id="fzo" style="display:none">
-        <select id="fzsel" aria-label="띠 선택"></select>
-        <p id="fztext"></p>
-      </div>
-      <details class="fme" id="fme" style="display:none">
-        <summary>🔮 내 정보로 보는 오늘의 운세</summary>
+      <div class="fme" id="fme" style="display:none">
+        <div class="fmet">🔮 내 정보로 보는 오늘의 운세</div>
         <div class="fmeform">
           <input id="fmname" type="text" placeholder="이름" maxlength="12">
           <select id="fmgender"><option value="남">남자</option><option value="여">여자</option></select>
@@ -206,6 +205,13 @@ footer{margin-top:48px;font-size:12px;color:var(--sub);text-align:center}
         </div>
         <div class="fmeres" id="fmeres" style="display:none"></div>
         <div class="fmenote">입력 정보는 이 기기에만 저장되며 어디에도 전송되지 않습니다</div>
+      </div>
+      <details class="fzo" id="fzo" style="display:none">
+        <summary>🐲 띠별 운세</summary>
+        <div class="fzbody">
+          <select id="fzsel" aria-label="띠 선택"></select>
+          <p id="fztext"></p>
+        </div>
       </details>
       <div class="fnote">AI가 생성한 재미용 콘텐츠입니다</div>
     </div>
@@ -421,7 +427,7 @@ function renderMe(f){
   if(saved){
     $('fmname').value=saved.name||'';$('fmgender').value=saved.g||'남';
     $('fmbirth').value=saved.b||'';$('fmhour').value=saved.h||'모름';
-    showMe(f,saved);$('fme').open=true;
+    showMe(f,saved);
   }
   $('fmgo').onclick=()=>{
     const me={name:$('fmname').value.trim(),g:$('fmgender').value,

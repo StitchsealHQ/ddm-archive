@@ -22,8 +22,10 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Pretendard',-apple-system,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
 .wrap{max-width:780px;margin:0 auto;padding:40px 24px 80px}
-.back{display:inline-block;font-size:13px;color:var(--sub);text-decoration:none;margin-bottom:18px;font-weight:600}
-.back:hover{color:var(--blue)}
+.topnav{display:flex;gap:8px;margin-top:18px}
+.tn{padding:10px 24px;border-radius:12px;font-size:14px;font-weight:700;text-decoration:none;color:var(--sub);background:#fff;border:1px solid var(--line)}
+.tn:hover{color:var(--blue);border-color:#BCCDF8}
+.tn.on{background:var(--blue);border-color:var(--blue);color:#fff}
 header h1{font-size:28px;font-weight:800;letter-spacing:-.5px}
 header h1 span{color:var(--blue)}
 .lead{font-size:14px;color:var(--sub);margin-top:8px}
@@ -61,10 +63,14 @@ footer a{color:var(--blue);text-decoration:none;font-weight:600}
 </head>
 <body>
 <div class="wrap">
-  <a class="back" href="./">← 아카이브로 돌아가기</a>
   <header>
     <h1>이용<span>안내</span></h1>
     <div class="lead">동대문 아카이브를 어떻게 쓰는지, 무엇을 주의하면 좋은지 정리했습니다. 팀 내부용 문서입니다.</div>
+    <nav class="topnav">
+      <a class="tn" href="./">📚 아카이브</a>
+      <a class="tn" href="plaza.html">💬 광장</a>
+      <a class="tn on" href="guide.html">📖 이용안내</a>
+    </nav>
   </header>
 
   <section>
