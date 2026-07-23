@@ -65,6 +65,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python fortune.py
 
+      - name: Supabase keep-alive (무료 티어 휴면 방지)
+        run: |
+          curl -s -o /dev/null -w "supabase ping %{http_code}\n" \
+            "https://vwbhainvzncciyiruepd.supabase.co/rest/v1/plaza_posts?select=id&limit=1" \
+            -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}" || true
+
       - name: Commit & push
         run: |
           git config user.name "ddm-archive-bot"

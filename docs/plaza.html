@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>동대문 광장</title>
+<meta name="theme-color" content="#2657E8">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<style>
+:root{--ink:#0E1526;--blue:#2657E8;--bg:#FFF;--sub:#5B6472;--line:#E8EBF0;--soft:#F5F7FA}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Pretendard',-apple-system,sans-serif;background:var(--soft);color:var(--ink);line-height:1.55}
+.wrap{max-width:640px;margin:0 auto;padding:28px 16px 80px}
+.back{font-size:13px;color:var(--sub);text-decoration:none;font-weight:600}
+.back:hover{color:var(--blue)}
+header h1{font-size:26px;font-weight:800;letter-spacing:-.5px;margin-top:10px}
+header h1 span{color:var(--blue)}
+.meta{font-size:12.5px;color:var(--sub);margin:6px 0 20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin-bottom:14px}
+.notice{background:#FFF8E1;border:1px solid #F0DCAE;color:#8A6D1A;border-radius:14px;padding:14px 18px;font-size:13px;margin-bottom:14px;display:none}
+/* 작성 */
+.crow{display:flex;gap:8px;margin-bottom:10px}
+.crow input,.crow select{padding:9px 12px;border:1px solid var(--line);border-radius:10px;font-size:13px;font-family:inherit;background:#fff}
+.crow input{flex:1;min-width:0}
+.crow input:focus,textarea:focus{outline:none;border-color:var(--blue)}
+textarea{width:100%;min-height:76px;padding:11px 13px;border:1px solid var(--line);border-radius:12px;font-size:13.5px;font-family:inherit;resize:vertical}
+.cbot{display:flex;align-items:center;gap:10px;margin-top:10px}
+.attach{font-size:12.5px;color:var(--sub);cursor:pointer;font-weight:600;padding:8px 12px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.attach:hover{color:var(--blue);border-color:#BCCDF8}
+#imgprev{max-height:64px;border-radius:8px;display:none}
+#imgclear{display:none;border:none;background:none;color:var(--sub);cursor:pointer;font-size:12px}
+.submit{margin-left:auto;padding:10px 22px;border:none;border-radius:11px;background:var(--blue);color:#fff;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.submit:hover{background:#1E47C7}
+.submit:disabled{background:#B9C7EE;cursor:default}
+/* 피드 */
+.post .phead{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.avatar{width:32px;height:32px;border-radius:99px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#fff;flex:none}
+.pname{font-size:13.5px;font-weight:700}
+.ptime{font-size:11.5px;color:var(--sub)}
+.pcat{font-size:10.5px;font-weight:700;padding:3px 10px;border-radius:999px;margin-left:auto}
+.cat-자유{background:#EAF0FE;color:#2657E8}.cat-정보{background:#E7F6EC;color:#1B7F3B}
+.cat-질문{background:#FFF3E0;color:#B26A00}.cat-거래{background:#F3E8FD;color:#7C3AED}
+.pbody{font-size:14px;line-height:1.65;white-space:pre-wrap;word-break:break-word}
+.pimg{margin-top:10px;max-width:100%;max-height:420px;border-radius:12px;display:block}
+.pacts{display:flex;gap:4px;margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+.pacts button{border:none;background:none;font-size:12.5px;color:var(--sub);cursor:pointer;font-family:inherit;font-weight:600;padding:6px 10px;border-radius:8px}
+.pacts button:hover{background:var(--soft)}
+.pacts .liked{color:#E0245E}
+.pacts .pdel{margin-left:auto}
+.cmts{margin-top:10px;padding-top:10px;border-top:1px solid var(--line);display:none}
+.cmt{display:flex;gap:8px;margin-bottom:9px;font-size:13px}
+.cmt .avatar{width:24px;height:24px;font-size:11px}
+.cmt b{font-size:12.5px;margin-right:6px}
+.cmt .ctime{color:var(--sub);font-size:11px;margin-left:6px}
+.cmt .cdel{border:none;background:none;color:#B9C0CC;cursor:pointer;font-size:11px}
+.cform{display:flex;gap:8px;margin-top:4px}
+.cform input{flex:1;padding:9px 12px;border:1px solid var(--line);border-radius:10px;font-size:13px;font-family:inherit}
+.cform button{padding:0 16px;border:none;border-radius:10px;background:var(--soft);color:var(--blue);font-weight:700;font-size:12.5px;cursor:pointer;font-family:inherit}
+.empty{text-align:center;color:var(--sub);padding:48px 0;font-size:13.5px}
+.more{display:block;margin:20px auto 0;padding:11px 30px;border:1px solid var(--line);border-radius:12px;background:#fff;font-size:13.5px;font-weight:600;color:var(--blue);cursor:pointer;font-family:inherit}
+.hl{animation:hl 2s}
+@keyframes hl{0%{box-shadow:0 0 0 3px #BCCDF8}100%{box-shadow:none}}
+footer{margin-top:40px;font-size:11.5px;color:var(--sub);text-align:center}
+footer a{color:var(--blue);text-decoration:none;font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./">← 동대문 아카이브</a>
+  <header>
+    <h1>동대문 <span>광장</span></h1>
+    <div class="meta">아카이브 이용자들의 소통 공간 · 닉네임만으로 글·댓글·좋아요 · 팀 내부 공유용</div>
+  </header>
+
+  <div class="notice" id="notice"></div>
+
+  <div class="card" id="composer">
+    <div class="crow">
+      <input id="nick" type="text" placeholder="닉네임" maxlength="20">
+      <select id="cat"><option>자유</option><option>정보</option><option>질문</option><option>거래</option></select>
+    </div>
+    <textarea id="body" placeholder="동대문 소식, 질문, 정보를 나눠보세요" maxlength="2000"></textarea>
+    <div class="cbot">
+      <label class="attach">📷 사진<input id="imgfile" type="file" accept="image/*" hidden></label>
+      <img id="imgprev" alt=""><button id="imgclear" type="button">✕ 제거</button>
+      <button class="submit" id="post">등록</button>
+    </div>
+  </div>
+
+  <div id="feed"></div>
+  <div class="empty" id="empty" style="display:none">아직 글이 없습니다. 첫 글을 남겨보세요!</div>
+  <button class="more" id="more" style="display:none">더 보기</button>
+
+  <footer>동대문 광장 · 부적절한 글은 관리자가 삭제할 수 있습니다 · <a href="./">아카이브로 →</a></footer>
+</div>
+
+<script>
+const SB_URL='https://vwbhainvzncciyiruepd.supabase.co';
+const SB_ANON='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ3YmhhaW52em5jY2l5aXJ1ZXBkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ3NTQ3ODUsImV4cCI6MjEwMDMzMDc4NX0.LGPlLcpocyX1tVAzgpOZOfe-HNT53Y9nYRgtt68epHA';
+const sb=window.supabase.createClient(SB_URL,SB_ANON);
+const $=id=>document.getElementById(id);
+const PAGE=30;
+let ME=null,cursor=null,imgBlob=null;
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+const AVC=['#2657E8','#B0326B','#1B7F3B','#B26A00','#7C3AED','#0E7490','#7A5230','#3B4CA8'];
+const avatar=(n,sz)=>`<span class="avatar" style="background:${AVC[[...n].reduce((a,c)=>a+c.charCodeAt(0),0)%AVC.length]}">${esc(n[0]||'?')}</span>`;
+function ago(t){const s=(Date.now()-new Date(t))/1e3;
+  if(s<60)return'방금';if(s<3600)return`${s/60|0}분 전`;if(s<86400)return`${s/3600|0}시간 전`;
+  if(s<86400*7)return`${s/86400|0}일 전`;return new Date(t).toISOString().slice(0,10)}
+function notice(msg){$('notice').textContent=msg;$('notice').style.display='block'}
+
+$('nick').value=localStorage.getItem('ddm_nick')||'';
+
+async function ensureAuth(){
+  const {data:{session}}=await sb.auth.getSession();
+  if(session)return session.user;
+  const {data,error}=await sb.auth.signInAnonymously();
+  if(error)throw error;
+  return data.user;
+}
+
+function postHtml(p){
+  const likes=p.plaza_likes||[];
+  const liked=ME&&likes.some(l=>l.author===ME.id);
+  const nc=(p.plaza_comments&&p.plaza_comments[0]&&p.plaza_comments[0].count)||0;
+  const mine=ME&&p.author===ME.id;
+  return `<div class="card post" id="post-${p.id}" data-id="${p.id}">
+    <div class="phead">${avatar(p.nickname)}
+      <div><div class="pname">${esc(p.nickname)}</div><div class="ptime">${ago(p.created_at)}</div></div>
+      <span class="pcat cat-${esc(p.category)}">${esc(p.category)}</span></div>
+    <div class="pbody">${esc(p.body)}</div>
+    ${p.image_url?`<img class="pimg" src="${esc(p.image_url)}" loading="lazy" alt="">`:''}
+    <div class="pacts">
+      <button class="plike${liked?' liked':''}">${liked?'♥':'♡'} <span>${likes.length}</span></button>
+      <button class="pcmt">💬 <span>${nc}</span></button>
+      <button class="pshare">🔗 공유</button>
+      ${mine?'<button class="pdel">삭제</button>':''}</div>
+    <div class="cmts"><div class="clist"></div>
+      <div class="cform"><input placeholder="댓글 쓰기" maxlength="500"><button>등록</button></div></div>
+  </div>`;
+}
+
+async function loadFeed(more){
+  let q=sb.from('plaza_posts')
+    .select('*, plaza_likes(author), plaza_comments(count)')
+    .order('created_at',{ascending:false}).limit(PAGE);
+  if(more&&cursor)q=q.lt('created_at',cursor);
+  const {data,error}=await q;
+  if(error){
+    notice(/relation|not exist|schema/i.test(error.message)
+      ?'광장이 아직 준비 중입니다 — 관리자가 스키마 설정을 완료하면 열립니다.'
+      :'불러오기 실패: '+error.message);
+    return;
+  }
+  if(data.length){
+    cursor=data[data.length-1].created_at;
+    $('feed').insertAdjacentHTML('beforeend',data.map(postHtml).join(''));
+  }
+  $('empty').style.display=$('feed').children.length?'none':'block';
+  $('more').style.display=data.length===PAGE?'block':'none';
+}
+
+async function loadComments(el){
+  const id=el.dataset.id,list=el.querySelector('.clist');
+  const {data,error}=await sb.from('plaza_comments').select('*')
+    .eq('post_id',id).order('created_at');
+  if(error)return;
+  list.innerHTML=data.map(c=>`<div class="cmt" data-cid="${c.id}">${avatar(c.nickname)}
+    <div><b>${esc(c.nickname)}</b>${esc(c.body)}<span class="ctime">${ago(c.created_at)}</span>
+    ${ME&&c.author===ME.id?'<button class="cdel">삭제</button>':''}</div></div>`).join('')
+    ||'<div class="cmt" style="color:var(--sub)">첫 댓글을 남겨보세요</div>';
+  el.querySelector('.pcmt span').textContent=data.length;
+}
+
+$('feed').addEventListener('click',async e=>{
+  const post=e.target.closest('.post');if(!post)return;
+  const id=post.dataset.id;
+  if(e.target.closest('.plike')){
+    if(!ME)return;
+    const btn=e.target.closest('.plike'),n=btn.querySelector('span');
+    if(btn.classList.contains('liked')){
+      btn.classList.remove('liked');btn.firstChild.textContent='♡ ';n.textContent=+n.textContent-1;
+      await sb.from('plaza_likes').delete().eq('post_id',id).eq('author',ME.id);
+    }else{
+      btn.classList.add('liked');btn.firstChild.textContent='♥ ';n.textContent=+n.textContent+1;
+      await sb.from('plaza_likes').insert({post_id:id});
+    }
+  }else if(e.target.closest('.pcmt')){
+    const c=post.querySelector('.cmts');
+    const open=c.style.display==='block';
+    c.style.display=open?'none':'block';
+    if(!open)loadComments(post);
+  }else if(e.target.closest('.pshare')){
+    navigator.clipboard.writeText(location.origin+location.pathname+'#p='+id)
+      .then(()=>{e.target.textContent='✅ 복사됨';setTimeout(()=>e.target.textContent='🔗 공유',1500)});
+  }else if(e.target.closest('.pdel')){
+    if(!confirm('이 글을 삭제할까요?'))return;
+    const {error}=await sb.from('plaza_posts').delete().eq('id',id);
+    if(!error)post.remove();
+  }else if(e.target.closest('.cdel')){
+    const cid=e.target.closest('.cmt').dataset.cid;
+    if(!confirm('댓글을 삭제할까요?'))return;
+    const {error}=await sb.from('plaza_comments').delete().eq('id',cid);
+    if(!error)loadComments(post);
+  }else if(e.target.closest('.cform button')){
+    const inp=post.querySelector('.cform input'),body=inp.value.trim();
+    const nick=$('nick').value.trim();
+    if(!nick){alert('상단에 닉네임을 먼저 입력해 주세요');return}
+    if(!body)return;
+    localStorage.setItem('ddm_nick',nick);
+    const {error}=await sb.from('plaza_comments').insert({post_id:id,nickname:nick,body});
+    if(error){alert(error.message);return}
+    inp.value='';loadComments(post);
+  }
+});
+
+$('more').onclick=()=>loadFeed(true);
+
+// 사진 첨부 (긴 변 1280px로 축소 후 jpeg 업로드)
+$('imgfile').onchange=e=>{
+  const f=e.target.files[0];if(!f)return;
+  const img=new Image();
+  img.onload=()=>{
+    const s=Math.min(1,1280/Math.max(img.width,img.height));
+    const cv=document.createElement('canvas');
+    cv.width=img.width*s;cv.height=img.height*s;
+    cv.getContext('2d').drawImage(img,0,0,cv.width,cv.height);
+    cv.toBlob(b=>{imgBlob=b;$('imgprev').src=cv.toDataURL('image/jpeg',.7);
+      $('imgprev').style.display='';$('imgclear').style.display='';},'image/jpeg',.85);
+  };
+  img.src=URL.createObjectURL(f);
+};
+$('imgclear').onclick=()=>{imgBlob=null;$('imgfile').value='';
+  $('imgprev').style.display='none';$('imgclear').style.display='none'};
+
+$('post').onclick=async()=>{
+  const nick=$('nick').value.trim(),body=$('body').value.trim();
+  if(!nick){alert('닉네임을 입력해 주세요');return}
+  if(!body){alert('내용을 입력해 주세요');return}
+  if(!ME){alert('연결 준비 중입니다. 잠시 후 다시 시도해 주세요.');return}
+  localStorage.setItem('ddm_nick',nick);
+  $('post').disabled=true;
+  try{
+    let image_url=null;
+    if(imgBlob){
+      const path=`${ME.id}/${Date.now()}.jpg`;
+      const {error}=await sb.storage.from('plaza').upload(path,imgBlob,{contentType:'image/jpeg'});
+      if(error)throw error;
+      image_url=sb.storage.from('plaza').getPublicUrl(path).data.publicUrl;
+    }
+    const {data,error}=await sb.from('plaza_posts')
+      .insert({nickname:nick,body,category:$('cat').value,image_url})
+      .select('*, plaza_likes(author), plaza_comments(count)').single();
+    if(error)throw error;
+    $('feed').insertAdjacentHTML('afterbegin',postHtml(data));
+    $('empty').style.display='none';
+    $('body').value='';$('imgclear').onclick();
+  }catch(err){alert('등록 실패: '+err.message)}
+  $('post').disabled=false;
+};
+
+// 새 글 실시간 반영 (남이 쓴 글만 — 내 글은 등록 시 이미 붙음)
+function subscribe(){
+  sb.channel('plaza').on('postgres_changes',
+    {event:'INSERT',schema:'public',table:'plaza_posts'},
+    payload=>{
+      const p=payload.new;
+      if(ME&&p.author===ME.id)return;
+      if(document.getElementById('post-'+p.id))return;
+      p.plaza_likes=[];p.plaza_comments=[{count:0}];
+      $('feed').insertAdjacentHTML('afterbegin',postHtml(p));
+      $('empty').style.display='none';
+    }).subscribe();
+}
+
+(async()=>{
+  try{ME=await ensureAuth()}
+  catch(e){notice('글쓰기 연결 실패 — 관리자가 익명 로그인 설정을 켜면 열립니다. (읽기는 가능)')}
+  await loadFeed();
+  subscribe();
+  const m=location.hash.match(/#p=([0-9a-f-]+)/);
+  if(m){
+    let el=document.getElementById('post-'+m[1]);
+    if(!el){
+      const {data}=await sb.from('plaza_posts')
+        .select('*, plaza_likes(author), plaza_comments(count)').eq('id',m[1]).single();
+      if(data){$('feed').insertAdjacentHTML('afterbegin',postHtml(data));el=document.getElementById('post-'+m[1])}
+    }
+    if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('hl')}
+  }
+})();
+</script>
+</body>
+</html>
