@@ -48,11 +48,13 @@ def main():
         print("SUPABASE_SERVICE_KEY not set — skipped")
         return
 
-    # 글에서 참조 중인 이미지 경로
-    rows = req("GET", "/rest/v1/plaza_posts?select=image_url&image_url=not.is.null", key)
+    # 글·프로필에서 참조 중인 이미지 경로 (프로필 아바타도 보호)
     marker = f"/object/public/{BUCKET}/"
-    refs = {r["image_url"].split(marker, 1)[1]
-            for r in rows if marker in (r.get("image_url") or "")}
+    refs = set()
+    for endpoint, col in (("plaza_posts", "image_url"), ("profiles", "avatar_url")):
+        rows = req("GET", f"/rest/v1/{endpoint}?select={col}&{col}=not.is.null", key)
+        refs |= {r[col].split(marker, 1)[1]
+                 for r in rows if marker in (r.get(col) or "")}
     print(f"referenced: {len(refs)}")
 
     # 버킷 전체 파일 (1단계 폴더 구조: {uid}/{file})

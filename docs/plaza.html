@@ -66,6 +66,12 @@ header h1 span{color:var(--blue)}
 .cmts{margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
 .cmt{display:flex;gap:8px;margin-bottom:9px;font-size:13px}
 .avatar{width:28px;height:28px;border-radius:99px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff;flex:none}
+img.avatar{object-fit:cover}
+.avrow{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:14px}
+.avrow .avatar{width:64px;height:64px;font-size:26px}
+.avcol{display:flex;flex-direction:column;gap:6px}
+.avbtn{border:1px solid var(--line);background:#fff;border-radius:9px;padding:7px 12px;font-size:12px;cursor:pointer;font-family:inherit;color:var(--sub)}
+.avbtn:hover{color:var(--blue);border-color:#BCCDF8}
 .cmt .avatar{width:24px;height:24px;font-size:11px}
 .cmt b{font-size:12.5px;margin-right:6px}
 .cmt .ctime{color:var(--sub);font-size:11px;margin-left:6px}
@@ -119,11 +125,24 @@ header h1 span{color:var(--blue)}
 .tp:hover{border-color:#BCCDF8}
 .tp.on{background:#EAF0FE;border-color:var(--blue);color:var(--blue);font-weight:700}
 /* 로그인/프로필 */
-.authbar{display:flex;align-items:center;gap:8px;margin:-8px 0 14px;font-size:12.5px;color:var(--sub);flex-wrap:wrap}
+.authbar{position:relative;display:flex;align-items:center;gap:8px;margin:-8px 0 14px;font-size:12.5px;color:var(--sub);flex-wrap:wrap}
 .authbar b{color:var(--ink)}
 .kbtn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:none;border-radius:9px;background:#FEE500;color:#191919;font-size:12.5px;font-weight:700;padding:8px 14px;cursor:pointer;font-family:inherit}
 .kbtn:hover{filter:brightness(.96)}
 .abtn{border:none;background:none;color:var(--sub);cursor:pointer;font-size:12px;font-family:inherit;text-decoration:underline}
+/* 댓글 알림 */
+.nbell{position:relative;border:none;background:none;cursor:pointer;font-size:15px;padding:2px 6px}
+.nbell i{position:absolute;top:-4px;right:-4px;background:#E0245E;color:#fff;font-size:9.5px;font-weight:700;font-style:normal;border-radius:999px;padding:1px 5px;display:none}
+.npanel{position:absolute;top:32px;left:0;width:min(340px,92vw);background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 10px 30px rgba(14,21,38,.14);z-index:30;display:none;max-height:380px;overflow-y:auto}
+.npanel.open{display:block}
+.npanel h5{font-size:12px;color:var(--sub);padding:12px 14px 8px}
+.nitem{display:block;width:100%;text-align:left;border:none;background:none;font-family:inherit;cursor:pointer;padding:10px 14px;border-top:1px solid var(--soft);font-size:12.5px;color:var(--ink)}
+.nitem:hover{background:var(--soft)}
+.nitem.unread{background:#F3F7FF}
+.nitem .nbody{color:var(--sub);display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;margin-top:2px;word-break:break-all}
+.nitem .ntime{color:#9AA3B0;font-size:11px}
+.nitem .npost{color:#9AA3B0;font-size:11px;margin-top:2px;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.nempty{padding:18px 14px;font-size:12.5px;color:var(--sub);text-align:center}
 /* 로그인/닉네임 다이얼로그 */
 .dlgwrap{position:fixed;inset:0;background:rgba(14,21,38,.5);display:none;z-index:60;align-items:center;justify-content:center;padding:20px}
 .dlgwrap.open{display:flex}
@@ -206,13 +225,20 @@ footer{margin-top:32px;font-size:11.5px;color:var(--sub);text-align:center}
   </div>
 </div>
 
-<!-- 닉네임 온보딩 -->
+<!-- 닉네임·프로필 사진 설정 -->
 <div class="dlgwrap" id="ndlg">
   <div class="dlg">
-    <h3>광장에서 쓸 닉네임을 정해주세요</h3>
-    <p>글·댓글에 표시됩니다. 2~20자, 나중에 변경할 수 있어요.</p>
+    <h3>광장 프로필을 설정해주세요</h3>
+    <p>닉네임(2~20자)은 글·댓글에 표시됩니다. 나중에 변경할 수 있어요.</p>
+    <div class="avrow">
+      <span id="avprev"></span>
+      <div class="avcol">
+        <label class="avbtn">🖼 사진 선택<input id="avfile" type="file" accept="image/*" hidden></label>
+        <button class="avbtn" id="avclear" type="button">기본 아바타로</button>
+      </div>
+    </div>
     <input id="nnick" maxlength="20" placeholder="닉네임">
-    <button class="go" id="nsave">시작하기</button>
+    <button class="go" id="nsave">저장하기</button>
   </div>
 </div>
 
@@ -235,7 +261,9 @@ const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'
 const linkify=s=>esc(s).replace(/(https?:\/\/[^\s<]+)/g,
   '<a href="$1" target="_blank" rel="noopener" style="color:var(--blue);word-break:break-all">$1</a>');
 const AVC=['#2657E8','#B0326B','#1B7F3B','#B26A00','#7C3AED','#0E7490','#7A5230','#3B4CA8'];
-const avatar=n=>`<span class="avatar" style="background:${AVC[[...n].reduce((a,c)=>a+c.charCodeAt(0),0)%AVC.length]}">${esc(n[0]||'?')}</span>`;
+const avatar=(n,url)=>url
+  ?`<img class="avatar" src="${esc(url)}" alt="" loading="lazy">`
+  :`<span class="avatar" style="background:${AVC[[...n].reduce((a,c)=>a+c.charCodeAt(0),0)%AVC.length]}">${esc(n[0]||'?')}</span>`;
 function ago(t){const s=(Date.now()-new Date(t))/1e3;
   if(s<60)return'방금';if(s<3600)return`${s/60|0}분 전`;if(s<86400)return`${s/3600|0}시간 전`;
   if(s<86400*7)return`${s/86400|0}일 전`;return new Date(t).toISOString().slice(0,10)}
@@ -270,11 +298,15 @@ function renderAuth(){
   const bar=$('authbar');
   if(ME&&hasKakao(ME)){
     const name=PROFILE?PROFILE.nickname:'닉네임 미설정';
-    bar.innerHTML=`${avatar(name)}<b>${esc(name)}</b>
+    bar.innerHTML=`${avatar(name,PROFILE&&PROFILE.avatar_url)}<b>${esc(name)}</b>
+      <button class="nbell" id="nbell" title="댓글 알림">🔔<i id="ncount"></i></button>
       <button class="abtn" id="nickedit">닉네임 변경</button>
-      <button class="abtn" id="logoutbtn">로그아웃</button>`;
+      <button class="abtn" id="logoutbtn">로그아웃</button>
+      <div class="npanel" id="npanel"></div>`;
+    $('nbell').onclick=toggleNoti;
     $('nickedit').onclick=openOnboard;
     $('logoutbtn').onclick=async()=>{await sb.auth.signOut();location.reload()};
+    renderNotiBadge();
   }else{
     bar.innerHTML=`<button class="kbtn" id="loginbtn">💬 카카오 로그인</button>
       <span>글쓰기·댓글·좋아요는 로그인 후 이용할 수 있어요</span>`;
@@ -283,11 +315,30 @@ function renderAuth(){
   $('cwho').textContent=PROFILE?PROFILE.nickname:'';
 }
 function openLogin(){$('ldlg').classList.add('open')}
+let AVBLOB=null,AVCLEAR=false;
 function openOnboard(){
   $('nnick').value=(PROFILE&&PROFILE.nickname)||localStorage.getItem('ddm_nick')||'';
+  AVBLOB=null;AVCLEAR=false;$('avfile').value='';
+  $('avprev').innerHTML=avatar($('nnick').value||'?',PROFILE&&PROFILE.avatar_url);
   $('ndlg').classList.add('open');
   setTimeout(()=>$('nnick').focus(),100);
 }
+// 프로필 사진 선택 — 중앙 정사각 크롭 후 256px 축소
+$('avfile').onchange=e=>{
+  const f=e.target.files[0];if(!f)return;
+  const img=new Image();
+  img.onload=()=>{
+    const s=Math.min(img.width,img.height),size=256;
+    const cv=document.createElement('canvas');cv.width=cv.height=size;
+    cv.getContext('2d').drawImage(img,(img.width-s)/2,(img.height-s)/2,s,s,0,0,size,size);
+    cv.toBlob(b=>{AVBLOB=b;AVCLEAR=false;
+      $('avprev').innerHTML=`<img class="avatar" src="${cv.toDataURL('image/jpeg',.8)}" alt="">`;
+    },'image/jpeg',.85);
+  };
+  img.src=URL.createObjectURL(f);
+};
+$('avclear').onclick=()=>{AVBLOB=null;AVCLEAR=true;$('avfile').value='';
+  $('avprev').innerHTML=avatar($('nnick').value.trim()||'?',null)};
 function gate(){  // 쓰기 동작 공통 게이트 — 통과 못 하면 로그인/온보딩 안내
   if(!ME||!hasKakao(ME)){openLogin();return false}
   if(!PROFILE){openOnboard();return false}
@@ -306,12 +357,82 @@ $('ldlg').onclick=e=>{if(e.target===$('ldlg'))$('ldlg').classList.remove('open')
 $('nsave').onclick=async()=>{
   const nickname=$('nnick').value.trim();
   if(nickname.length<2){alert('닉네임은 2자 이상이어야 해요');return}
-  const {data,error}=await sb.from('profiles')
-    .upsert({id:ME.id,nickname,updated_at:new Date().toISOString()}).select().single();
-  if(error){alert('닉네임 저장 실패: '+error.message);return}
-  PROFILE=data;localStorage.setItem('ddm_nick',nickname);
-  $('ndlg').classList.remove('open');renderAuth();
+  $('nsave').disabled=true;
+  try{
+    let avatar_url=(PROFILE&&PROFILE.avatar_url)||null;
+    if(AVCLEAR)avatar_url=null;
+    if(AVBLOB){
+      const path=`avatars/${ME.id}-${Date.now()}.jpg`;   // 교체 시 새 경로 — 이전 파일은 고아 정리 크론이 삭제
+      const {error:ue}=await sb.storage.from('plaza').upload(path,AVBLOB,{contentType:'image/jpeg'});
+      if(ue)throw ue;
+      avatar_url=sb.storage.from('plaza').getPublicUrl(path).data.publicUrl;
+    }
+    const {data,error}=await sb.from('profiles')
+      .upsert({id:ME.id,nickname,avatar_url,updated_at:new Date().toISOString()}).select().single();
+    if(error)throw error;
+    PROFILE=data;localStorage.setItem('ddm_nick',nickname);
+    $('ndlg').classList.remove('open');renderAuth();loadNotis();
+  }catch(err){alert('프로필 저장 실패: '+err.message)}
+  $('nsave').disabled=false;
 };
+
+/* ---- 댓글 알림 — 내 글에 남이 단 댓글, 읽음 시점은 profiles.noti_seen_at ---- */
+let NOTIS=[],NUNREAD=0;
+const notiSeen=()=>PROFILE&&PROFILE.noti_seen_at?new Date(PROFILE.noti_seen_at):new Date(0);
+async function loadNotis(){
+  if(!ME||!PROFILE)return;
+  const {data,error}=await sb.from('plaza_comments')
+    .select('id,post_id,nickname,body,created_at,plaza_posts!inner(author,title)')
+    .eq('plaza_posts.author',ME.id).neq('author',ME.id)
+    .order('created_at',{ascending:false}).limit(20);
+  if(error)return;
+  NOTIS=data;
+  NUNREAD=NOTIS.filter(n=>new Date(n.created_at)>notiSeen()).length;
+  renderNotiBadge();
+}
+function renderNotiBadge(){
+  const c=$('ncount');if(!c)return;
+  c.style.display=NUNREAD?'inline-block':'none';
+  c.textContent=NUNREAD>9?'9+':NUNREAD;
+}
+function toggleNoti(){
+  const p=$('npanel');if(!p)return;
+  if(p.classList.contains('open')){p.classList.remove('open');return}
+  const seen=notiSeen();
+  p.innerHTML='<h5>내 글에 달린 댓글</h5>'+(NOTIS.length?NOTIS.map(n=>
+    `<button class="nitem${new Date(n.created_at)>seen?' unread':''}" data-p="${n.post_id}">
+      <b>${esc(n.nickname)}</b> <span class="ntime">· ${ago(n.created_at)}</span>
+      <div class="nbody">${esc(n.body)}</div>
+      <div class="npost">📄 ${esc(n.plaza_posts.title||'글 보기')}</div></button>`).join('')
+    :'<div class="nempty">아직 알림이 없어요</div>');
+  p.onclick=e=>{
+    const b=e.target.closest('.nitem');if(!b)return;
+    p.classList.remove('open');openPost(b.dataset.p);
+  };
+  p.classList.add('open');
+  if(NUNREAD){                       // 패널을 열면 읽음 처리
+    NUNREAD=0;renderNotiBadge();
+    const now=new Date().toISOString();
+    PROFILE.noti_seen_at=now;
+    sb.from('profiles').update({noti_seen_at:now}).eq('id',ME.id).then(()=>{});
+  }
+}
+document.addEventListener('click',e=>{   // 바깥 클릭 시 패널 닫기
+  const p=$('npanel');
+  if(p&&p.classList.contains('open')&&!e.target.closest('#npanel')&&!e.target.closest('#nbell'))
+    p.classList.remove('open');
+});
+async function openPost(id){             // 특정 글 펼쳐서 보여주기 (알림·딥링크 공용)
+  let el=document.getElementById('post-'+id);
+  if(!el){
+    const {data}=await sb.from('plaza_posts').select(SEL).eq('id',id).single();
+    if(!data)return;
+    $('feed').insertAdjacentHTML('afterbegin',rowHtml(data));
+    el=document.getElementById('post-'+id);
+  }
+  el.querySelector('.pfull').hidden=false;loadComments(el);
+  el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('hl');
+}
 
 function pollHtml(p){
   if(!p.poll_options||!p.poll_options.length)return'';
@@ -407,7 +528,13 @@ async function loadComments(el){
   const {data,error}=await sb.from('plaza_comments').select('*')
     .eq('post_id',id).order('created_at');
   if(error)return;
-  list.innerHTML=data.map(c=>`<div class="cmt" data-cid="${c.id}">${avatar(c.nickname)}
+  const av={};                                    // 작성자 프로필 사진 일괄 조회
+  const ids=[...new Set(data.map(c=>c.author))];
+  if(ids.length){
+    const {data:ps}=await sb.from('profiles').select('id,avatar_url').in('id',ids);
+    (ps||[]).forEach(p=>av[p.id]=p.avatar_url);
+  }
+  list.innerHTML=data.map(c=>`<div class="cmt" data-cid="${c.id}">${avatar(c.nickname,av[c.author])}
     <div><b>${esc(c.nickname)}</b>${esc(c.body)}<span class="ctime">${ago(c.created_at)}</span>
     ${ME&&c.author===ME.id?'<button class="cdel">삭제</button>':''}</div></div>`).join('')
     ||'<div class="cmt" style="color:var(--sub)">첫 댓글을 남겨보세요</div>';
@@ -616,6 +743,19 @@ function subscribe(){
       $('feed').insertAdjacentHTML('afterbegin',rowHtml(p));
       $('empty').style.display='none';
       localStorage.setItem('ddm_plaza_seen',new Date().toISOString());  // 실시간 유입분도 봤음 처리
+    }).on('postgres_changes',
+    {event:'INSERT',schema:'public',table:'plaza_comments'},
+    async payload=>{
+      const c=payload.new;
+      if(ME&&c.author===ME.id)return;
+      // 열려 있는 글이면 댓글 목록 즉시 갱신
+      const el=document.getElementById('post-'+c.post_id);
+      if(el&&!el.querySelector('.pfull').hidden)loadComments(el);
+      // 내 글에 달린 댓글이면 알림 뱃지 증가
+      if(!ME||!PROFILE)return;
+      const {data}=await sb.from('plaza_posts').select('author,title').eq('id',c.post_id).single();
+      if(!data||data.author!==ME.id)return;
+      NOTIS.unshift({...c,plaza_posts:data});NUNREAD++;renderNotiBadge();
     }).subscribe();
 }
 
@@ -632,6 +772,7 @@ function subscribe(){
     if(!PROFILE)openOnboard();    // 첫 카카오 로그인 → 닉네임 온보딩
   }
   renderAuth();
+  loadNotis();
   // 아카이브에서 '광장에 공유'로 넘어온 경우 — 글쓰기 화면을 미리 채워서 연다
   // (로그인 게이트에 걸리면 ddm_share는 남겨두고 로그인 안내만 — 로그인 후 아카이브에서 다시 공유)
   if(new URLSearchParams(location.search).get('share')==='1'){
@@ -652,15 +793,7 @@ function subscribe(){
   localStorage.setItem('ddm_plaza_seen',new Date().toISOString());  // 아카이브 탭 새글 뱃지 기준점
   subscribe();
   const m=location.hash.match(/#p=([0-9a-f-]+)/);
-  if(m){
-    let el=document.getElementById('post-'+m[1]);
-    if(!el){
-      const {data}=await sb.from('plaza_posts').select(SEL).eq('id',m[1]).single();
-      if(data){$('feed').insertAdjacentHTML('afterbegin',rowHtml(data));el=document.getElementById('post-'+m[1])}
-    }
-    if(el){el.querySelector('.pfull').hidden=false;loadComments(el);
-      el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('hl')}
-  }
+  if(m)openPost(m[1]);
 })();
 </script>
 </body>
