@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write
   models: read
+  issues: write
 
 concurrency:
   group: collect
@@ -79,3 +80,41 @@ jobs:
           git add docs/*.json
           git diff --cached --quiet || git commit -m "data: auto collect $(date -u +%Y-%m-%d)"
           git push
+
+      - name: Close failure issue (정상 복구 시 자동 종료)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for n in $(gh issue list --repo ${{ github.repository }} --label cron-failure --state open --json number --jq '.[].number'); do
+            gh issue close "$n" --repo ${{ github.repository }} \
+              --comment "✅ 다음 실행이 정상 완료되어 자동 종료합니다."
+          done
+
+  # 크론 실패 알림 — 이슈 생성+멘션으로 GitHub 알림(메일·앱) 발송, 자격증명 불필요
+  notify-fail:
+    needs: collect
+    if: ${{ failure() }}
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Open or comment failure issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create cron-failure --repo ${{ github.repository }} \
+            --color D93F0B --description "일일 수집 크론 실패" --force
+          BODY="@StitchsealHQ 일일 수집 워크플로가 실패했습니다.
+
+          실행 로그: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+          레이트리밋·일시 장애면 다음 실행에서 자동 복구되며, 복구 시 이 이슈는 자동으로 닫힙니다.
+          이틀 연속 실패하면 점검이 필요합니다."
+          EXIST=$(gh issue list --repo ${{ github.repository }} --label cron-failure --state open --json number --jq '.[0].number')
+          if [ -n "$EXIST" ]; then
+            gh issue comment "$EXIST" --repo ${{ github.repository }} --body "$BODY"
+          else
+            gh issue create --repo ${{ github.repository }} \
+              --title "⚠️ 수집 크론 실패 $(TZ=Asia/Seoul date +%Y-%m-%d)" \
+              --body "$BODY" --label cron-failure
+          fi
