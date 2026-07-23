@@ -25,16 +25,24 @@ CTX = ssl.create_default_context()
 KST = timezone(timedelta(hours=9))
 WEEKDAYS = ["월", "화", "수", "목", "금", "토", "일"]
 
-PROMPT = """너는 동대문 시장 골목에서 오래 장사꾼들을 봐온 재치있는 이야기꾼이다.
-오늘 날짜의 '오늘의 동대문 장사운'을 한 편 써라. 패션 유통 팀의 아침 인사용 재미 콘텐츠다.
+ZODIAC = ["쥐", "소", "호랑이", "토끼", "용", "뱀", "말", "양", "원숭이", "닭", "개", "돼지"]
 
-- text: 2~3문장. 장사·사입·발주·거래처·신상 같은 동대문 상인 정서를 담아 밝고 유쾌하게.
+PROMPT = """너는 동대문 시장 골목에서 오래 장사꾼들을 봐온 재치있는 이야기꾼이다.
+오늘 날짜의 '오늘의 동대문 장사운'을 써라. 패션 유통 팀의 아침 인사용 재미 콘텐츠다.
+
+- text: 공통 운세 2~3문장. 장사·사입·발주·거래처·신상 같은 동대문 상인 정서를 담아 밝고 유쾌하게.
   불안 조장·미신 강요 금지, 실제 재무·투자 조언처럼 들리는 표현 금지.
 - color: 오늘의 럭키 컬러 (한글, 예: 버건디)
 - item: 오늘의 럭키 아이템 (동대문에서 구할 수 있는 소품, 예: 체크 머플러)
 - number: 1~99 사이 럭키 숫자
+- zodiac: 12띠 각각의 오늘 운세 1~2문장. 띠마다 소재(사입/발주/거래처/신상/매대/손님/원단 등)와
+  분위기를 다르게 변주하고, 공통 운세와 겹치지 않게. 부정 운세도 가볍고 귀엽게
+  ("오후엔 계산기 한 번 더 두드려 보기" 정도), 겁주는 표현 금지.
 
-JSON으로만 답하라: {"text": "...", "color": "...", "item": "...", "number": 숫자}"""
+JSON으로만 답하라:
+{"text": "...", "color": "...", "item": "...", "number": 숫자,
+ "zodiac": {"쥐": "...", "소": "...", "호랑이": "...", "토끼": "...", "용": "...", "뱀": "...",
+            "말": "...", "양": "...", "원숭이": "...", "닭": "...", "개": "...", "돼지": "..."}}"""
 
 
 def call_model(token, model, user_content):
@@ -67,7 +75,8 @@ def main():
     data = json.loads(DATA.read_text(encoding="utf-8"))
     now = datetime.now(KST)
     today = now.strftime("%Y-%m-%d")
-    if (data.get("fortune") or {}).get("date") == today:
+    prev = data.get("fortune") or {}
+    if prev.get("date") == today and prev.get("zodiac"):
         print("already generated today — skipped")
         return
 
@@ -91,6 +100,13 @@ def main():
         "item": str(result.get("item", "")).strip(),
         "number": result.get("number", ""),
     }
+    z = result.get("zodiac")
+    if isinstance(z, dict):
+        zodiac = {k: str(z[k]).strip() for k in ZODIAC if str(z.get(k, "")).strip()}
+        if len(zodiac) == 12:
+            data["fortune"]["zodiac"] = zodiac
+        else:
+            print(f"zodiac incomplete ({len(zodiac)}/12) — common only")
     DATA.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"fortune saved: {data['fortune']['text'][:40]}")
 

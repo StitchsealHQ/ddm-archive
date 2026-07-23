@@ -40,6 +40,9 @@ header h1 span{color:var(--blue)}
 .fortune p{font-size:13.5px;line-height:1.6}
 .fortune .flucky{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
 .fortune .flucky span{font-size:11px;font-weight:600;padding:4px 11px;border-radius:999px;background:#fff;border:1px solid #F0DCAE;color:#8A6D1A}
+.fortune .fzo{margin-top:12px;padding-top:12px;border-top:1px dashed #F0DCAE;display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap}
+.fortune .fzo select{padding:7px 10px;border:1px solid #F0DCAE;border-radius:10px;font-size:12.5px;font-family:inherit;background:#fff;color:#8A6D1A;font-weight:600}
+.fortune .fzo p{flex:1;min-width:200px;font-size:13px;line-height:1.6;margin-top:4px}
 .fortune .fnote{font-size:10px;color:#C4AE6E;margin-top:8px}
 .brief{background:linear-gradient(135deg,#F7F9FE,#EAF0FE);border:1px solid #BCCDF8;border-radius:16px;padding:20px 24px;margin-bottom:24px}
 .brief h2{font-size:15px;font-weight:800;color:var(--blue);margin-bottom:12px;display:flex;align-items:center;gap:8px}
@@ -162,6 +165,10 @@ footer{margin-top:48px;font-size:12px;color:var(--sub);text-align:center}
       <h2>오늘의 동대문 장사운 <span id="fdate"></span></h2>
       <p id="ftext"></p>
       <div class="flucky" id="flucky"></div>
+      <div class="fzo" id="fzo" style="display:none">
+        <select id="fzsel" aria-label="띠 선택"></select>
+        <p id="fztext"></p>
+      </div>
       <div class="fnote">AI가 생성한 재미용 콘텐츠입니다</div>
     </div>
   </div>
@@ -343,12 +350,23 @@ function renderTrend(t){
   $('trend').style.display='';
 }
 
+const ZODIAC=[['쥐','🐭'],['소','🐮'],['호랑이','🐯'],['토끼','🐰'],['용','🐲'],['뱀','🐍'],
+  ['말','🐴'],['양','🐑'],['원숭이','🐵'],['닭','🐔'],['개','🐶'],['돼지','🐷']];
 function renderFortune(f){
   if(!f||!f.text)return;
   $('fdate').textContent=f.date||'';
   $('ftext').textContent=f.text;
   const lucky=[['컬러',f.color],['아이템',f.item],['숫자',f.number]].filter(x=>x[1]);
   $('flucky').innerHTML=lucky.map(([k,v])=>`<span>럭키 ${k} · ${esc(String(v))}</span>`).join('');
+  if(f.zodiac){
+    const saved=localStorage.getItem('ddm_zodiac')||'쥐';
+    $('fzsel').innerHTML=ZODIAC.map(([z,e])=>
+      `<option value="${z}"${z===saved?' selected':''}>${e} ${z}띠</option>`).join('');
+    const show=z=>{$('fztext').textContent=f.zodiac[z]||''};
+    show(saved);
+    $('fzsel').onchange=e=>{localStorage.setItem('ddm_zodiac',e.target.value);show(e.target.value)};
+    $('fzo').style.display='';
+  }
   $('fortune').style.display='';
 }
 
