@@ -260,8 +260,6 @@ def collect_channels(key, token, data, existing_links):
         return 0
     seen = data.setdefault("ch_seen", {})
     valid_tags = {t for _, t in QUERIES}
-    cutoff = (datetime.now(timezone.utc) - timedelta(days=LOOKBACK_DAYS)) \
-        .strftime("%Y-%m-%d")
     today = datetime.now(KST).strftime("%Y-%m-%d")
     added = 0
     for cid, name in CHANNELS:
@@ -271,16 +269,11 @@ def collect_channels(key, token, data, existing_links):
         except Exception as e:
             print(f"[yt/ch] {name}: FAILED {e}")
             continue
-        cands = []
-        for vid, pub in uploads:
-            if vid in judged_ids:
-                continue
-            if f"https://www.youtube.com/watch?v={vid}" in existing_links:
-                continue
-            # 최초 스캔(판정 이력 없음)은 시드 전체, 이후엔 최근 업로드만
-            if judged_ids and pub < cutoff:
-                continue
-            cands.append(vid)
+        # 미판정 영상은 날짜와 무관하게 후보 — 시드가 레이트리밋으로 부분 완료돼도
+        # 다음 실행이 잔여분을 이어서 판정한다 (judged_ids가 재작업을 막음, 260723)
+        cands = [vid for vid, pub in uploads
+                 if vid not in judged_ids
+                 and f"https://www.youtube.com/watch?v={vid}" not in existing_links]
         if not cands:
             print(f"[yt/ch] {name}: no new uploads")
             continue
