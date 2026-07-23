@@ -48,6 +48,21 @@ header h1 span{color:var(--blue)}
 .pacts button:hover{background:var(--soft)}
 .pacts .liked{color:#E0245E}
 .pacts .pdel{margin-left:auto}
+/* 투표 */
+.poll{margin-top:12px;display:flex;flex-direction:column;gap:7px}
+.popt{position:relative;overflow:hidden;text-align:left;padding:11px 14px;border:1px solid var(--line);border-radius:11px;background:#fff;font-size:13.5px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:8px}
+.popt i{position:absolute;left:0;top:0;bottom:0;background:#EAF0FE;transition:width .3s}
+.popt span{position:relative;font-weight:600}
+.popt b{position:relative;margin-left:auto;font-size:11.5px;color:var(--sub);font-weight:600;white-space:nowrap}
+.popt.my{border-color:var(--blue)}
+.popt.my span{color:var(--blue)}
+.ptotal{font-size:11.5px;color:#9AA3B0}
+.pollpill{display:inline-block;font-size:10.5px;font-weight:700;padding:3px 10px;border-radius:7px;background:#EAF0FE;color:var(--blue);margin-left:5px}
+/* 작성 화면 투표 편집 */
+#cpoll{display:none;flex-direction:column;gap:8px;margin-top:10px;padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--soft)}
+#cpoll .pin{padding:10px 13px;border:1px solid var(--line);border-radius:10px;font-size:13.5px;font-family:inherit}
+#cpoll .paddopt{align-self:flex-start;border:none;background:none;color:var(--blue);font-size:12.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.ctool label.on{color:var(--blue)}
 .cmts{margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
 .cmt{display:flex;gap:8px;margin-bottom:9px;font-size:13px}
 .avatar{width:28px;height:28px;border-radius:99px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff;flex:none}
@@ -126,7 +141,7 @@ footer{margin-top:32px;font-size:11.5px;color:var(--sub);text-align:center}
   <div class="empty" id="empty" style="display:none">아직 글이 없습니다. 첫 글을 남겨보세요!</div>
   <button class="more" id="more" style="display:none">더 보기</button>
 
-  <footer>동대문 광장 · 부적절한 글은 관리자가 삭제할 수 있습니다</footer>
+  <footer>동대문 광장 · 부적절한 글은 관리자가 삭제할 수 있습니다 · <a href="#" id="adminlink" style="color:inherit;text-decoration:none">관리</a></footer>
 </div>
 
 <button class="fab" id="fab">＋ 글쓰기</button>
@@ -145,6 +160,11 @@ footer{margin-top:32px;font-size:11.5px;color:var(--sub);text-align:center}
     <input id="ctitle" type="text" placeholder="제목을 입력하세요." maxlength="100">
     <textarea id="cbody" placeholder="동대문 이웃과 이야기를 나눠보세요.&#10;#사입 #원단 #신상 #맛집..." maxlength="2000"></textarea>
     <img id="cimgprev" alt=""><button id="cimgclear" type="button">✕ 사진 제거</button>
+    <div id="cpoll">
+      <input class="pin" placeholder="선택지 1" maxlength="40">
+      <input class="pin" placeholder="선택지 2" maxlength="40">
+      <button class="paddopt" id="paddopt" type="button">＋ 선택지 추가</button>
+    </div>
     <div class="tip"><b>TIP</b> 광장에서 이런 이야기를 나눠보세요
       <ul>
         <li>사입·원단·신상 등 시장의 질문과 정보를 공유해요.</li>
@@ -154,6 +174,7 @@ footer{margin-top:32px;font-size:11.5px;color:var(--sub);text-align:center}
     </div>
     <div class="ctool">
       <label>🖼 사진<input id="cimgfile" type="file" accept="image/*" hidden></label>
+      <label id="cpollbtn">🗳 투표</label>
     </div>
   </div>
 </div>
@@ -192,7 +213,10 @@ const GROUPS=[
   ['⚪ 기타',['일반','자유','정보','거래']],  // 뒤 3개=구버전 호환
 ];
 const GROUP_OF={};GROUPS.forEach(([g,ts])=>ts.forEach(t=>GROUP_OF[t]=g));
-const FILTERS=['전체','🔥 인기','🏪 시장정보','👥 이웃과 함께','📣 소식','💼 거래·구인'];
+const FILTERS=['전체','🔥 인기','🗳 투표','🏪 시장정보','👥 이웃과 함께','📣 소식','💼 거래·구인'];
+const SEL='*, plaza_likes(author), plaza_comments(count), plaza_poll_votes(author,option_idx)';
+const viewed=new Set();          // 세션 내 조회수 중복 증가 방지
+const ADMIN=()=>localStorage.getItem('ddm_admin_key');
 
 $('nick').value=localStorage.getItem('ddm_nick')||'';
 
@@ -202,6 +226,20 @@ async function ensureAuth(){
   const {data,error}=await sb.auth.signInAnonymously();
   if(error)throw error;
   return data.user;
+}
+
+function pollHtml(p){
+  if(!p.poll_options||!p.poll_options.length)return'';
+  const votes=p.plaza_poll_votes||[];
+  const my=ME&&votes.find(v=>v.author===ME.id);
+  const total=votes.length;
+  return `<div class="poll">${p.poll_options.map((o,i)=>{
+    const n=votes.filter(v=>v.option_idx===i).length;
+    const pct=total?Math.round(n*100/total):0;
+    return `<button class="popt${my&&my.option_idx===i?' my':''}" data-i="${i}">
+      <i style="width:${pct}%"></i><span>${esc(o)}</span><b>${n}표 · ${pct}%</b></button>`;
+  }).join('')}
+  <div class="ptotal">🗳 ${total}명 참여 · 선택지를 누르면 투표${my?' 변경':''}됩니다</div></div>`;
 }
 
 function rowHtml(p){
@@ -214,10 +252,10 @@ function rowHtml(p){
   return `<div class="post" id="post-${p.id}" data-id="${p.id}">
     <div class="prow">
       <div class="pmain">
-        <span class="pcat">${esc(p.category)}</span>
+        <span class="pcat">${esc(p.category)}</span>${p.poll_options?'<span class="pollpill">📊 투표</span>':''}
         <div class="ptitle">${esc(title)}</div>
         ${pre.trim()?`<div class="ppre">${esc(pre)}</div>`:''}
-        <div class="pmeta">${esc(p.nickname)} · ${ago(p.created_at)}
+        <div class="pmeta">${esc(p.nickname)} · ${ago(p.created_at)} · 조회 <b class="vw">${p.views||0}</b>
           <span class="cnts"><span>👍 <b class="lk">${likes.length}</b></span><span>💬 <b class="ck">${nc}</b></span></span></div>
       </div>
       ${p.image_url?`<img class="pthumb" src="${esc(p.image_url)}" loading="lazy" alt="">`:''}
@@ -225,10 +263,13 @@ function rowHtml(p){
     <div class="pfull" hidden>
       <div class="fbody">${linkify(p.body)}</div>
       ${p.image_url?`<img class="fimg" src="${esc(p.image_url)}" loading="lazy" alt="">`:''}
+      <div class="pollwrap">${pollHtml(p)}</div>
       <div class="pacts">
         <button class="plike${liked?' liked':''}">${liked?'♥':'♡'} 좋아요 <span>${likes.length}</span></button>
         <button class="pshare">🔗 공유</button>
-        ${mine?'<button class="pdel">삭제</button>':''}</div>
+        ${mine?'':'<button class="prep">🚨 신고</button>'}
+        ${mine?'<button class="pdel">삭제</button>':''}
+        ${!mine&&ADMIN()?'<button class="pdel padel">관리삭제</button>':''}</div>
       <div class="cmts"><div class="clist"></div>
         <div class="cform"><input placeholder="댓글 쓰기" maxlength="500"><button>등록</button></div></div>
     </div>
@@ -236,6 +277,7 @@ function rowHtml(p){
 }
 
 function filterQuery(q){
+  if(FILTER==='🗳 투표')return q.not('poll_options','is',null);
   const g=FILTER.replace(/^\S+\s/,'');  // 이모지 제거
   if(FILTER!=='전체'&&FILTER!=='🔥 인기'){
     const grp=GROUPS.find(([name])=>name.includes(g));
@@ -246,7 +288,7 @@ function filterQuery(q){
 
 async function loadFeed(more){
   let q=sb.from('plaza_posts')
-    .select('*, plaza_likes(author), plaza_comments(count)')
+    .select(SEL)
     .order('created_at',{ascending:false}).limit(PAGE);
   q=filterQuery(q);
   if(more&&cursor)q=q.lt('created_at',cursor);
@@ -293,7 +335,42 @@ $('feed').addEventListener('click',async e=>{
   if(e.target.closest('.prow')){
     const full=post.querySelector('.pfull');
     full.hidden=!full.hidden;
-    if(!full.hidden)loadComments(post);
+    if(!full.hidden){
+      loadComments(post);
+      if(!viewed.has(id)){   // 세션당 1회만 조회수 증가
+        viewed.add(id);
+        const vw=post.querySelector('.vw');
+        vw.textContent=+vw.textContent+1;
+        sb.rpc('plaza_view',{pid:id}).then(()=>{});
+      }
+    }
+    return;
+  }
+  if(e.target.closest('.popt')){
+    if(!ME)return;
+    const idx=+e.target.closest('.popt').dataset.i;
+    const {error}=await sb.from('plaza_poll_votes')
+      .upsert({post_id:id,author:ME.id,option_idx:idx},{onConflict:'post_id,author'});
+    if(error){alert('투표 실패: '+error.message);return}
+    const {data}=await sb.from('plaza_posts')
+      .select('poll_options, plaza_poll_votes(author,option_idx)').eq('id',id).single();
+    if(data)post.querySelector('.pollwrap').innerHTML=pollHtml(data);
+    return;
+  }
+  if(e.target.closest('.prep')){
+    if(!ME)return;
+    const reason=prompt('신고 사유를 적어주세요 (선택사항)');
+    if(reason===null)return;
+    const {error}=await sb.from('plaza_reports').insert({post_id:id,reason:reason.trim()||null});
+    alert(error?(error.code==='23505'?'이미 신고한 글입니다':'신고 실패: '+error.message)
+      :'신고가 접수됐습니다. 관리자가 확인 후 조치합니다.');
+    return;
+  }
+  if(e.target.closest('.padel')){
+    if(!confirm('관리자 권한으로 이 글을 삭제할까요?'))return;
+    const {data,error}=await sb.rpc('plaza_admin_delete',{pid:id,akey:ADMIN()});
+    if(error||data!==true){alert('삭제 실패 — 관리자 키를 확인해 주세요');return}
+    post.remove();
     return;
   }
   if(e.target.closest('.plike')){
@@ -333,6 +410,16 @@ $('feed').addEventListener('click',async e=>{
 
 $('more').onclick=()=>loadFeed(true);
 
+// 관리자 모드 — 키를 기기에 저장하면 모든 글에 '관리삭제' 버튼 노출
+$('adminlink').onclick=e=>{
+  e.preventDefault();
+  const k=prompt('관리자 키를 입력하세요 (해제하려면 빈칸으로 확인)',ADMIN()||'');
+  if(k===null)return;
+  if(k.trim())localStorage.setItem('ddm_admin_key',k.trim());
+  else localStorage.removeItem('ddm_admin_key');
+  cursor=null;loadFeed();
+};
+
 /* ---- 글쓰기 모달 ---- */
 function checkReady(){
   const ok=TOPIC&&$('ctitle').value.trim()&&$('cbody').value.trim()&&$('nick').value.trim();
@@ -355,6 +442,29 @@ $('tsheet').onclick=e=>{
   $('ctopic').textContent=TOPIC;$('ctopic').classList.add('picked');
   $('tsheet').classList.remove('open');checkReady();
 };
+
+// 투표 편집기
+let pollOn=false;
+$('cpollbtn').onclick=()=>{
+  pollOn=!pollOn;
+  $('cpoll').style.display=pollOn?'flex':'none';
+  $('cpollbtn').classList.toggle('on',pollOn);
+};
+$('cpoll').addEventListener('click',e=>{
+  if(e.target.id!=='paddopt')return;
+  const n=document.querySelectorAll('#cpoll .pin').length;
+  if(n>=4)return;
+  e.target.insertAdjacentHTML('beforebegin',
+    `<input class="pin" placeholder="선택지 ${n+1}" maxlength="40">`);
+  if(n+1>=4)e.target.style.display='none';
+});
+function resetPoll(){
+  pollOn=false;$('cpollbtn').classList.remove('on');
+  $('cpoll').style.display='none';
+  $('cpoll').innerHTML=`<input class="pin" placeholder="선택지 1" maxlength="40">
+    <input class="pin" placeholder="선택지 2" maxlength="40">
+    <button class="paddopt" id="paddopt" type="button">＋ 선택지 추가</button>`;
+}
 
 // 사진 (긴 변 1280px 축소)
 $('cimgfile').onchange=e=>{
@@ -380,6 +490,13 @@ $('csubmit').onclick=async()=>{
   if(!title){alert('제목을 입력해 주세요');return}
   if(!body){alert('내용을 입력해 주세요');return}
   if(!ME){alert('연결 준비 중입니다. 잠시 후 다시 시도해 주세요.');return}
+  let poll_options=null;
+  if(pollOn){
+    const opts=[...document.querySelectorAll('#cpoll .pin')]
+      .map(i=>i.value.trim()).filter(Boolean);
+    if(opts.length<2){alert('투표 선택지를 2개 이상 입력해 주세요');return}
+    poll_options=opts.slice(0,4);
+  }
   localStorage.setItem('ddm_nick',nick);
   $('csubmit').disabled=true;
   try{
@@ -391,12 +508,12 @@ $('csubmit').onclick=async()=>{
       image_url=sb.storage.from('plaza').getPublicUrl(path).data.publicUrl;
     }
     const {data,error}=await sb.from('plaza_posts')
-      .insert({nickname:nick,title,body,category:TOPIC,image_url})
-      .select('*, plaza_likes(author), plaza_comments(count)').single();
+      .insert({nickname:nick,title,body,category:TOPIC,image_url,poll_options})
+      .select(SEL).single();
     if(error)throw error;
     $('feed').insertAdjacentHTML('afterbegin',rowHtml(data));
     $('empty').style.display='none';
-    $('ctitle').value='';$('cbody').value='';$('cimgclear').onclick();
+    $('ctitle').value='';$('cbody').value='';$('cimgclear').onclick();resetPoll();
     $('cclose').onclick();
   }catch(err){alert('등록 실패: '+err.message)}
   $('csubmit').disabled=false;
@@ -410,7 +527,7 @@ function subscribe(){
       const p=payload.new;
       if(ME&&p.author===ME.id)return;
       if(document.getElementById('post-'+p.id))return;
-      p.plaza_likes=[];p.plaza_comments=[{count:0}];
+      p.plaza_likes=[];p.plaza_comments=[{count:0}];p.plaza_poll_votes=[];
       $('feed').insertAdjacentHTML('afterbegin',rowHtml(p));
       $('empty').style.display='none';
       localStorage.setItem('ddm_plaza_seen',new Date().toISOString());  // 실시간 유입분도 봤음 처리
@@ -443,8 +560,7 @@ function subscribe(){
   if(m){
     let el=document.getElementById('post-'+m[1]);
     if(!el){
-      const {data}=await sb.from('plaza_posts')
-        .select('*, plaza_likes(author), plaza_comments(count)').eq('id',m[1]).single();
+      const {data}=await sb.from('plaza_posts').select(SEL).eq('id',m[1]).single();
       if(data){$('feed').insertAdjacentHTML('afterbegin',rowHtml(data));el=document.getElementById('post-'+m[1])}
     }
     if(el){el.querySelector('.pfull').hidden=false;loadComments(el);
