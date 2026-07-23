@@ -413,6 +413,7 @@ function subscribe(){
       p.plaza_likes=[];p.plaza_comments=[{count:0}];
       $('feed').insertAdjacentHTML('afterbegin',rowHtml(p));
       $('empty').style.display='none';
+      localStorage.setItem('ddm_plaza_seen',new Date().toISOString());  // 실시간 유입분도 봤음 처리
     }).subscribe();
 }
 
@@ -436,6 +437,7 @@ function subscribe(){
     }catch(e){}
   }
   await loadFeed();
+  localStorage.setItem('ddm_plaza_seen',new Date().toISOString());  // 아카이브 탭 새글 뱃지 기준점
   subscribe();
   const m=location.hash.match(/#p=([0-9a-f-]+)/);
   if(m){

@@ -29,7 +29,8 @@ header h1 span{color:var(--blue)}
 .meta a,footer a{color:var(--blue);text-decoration:none;font-weight:600}
 .meta a:hover,footer a:hover{text-decoration:underline}
 .topnav{display:flex;gap:8px;margin-top:20px}
-.tn{padding:10px 24px;border-radius:12px;font-size:14px;font-weight:700;text-decoration:none;color:var(--sub);background:#fff;border:1px solid var(--line)}
+.tn{position:relative;padding:10px 24px;border-radius:12px;font-size:14px;font-weight:700;text-decoration:none;color:var(--sub);background:#fff;border:1px solid var(--line)}
+.tnbadge{position:absolute;top:-7px;right:-7px;background:#E0245E;color:#fff;font-size:10.5px;font-weight:800;min-width:19px;height:19px;border-radius:999px;display:flex;align-items:center;justify-content:center;padding:0 5px;box-shadow:0 2px 6px rgba(224,36,94,.35)}
 .tn:hover{color:var(--blue);border-color:#BCCDF8}
 .tn.on{background:var(--blue);border-color:var(--blue);color:#fff}
 .stats{display:flex;gap:12px;margin:24px 0;flex-wrap:wrap}
@@ -655,6 +656,22 @@ function closeDoc(){
   $('overlay').classList.remove('open');document.body.style.overflow='';
   history.replaceState(null,'',location.pathname+location.search);
 }
+// 광장 탭 새 글 뱃지 — 마지막 광장 방문 이후 올라온 글 수 (HEAD 카운트, 실패 시 무표시)
+(async()=>{
+  const SB='https://vwbhainvzncciyiruepd.supabase.co';
+  const K='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ3YmhhaW52em5jY2l5aXJ1ZXBkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ3NTQ3ODUsImV4cCI6MjEwMDMzMDc4NX0.LGPlLcpocyX1tVAzgpOZOfe-HNT53Y9nYRgtt68epHA';
+  try{
+    const seen=localStorage.getItem('ddm_plaza_seen')
+      ||new Date(Date.now()-7*864e5).toISOString();  // 첫 방문자는 최근 7일 기준
+    const r=await fetch(`${SB}/rest/v1/plaza_posts?select=id&created_at=gt.${encodeURIComponent(seen)}`,
+      {method:'HEAD',headers:{apikey:K,Authorization:'Bearer '+K,Prefer:'count=exact'}});
+    const m=(r.headers.get('content-range')||'').match(/\/(\d+)/);
+    const n=m?+m[1]:0;
+    if(n>0)document.querySelector('.topnav a[href="plaza.html"]')
+      .insertAdjacentHTML('beforeend',`<span class="tnbadge">${n>9?'9+':n}</span>`);
+  }catch(e){}
+})();
+
 if('serviceWorker' in navigator)
   addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
 
