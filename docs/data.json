@@ -1,6 +1,2362 @@
 {
- "generated_at": "2026-08-25T23:35:03+00:00",
+ "generated_at": "2026-08-27T04:26:14+00:00",
  "items": [
+  {
+   "title": "서울패션위크 9월 1∼6일…NCT 데뷔 10주년 기념 의상 전시",
+   "link": "https://www.yna.co.kr/view/AKR20260827055100004?input=1195m",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "DDP",
+    "인근상권",
+    "패션"
+   ],
+   "added": "2026-08-27",
+   "thumbnail": "https://img3.yna.co.kr/etc/inner/KR/2026/08/27/AKR20260827055100004_01_i_P4.jpg",
+   "og_checked": true
+  },
+  {
+   "title": "서울패션위크서 NCT 활동 의상도 사고 런웨이도 보고",
+   "link": "http://tbs.seoul.kr/news/newsView.do?typ_800=7&idx_800=3538094&seq_800=20530986",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "DDP",
+    "패션"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "침묵에서 아우라까지...켈리신, 4단계 런웨이 선보인다",
+   "link": "https://www.sportsseoul.com/news/read/1631213?ref=naver",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "DDP",
+    "패션"
+   ],
+   "added": "2026-08-27",
+   "thumbnail": "https://file.sportsseoul.com/news/cms/2026/08/27/news-p.v1.20260827.0395d3c39a444bd9a0c1e5f11fab490e_T1.jpg",
+   "og_checked": true
+  },
+  {
+   "title": "외국인 매출 1조 시대…백화점, 외국인 '쇼핑 편의' 경쟁",
+   "link": "https://www.m-i.kr/news/articleView.html?idxno=1406636",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "쇼핑/관광",
+    "외국인",
+    "패션"
+   ],
+   "added": "2026-08-27",
+   "thumbnail": "https://cdn.m-i.kr/news/thumbnail/202608/1406636_1194773_1449_v150.jpg",
+   "og_checked": true
+  },
+  {
+   "title": "서울 패션 런웨이 개막…7개 브랜드, 130명 모델 무대 선보여",
+   "link": "https://www.gukjenews.com/news/articleView.html?idxno=3676021",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27",
+   "thumbnail": "https://cdn.gukjenews.com/news/thumbnail/202608/3676021_3844602_2513_v150.jpg",
+   "og_checked": true,
+   "sum_failed": true
+  },
+  {
+   "title": "[뉴스락] 2027 S/S 서울패션위크, 9월 1일 개막…31개 브랜드 서울을 런....",
+   "link": "https://blog.naver.com/newslock_7820710/224391912295",
+   "date": "2026-08-27",
+   "source": "뉴스락",
+   "kind": "블로그",
+   "tags": [
+    "DDP",
+    "쇼핑/관광",
+    "패션"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "[2칼럼 10] 마뗑킴 김다인 대표 인터뷰 심층 탐구",
+   "link": "https://blog.naver.com/sy1636_/224391884881",
+   "date": "2026-08-27",
+   "source": "sy1636_님의 블로그",
+   "kind": "블로그",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "서울 중구강제추행고소변호사 성범죄 피해 고소 철저한 법적 대응 ....",
+   "link": "https://blog.naver.com/diarymb/224391740534",
+   "date": "2026-08-27",
+   "source": "법무법인 에이시스",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광",
+    "인근상권",
+    "패션"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "서울 중구스토킹변호사 스토킹 고소인과의 합의 및 처벌불원 경찰....",
+   "link": "https://blog.naver.com/diarymb/224391690999",
+   "date": "2026-08-27",
+   "source": "법무법인 에이시스",
+   "kind": "블로그",
+   "tags": [
+    "인근상권",
+    "패션",
+    "행정/정책"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "서울 중구특수강간변호사 특수강간 사건 무죄 입증 증거 확보 경찰....",
+   "link": "https://blog.naver.com/diarymb/224391654658",
+   "date": "2026-08-27",
+   "source": "법무법인 에이시스",
+   "kind": "블로그",
+   "tags": [
+    "인근상권",
+    "패션",
+    "행정/정책"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "한국 의류 미국 배송 방법",
+   "link": "https://blog.naver.com/rmkspace/224391562513",
+   "date": "2026-08-27",
+   "source": "RMK SPACE/한국->LA 항공특송통관3PL",
+   "kind": "블로그",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "신한라이프, 취업준비 청년 대상 본사 초청 채용설명회 개최",
+   "link": "https://daily.hankooki.com/news/articleView.html?idxno=1399868",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "DDP",
+    "쇼핑/관광",
+    "행정/정책"
+   ],
+   "added": "2026-08-27",
+   "thumbnail": "https://cdn.daily.hankooki.com/news/thumbnail/202608/1399868_1579761_4748_v150.jpg",
+   "og_checked": true
+  },
+  {
+   "title": "[더밸류 브리핑] 오늘의 생명보험 소식...신한라이프·미래에셋생명",
+   "link": "http://www.thevaluenews.co.kr/news/view.php?idx=201082",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "DDP"
+   ],
+   "added": "2026-08-27",
+   "thumbnail": "https://www.thevaluenews.co.kr/data/cheditor4/2608/db368d848cebfba4148a969c0a1449bda806ca0e.jpg",
+   "og_checked": true
+  },
+  {
+   "title": "신한라이프, 보험업 취준생에 직무·채용정보 제공",
+   "link": "https://www.cstimes.com/news/articleView.html?idxno=718268",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "DDP"
+   ],
+   "added": "2026-08-27",
+   "thumbnail": "https://www.cstimes.com/news/photo/202608/718268_638827_4013.jpg",
+   "og_checked": true
+  },
+  {
+   "title": "\"청년 100명 사옥으로 불렀다\"… 신한라이프, 취업 난관 뚫을 '특급 비밀...",
+   "link": "http://www.dailysmart.co.kr/news/articleView.html?idxno=128763",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "DDP",
+    "도매시장"
+   ],
+   "added": "2026-08-27",
+   "thumbnail": "https://cdn.dailysmart.co.kr/news/photo/202608/128763_128086_559.jpg",
+   "og_checked": true,
+   "sum_failed": true
+  },
+  {
+   "title": "[금융톡톡] 삼성생명 'AI CX 글쓰기' 과기부장관상·신한라이프 청년 채...",
+   "link": "https://www.newsworks.co.kr/news/articleView.html?idxno=851678",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "DDP"
+   ],
+   "added": "2026-08-27",
+   "thumbnail": "https://cdn.newsworks.co.kr/news/thumbnail/202608/851678_813051_2838_v150.jpg",
+   "og_checked": true
+  },
+  {
+   "title": "뷰티풀라이프 인 서울 동대문디자인플라자 서울 뷰티 위크 후기",
+   "link": "https://blog.naver.com/lovelyyoo70/224391618939",
+   "date": "2026-08-27",
+   "source": "마녀맘의 쉬는시간^^",
+   "kind": "블로그",
+   "tags": [
+    "DDP"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "을지로4가역 도보 8분 신상 호텔 머큐어 앰배서더 서울 동대문 1박 ....",
+   "link": "https://blog.naver.com/spirituallife100/224388883060",
+   "date": "2026-08-27",
+   "source": "소망아빠의 경제이야기",
+   "kind": "블로그",
+   "tags": [
+    "DDP",
+    "인근상권"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "웃다가 울다가, 마음을 꽉 채우는 키크니 특별전, 그렸고, 그런 사이....",
+   "link": "https://blog.naver.com/kjtwo21/224391385841",
+   "date": "2026-08-27",
+   "source": "Janu's Date",
+   "kind": "블로그",
+   "tags": [
+    "DDP"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "동대문 디자인플라자 DDP 주차 놀거리 데이트 가볼만한곳",
+   "link": "https://blog.naver.com/goona_trip/224391439121",
+   "date": "2026-08-27",
+   "source": "#구나트립의 Go on a Trip!",
+   "kind": "블로그",
+   "tags": [
+    "DDP",
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "명동은 북적, 골목은 한산…카페 매출 3만배 격차",
+   "link": "https://www.widedaily.com/news/articleView.html?idxno=300146",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "F&B",
+    "쇼핑/관광",
+    "외국인",
+    "인근상권"
+   ],
+   "added": "2026-08-27",
+   "thumbnail": "https://cdn.widedaily.com/news/thumbnail/202608/300146_307721_2034_v150.jpg",
+   "og_checked": true,
+   "sum_failed": true
+  },
+  {
+   "title": "홍대 뉴뉴(nyu nyu) 소품샵 방문 후기,  양말 선물 쇼핑",
+   "link": "https://blog.naver.com/habro-mom/224391795838",
+   "date": "2026-08-27",
+   "source": "HaHaHa:)",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "서울 주말 나들이 동대문 창신동 완구거리 주차",
+   "link": "https://blog.naver.com/lightairs/224391785924",
+   "date": "2026-08-27",
+   "source": "오름작가 올라양",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광",
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "동대문필라테스 추천 수업이 다양한 리네아 필라테스 후기",
+   "link": "https://blog.naver.com/chicken1505/224391637137",
+   "date": "2026-08-27",
+   "source": "밀크의 갓생 일기",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "동대문 광화문미진 현대시티아울렛 점심맛집 내돈내산 여름점심맛....",
+   "link": "https://blog.naver.com/alldanny_/224391410364",
+   "date": "2026-08-27",
+   "source": "메추리 이야기",
+   "kind": "블로그",
+   "tags": [
+    "F&B",
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "동대문 도매업 세금, 세무조사 위험 줄여주는 6가지 세무관리",
+   "link": "https://blog.naver.com/uandtax/224391147617",
+   "date": "2026-08-27",
+   "source": "“계약 해지율 0%, 관리능력의 차이 - 유앤택스",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광",
+    "행정/정책"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "아이와 동대문 나들이! 창신동 완구시장, 문구거리 다녀왔어요. 말....",
+   "link": "https://blog.naver.com/damibyeol/224384688414",
+   "date": "2026-08-27",
+   "source": "✔️다미네가 살고 있는 다미별",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광",
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "동대문역 맛집 호랭이뼈다귀 솔직 후기, 새벽까지 영업하는 뼈해장....",
+   "link": "https://blog.naver.com/kimmmm27/224391557402",
+   "date": "2026-08-27",
+   "source": "어서오시고",
+   "kind": "블로그",
+   "tags": [
+    "F&B",
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "너구리의라면가게 현대아울렛동대문점 동대문 쇼핑 중 들러본 라면....",
+   "link": "https://blog.naver.com/reoni321/224390036674",
+   "date": "2026-08-27",
+   "source": "하늘을 달리다..",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "삼송빵집 현대시티아울렛동대문점 쇼핑 동선 속에서 직접 둘러본 ....",
+   "link": "https://blog.naver.com/reoni321/224390034166",
+   "date": "2026-08-27",
+   "source": "하늘을 달리다..",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "백미당 현대시티아울렛 동대문점 쇼핑 중 쉬어가기 좋았던 직접 방....",
+   "link": "https://blog.naver.com/reoni321/224390004766",
+   "date": "2026-08-27",
+   "source": "하늘을 달리다..",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "JW 메리어트 동대문 스퀘어 서울 후기, 쇼핑과 휴식이 완벽한 도심 ....",
+   "link": "https://blog.naver.com/room_whisper/224380827751",
+   "date": "2026-08-27",
+   "source": "베개 일기",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "그릇 사려면 동대문 말고 남대문시장 가세요! │동대문 종합 상가 vs....",
+   "link": "https://blog.naver.com/noniguki/224391446279",
+   "date": "2026-08-27",
+   "source": "오늘 한입, 내일 한페이지",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "【동대문맛집】牛肉面 대만우육면 찐맛집새벽까지 샤오바오우육면....",
+   "link": "https://blog.naver.com/letsgreatlife/224391890149",
+   "date": "2026-08-27",
+   "source": "여의도 먹상무의 돈, 맛, 투자, 사람",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "세월의 흔적이 고스란히 묻어나는 동대문역맛집 식사 시간",
+   "link": "https://blog.naver.com/k99mmmm/224391869859",
+   "date": "2026-08-27",
+   "source": "k99mmmm님의 블로그",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "[Daily 장소] 동묘 완구 거리 | 신당동 떡볶이타운 우정닭발 | 데이트....",
+   "link": "https://blog.naver.com/kisidaily/224391861636",
+   "date": "2026-08-27",
+   "source": "F&B 전공생의 기록장",
+   "kind": "블로그",
+   "tags": [
+    "F&B",
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "신설동 맛집 안주가 맛있는 새벽 술집 부오상회 내돈내산 후기",
+   "link": "https://blog.naver.com/hxxyxxx/224391844971",
+   "date": "2026-08-27",
+   "source": "❤️ The pursuit of Happiness",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "[건대]동대문곱창 나혼자산다 NCT도영 단골가게 야장 닭꽃게탕 솔직....",
+   "link": "https://blog.naver.com/4887364/224391833559",
+   "date": "2026-08-27",
+   "source": "❣️혜니한입❣️",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "동대문 장한평 | 장안동 삼겹살 맛집 깔끔하고 질 좋은 고깃집 김치....",
+   "link": "https://blog.naver.com/bong_bong__/224391816526",
+   "date": "2026-08-27",
+   "source": "BONGBONG",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "신당역맛집 동대문짜장면도 맛있는 태태삼겹 신당2호점",
+   "link": "https://blog.naver.com/sidvi/224391794028",
+   "date": "2026-08-27",
+   "source": "쟁토리의 다락방",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "[전농동] 잔농동 맛집 ‘산육’ 리뷰 | 푸짐한 뼈수육부터 마무리 죽....",
+   "link": "https://blog.naver.com/hannahgo_/224391777430",
+   "date": "2026-08-27",
+   "source": "My favorite things",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "신선한 재료와 뛰어난 내공을 자랑하는 동대문역맛집 방문 후기",
+   "link": "https://blog.naver.com/suksuk0011/224391773942",
+   "date": "2026-08-27",
+   "source": "suksuk0011님의 블로그",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "[동대문맛집] 애슐리퀸즈 던던 동대문점 주말방문 후기 신메뉴",
+   "link": "https://blog.naver.com/hodury/224391749385",
+   "date": "2026-08-27",
+   "source": "호두리의 점찍는 하루",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "칼국수맛집 동대문맛집 디디피집 민속식당 동대문 현대시티아울렛....",
+   "link": "https://blog.naver.com/sunme5233/224391734410",
+   "date": "2026-08-27",
+   "source": "썬썬로그",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "2편 동대문·답십리 6년차 주민이 자주 가는 동네 밥집 5곳",
+   "link": "https://blog.naver.com/huwahuwa85/224391716871",
+   "date": "2026-08-27",
+   "source": "어흥이네 | 대충 성장중인 40대 워킹맘의 일상",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "동대문 야경 보며 먹는 우동맛집 일월의제면소 흥인지문",
+   "link": "https://blog.naver.com/joy_ordinaryday/224391716482",
+   "date": "2026-08-27",
+   "source": "보통날 , 마음이 닿길",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "삼선교 맛집으로 검색해 들어간 성신여대 라멘, cgv 성신여대 앞이라....",
+   "link": "https://blog.naver.com/ohyerasyfrs/224391694877",
+   "date": "2026-08-27",
+   "source": "달노래꾼의 맛있는 웰니스",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "동대문맛집, 동대문 라멘맛집, 일본라면 맛집 마제소바가 대박이야!",
+   "link": "https://blog.naver.com/joodark3/224391665936",
+   "date": "2026-08-27",
+   "source": "공허의 일기 이야기",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "경희대맛집 느낌 그대로였던 외대닭갈비 맛집, 남녀노소 누구나 좋....",
+   "link": "https://blog.naver.com/remove8906/224391652420",
+   "date": "2026-08-27",
+   "source": "가게와 건강 이야기",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "동묘맛집 동대문맛집 동묘역맛집 • 동묘가라지 산봉우리 피자 라....",
+   "link": "https://blog.naver.com/sundaytoast/224391621113",
+   "date": "2026-08-27",
+   "source": "토스트의 하루",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "왕십리원조곱창 - 24시간 운영되는 동대문 곱창맛집 실내포차 리뷰!",
+   "link": "https://blog.naver.com/ddeukkubi_zip/224390847917",
+   "date": "2026-08-27",
+   "source": "듞꺼비집",
+   "kind": "블로그",
+   "tags": [
+    "F&B",
+    "기업/산업"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "[동대문역사문화공원역 맛집] DDP 맛집 미국식 핫도그 ‘이쁜여우핫....",
+   "link": "https://blog.naver.com/jeje5126/224391613107",
+   "date": "2026-08-27",
+   "source": "지난 날들의 기록",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "동대문 육즙관리소 더룸/ 동대문 고깃집/ 육즙관리소 더룸/ 을지로DD....",
+   "link": "https://blog.naver.com/mpup852547/224391440894",
+   "date": "2026-08-27",
+   "source": "준비갈완료",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "[동대문 속눈썹/네일 맛집 추천] ' 굿모닝 네일 ' 오래가는 네일 그리....",
+   "link": "https://blog.naver.com/nannada_47/224391433723",
+   "date": "2026-08-27",
+   "source": "소소한 운동그림여행공부",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "✅동대문역 맛집 왕가네웰빙 콩나물비빔밥 7천원‼️",
+   "link": "https://blog.naver.com/next0390/224391426444",
+   "date": "2026-08-27",
+   "source": "▶언제나맑음◀",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "[서울/중구] 강남교자 동대문점. 입맛 없는 여름철 감칠맛 제대로 깨....",
+   "link": "https://blog.naver.com/dudu_nara/224391426425",
+   "date": "2026-08-27",
+   "source": "맛집 / 일상 리뷰어 두두나라",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "[금융권 이모저모]하나은행, 시중은행 최초 ICSD 통한 국고채 달러 결제...",
+   "link": "https://www.businessplus.kr/news/articleView.html?idxno=116013",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "외국인",
+    "행정/정책"
+   ],
+   "added": "2026-08-27",
+   "thumbnail": "https://cdn.businessplus.kr/news/thumbnail/202608/116013_114973_2126_v150.jpg",
+   "og_checked": true
+  },
+  {
+   "title": "숲길·물길 옆에서 시원한 맥주, 늦더위 날려",
+   "link": "https://www.naeil.com/news/read/600249?ref=naver",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "상인/단체",
+    "외국인",
+    "인근상권"
+   ],
+   "added": "2026-08-27",
+   "thumbnail": "https://wimg.naeil.com/paper/2026/08/27/20260827_01100105000006_M01.jpg",
+   "og_checked": true
+  },
+  {
+   "title": "건강산, 스킨케어 브랜드 '닥터크림(Dr.CREAM)' 공식 론칭… K-뷰티 시장...",
+   "link": "https://www.fntoday.co.kr/news/articleView.html?idxno=391314",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "외국인"
+   ],
+   "added": "2026-08-27",
+   "thumbnail": "https://www.fntoday.co.kr/news/thumbnail/202608/2_1315463_1276941_2221_v150.jpg",
+   "og_checked": true,
+   "sum_failed": true
+  },
+  {
+   "title": "동대문 크레페 할아버지 2026 최신 가격은? 위치·영업시간·웨이팅 ....",
+   "link": "https://blog.naver.com/dwing1/224391699561",
+   "date": "2026-08-27",
+   "source": "모두 행복하세요",
+   "kind": "블로그",
+   "tags": [
+    "외국인"
+   ],
+   "added": "2026-08-27",
+   "og_checked": true
+  },
+  {
+   "title": "요즘 어른들이 말랑이에 빠진 이유 7가지",
+   "link": "https://blog.naver.com/skyijs0519/224391458157",
+   "date": "2026-08-27",
+   "source": "왈순여사 사랑 블로그",
+   "kind": "블로그",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[27일 평택시] 최원용 시장, 국토부·LH와 도시·교통 현안 논의 등",
+   "link": "https://www.asiatime.co.kr/article/20260827500213",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "\"백 가지 맛과 수제맥주의 만남\"… 강북구, '2026 백맥축제' 9월 4일 개최",
+   "link": "https://www.gukjenews.com/news/articleView.html?idxno=3676537",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27",
+   "sum_failed": true
+  },
+  {
+   "title": "안양시, 내달 30일 '제8회 안양공공예술프로젝트(APAP8)' 개막",
+   "link": "https://www.newspim.com/news/view/20260827000713",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "김해시장 선거 '우회광고' 의혹…시민단체 거리로 \"경찰, 진상규명하라...",
+   "link": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=706040",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27",
+   "sum_failed": true
+  },
+  {
+   "title": "증평군, 상거래 계량기 정기검사 추진",
+   "link": "https://www.thepublic.kr/news/articleView.html?idxno=316413",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "기억하고 돌보고 나누고… 신천지 부산야고보지파, 양산·거제서 폭염속...",
+   "link": "https://sports.donga.com/region/article/all/20260827/134555346/1",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "“AI가 그리는 미래, 구미서 현실로”…GAMFF 2026 내달 3일 개막",
+   "link": "https://www.kbmaeil.com/article/20260827500297",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[천안 24시] 천안시, 총인구 71만 명 시대…산단·일자리·외국인 유입 ...",
+   "link": "https://www.sisajournal.com/news/articleView.html?idxno=385029",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27",
+   "sum_failed": true
+  },
+  {
+   "title": "\"소상공인 돕고, 개인정보 지키고, AI인재 키우고\" 카카오, '상생·신뢰...",
+   "link": "https://www.techm.kr/news/articleView.html?idxno=154670",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[위클리오늘] 평택시, '숙의․공론 아카데미' 운영 성황리 마무리",
+   "link": "http://www.weeklytoday.com/news/articleView.html?idxno=791881",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "\"불법\" vs \"적법 운영\"…충주 활옥동굴 갈등에 영우자원 휴업까지 검토",
+   "link": "https://www.joongdo.co.kr/web/view.php?key=20260827010008306",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27",
+   "sum_failed": true
+  },
+  {
+   "title": "\"서울 한복판 물들인 붉은 유혹\"… 영양군, '2026 영양고추 H.O.T 페스티...",
+   "link": "https://www.straightnews.co.kr/news/articleView.html?idxno=309852",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "현대건설, 목동10단지 수주…도시정비 10조 클럽 입성",
+   "link": "https://www.fntimes.com/html/view.php?ud=202608271131156966b372994c95_18",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "당진시, 합계출산율 1.12명… 충남 15개 시군 중 최고",
+   "link": "https://www.m-i.kr/news/articleView.html?idxno=1406677",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "당진시, 합계출산율 도내 1위 ··· 3년 연속 정상",
+   "link": "https://www.ggilbo.com/news/articleView.html?idxno=1177872",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[위클리오늘] 제25회 동두천 청소년미술대전 시상식 개최",
+   "link": "http://www.weeklytoday.com/news/articleView.html?idxno=791862",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[동정] 조현일 경산시장",
+   "link": "https://www.kbsm.net/news/view.php?idx=531813",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "속도전 펼치는 여의도 재건축, 정비사업 빅2 쏠리는 형국",
+   "link": "https://www.newstopkorea.com/news/articleView.html?idxno=47298",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27",
+   "sum_failed": true
+  },
+  {
+   "title": "[르포]강남에 1만3000호 대단지가?…강남 탄천 가보니",
+   "link": "https://www.sidae.com/article/2026082707005382163",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[헤럴드광장] 반도체 버블인가, 슈퍼사이클인가",
+   "link": "https://biz.heraldcorp.com/article/10853956?ref=naver",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "구미시, 9월 '경북 국제 AI·메타버스 영상제' 개최…AI 영상·산업·체험...",
+   "link": "https://www.m-i.kr/news/articleView.html?idxno=1406647",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "w4-1. 종로에서  반지골랐는데 아쉬운점 +광장시장 맛집추천",
+   "link": "https://blog.naver.com/cobukt/224391911468",
+   "date": "2026-08-27",
+   "source": "최최네 기록",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "광장시장 스타벅스 광장마켓점 특화메뉴 가격, 층별 방문과 위치, ....",
+   "link": "https://blog.naver.com/yongguide/224391898669",
+   "date": "2026-08-27",
+   "source": "겸사겸사 Daily 여행",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "광장시장맛집 처음 간다면 꼭 알아야 할 순서",
+   "link": "https://blog.naver.com/lgy6872/224391893052",
+   "date": "2026-08-27",
+   "source": "테이스트 하이킹",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "덕자 이야기",
+   "link": "https://blog.naver.com/yjs2675/224391834710",
+   "date": "2026-08-27",
+   "source": "자전거 여행",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조",
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "을지로 선물 사러 들른 종로 빵집",
+   "link": "https://blog.naver.com/gkdlzx93/224391833669",
+   "date": "2026-08-27",
+   "source": "하낭의 일상육아일기",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "광장시장맛집에서 이런 육회를 먹게 될 줄이야",
+   "link": "https://blog.naver.com/tcae2002/224391831278",
+   "date": "2026-08-27",
+   "source": "음식과 장소의 연대기",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "종로맛집인데 이렇게 조용한 곳인 줄은 몰랐음",
+   "link": "https://blog.naver.com/jungyang6410/224391818729",
+   "date": "2026-08-27",
+   "source": "jungyang6410님의블로그",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "종로 5가 광장시장 박가네 빈대떡 | 부드러운 육회와 맷돌빈대떡 먹....",
+   "link": "https://blog.naver.com/iiluuciaii/224391797021",
+   "date": "2026-08-27",
+   "source": "어디한번 즐겨 볼까나",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "라이프워크광장시장점 서울쇼핑추천 라독티셔츠 서울여행",
+   "link": "https://blog.naver.com/ginny_making/224391797223",
+   "date": "2026-08-27",
+   "source": "지니의 하루",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "막걸리가 땡길땐 종로 광장시장 맛집 박가네 빈대떡",
+   "link": "https://blog.naver.com/taksbloglife/224391795586",
+   "date": "2026-08-27",
+   "source": "Tak's Blog Life",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "용산 맛집, 창 너머 노을빛과 어우러진 훈연의 여운",
+   "link": "https://blog.naver.com/viusnbqwqs986/224391792951",
+   "date": "2026-08-27",
+   "source": "젤리콩트립",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "광장시장맛집 고민 끝에 찾은 진짜 단골집 발견",
+   "link": "https://blog.naver.com/bymy7031/224391774046",
+   "date": "2026-08-27",
+   "source": "밥 위의 지도",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "맛집투어 1│ (종로) 미옥육회",
+   "link": "https://blog.naver.com/hj--j/224391763828",
+   "date": "2026-08-27",
+   "source": "감자나라팥심동네",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "종로약국성지 온유약국까지 돌고온 광장시장 나들이",
+   "link": "https://blog.naver.com/sylove4ever/224391750048",
+   "date": "2026-08-27",
+   "source": "오늘도 즐겁게 맛있게 감사하게",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "260827 7️⃣월 근황☀️",
+   "link": "https://blog.naver.com/neulhahappy_/224391736574",
+   "date": "2026-08-27",
+   "source": "하하하하",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "현대백화점 판교점 팝업 용산 광장시장 바비큐 참나무 바베큐 후기",
+   "link": "https://blog.naver.com/szenefoto/224390272614",
+   "date": "2026-08-27",
+   "source": "Photographer's Log",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울여행코스 광장시장 맛집 미쉐린 9년 연속 부촌육회 본점",
+   "link": "https://blog.naver.com/suuuuuuuuuubini/224391705361",
+   "date": "2026-08-27",
+   "source": "뉸뉸이네 일상",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[카페] 7월 11일 -잉크커피~아마츄어작업실 광장시장점",
+   "link": "https://blog.naver.com/jip5028/224391640706",
+   "date": "2026-08-27",
+   "source": "煙霧",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 혼자 여행 코스 추천, 낮과 밤 동선 기준",
+   "link": "https://blog.naver.com/sis_wa/224391628810",
+   "date": "2026-08-27",
+   "source": "이보게, 들렸다가게♩",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "광장시장 찹쌀꽈배기 맛집, 꽈배기랑 흑미 찹쌀도너츠 먹어본 후기",
+   "link": "https://blog.naver.com/yhee0_0/224391623869",
+   "date": "2026-08-27",
+   "source": "YHEE.zip",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "\"종로 한복판에서 고소한 녹두전에 육회 탕탕이 한 접시?! 9월 가을....",
+   "link": "https://blog.naver.com/information8282_/224390745850",
+   "date": "2026-08-27",
+   "source": "information8282_님의 블로그",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "광장시장 빈대떡 맛집 추천! 원조순희네빈대떡 바삭한 녹두빈대떡 ....",
+   "link": "https://blog.naver.com/yhee0_0/224391343980",
+   "date": "2026-08-27",
+   "source": "YHEE.zip",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[종로5가/광장시장 맛집] 쑥스초코파이 : 디저트 선물로 딱인 6구 세....",
+   "link": "https://blog.naver.com/wldud5941/224390952592",
+   "date": "2026-08-27",
+   "source": "오늘도, 예쁘게 맛있게❤︎",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "청량리 제기동 경동시장맛집 현덕육회 육사시미 모둠한판",
+   "link": "https://blog.naver.com/biggtory/224391904265",
+   "date": "2026-08-27",
+   "source": "꿀찌의 취향",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "경동시장 과일 가격 이번주 시세, 복숭아 수박 포도 가격 총정리",
+   "link": "https://blog.naver.com/eeunjane/224391881272",
+   "date": "2026-08-27",
+   "source": "쥬퐁이네 가족이야기",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "경동시장 이천농장 가격 온누리상품권 결제 주차 방문 꿀팁",
+   "link": "https://blog.naver.com/greenery829/224391858447",
+   "date": "2026-08-27",
+   "source": "눕지마 일어나",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[셔터를 내린 뒤] 한식에 진심인 청년상인이 다시 도전하면 생기는 ....",
+   "link": "https://blog.naver.com/ymf_story/224391820554",
+   "date": "2026-08-27",
+   "source": "전통시장육성재단",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "★ NEW ★ 경동시장 희망놀이터 이용 안내 (26년 9월)",
+   "link": "https://blog.naver.com/happykyungdong/224391807104",
+   "date": "2026-08-27",
+   "source": "경동시장 서포터즈 꼬집스",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 경동시장 스타벅스1960점 이색카페 솔직 방문후기(내돈내산)",
+   "link": "https://blog.naver.com/noih__saf/224390747299",
+   "date": "2026-08-27",
+   "source": "noih__saf님의 블로그",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "경동시장 육회 포장 경동농장, 바로 손질해줘서 신선했던 후기",
+   "link": "https://blog.naver.com/hee_mmishh/224391654021",
+   "date": "2026-08-27",
+   "source": "20대히밍일상",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "이색 스타벅스 청량리 경동시장 스타벅스 경동1960점 폐극장 인테리....",
+   "link": "https://blog.naver.com/yuni403/224390823915",
+   "date": "2026-08-27",
+   "source": "드롤링유니 맛집탐방",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "입소문 난 주방 필수템! 신선함 가득한 경동시장 쇼핑 리스트 공개",
+   "link": "https://blog.naver.com/gksgywjd0819/224391409497",
+   "date": "2026-08-27",
+   "source": "이날저날",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "경동시장 야채 순창상회｜루꼴라 샐러드 채소 소량 구매 후기",
+   "link": "https://blog.naver.com/rachelloll/224388397579",
+   "date": "2026-08-27",
+   "source": "알차게 다녀온 하루ㅣ맛집·일상꿀팁",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[청량리/경동시장 맛집] 줄 서서 먹는 전설의 치킨, 곁들임 튀김까지....",
+   "link": "https://blog.naver.com/van9306/224383319449",
+   "date": "2026-08-27",
+   "source": "두부로그",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "제기동카페 경동시장 근처 분위기좋은 한옥 감성 참다정 쌍화차 디....",
+   "link": "https://blog.naver.com/always_travelwithme/224391411273",
+   "date": "2026-08-27",
+   "source": "✨️Lovely V-blog (*≧ω≦)ﾉ★*☆♪✨️",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "LIMM  순차전원기 NS8SW",
+   "link": "https://blog.naver.com/yoo423111/224391884956",
+   "date": "2026-08-27",
+   "source": "yoosound_up",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울광장 지하 'K-문화 스테이션', 빅뱅 만나 힙한 첫 인사 [MTN 현장+]",
+   "link": "https://news.mtn.co.kr/news-detail/2026082708052034169",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "롯데홈쇼핑 '벨리곰' 굿즈 '불티'…캐릭터 넘어 '브랜드 IP'로 진화",
+   "link": "http://www.srtimes.kr/news/articleView.html?idxno=210983",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27",
+   "sum_failed": true
+  },
+  {
+   "title": "\"한국이 더 좋아졌어요\"…28개국 외국인들의 특별한 K-브랜드 경험(종합...",
+   "link": "https://www.news1.kr/industry/distribution/6271194",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27",
+   "sum_failed": true
+  },
+  {
+   "title": "“외국인도 쉽고 빠르게”…롯데百, 유니온페이 QR결제 도입",
+   "link": "https://www.sentv.co.kr/article/view/sentv202608270033",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "7월 서울 찾은 외국인 161만명 '역대 최다'…의료·미식·뷰티 소비 다변...",
+   "link": "https://www.nc.press/news/articleView.html?idxno=624854",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27",
+   "sum_failed": true
+  },
+  {
+   "title": "[호텔의 재발견④] 리츠, 리테일·오피스보다 선호하는 이유는",
+   "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4432060",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[기고] 외국인 관광객이 바꾸는 서울 상권…823만 명에서 '소비 동선'을...",
+   "link": "http://www.e2news.com/news/articleView.html?idxno=333594",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권",
+    "행정/정책"
+   ],
+   "added": "2026-08-27",
+   "sum_failed": true
+  },
+  {
+   "title": "외국인 161만명 몰렸다…서울서 한 달 1조원 썼다",
+   "link": "https://www.newscj.com/news/articleView.html?idxno=3428067",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "올리브영에서 외국인이 많이 찾는 마스크팩은?",
+   "link": "https://blog.naver.com/han3232/224391757219",
+   "date": "2026-08-27",
+   "source": "피부노트",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "다채로운 구성과 특별한 구운 게장이 기억에 남는 명동맛집 다녀왔....",
+   "link": "https://blog.naver.com/baemango/224391899069",
+   "date": "2026-08-27",
+   "source": "뚜딩의 일상생활",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[✨서울핫플]싹~달라진 명동현장과 신세계백화점 미디어파사드 명....",
+   "link": "https://blog.naver.com/artriplab/224382243730",
+   "date": "2026-08-27",
+   "source": "보고 즐기고 그리는 예술여행",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "칼리스타 호텔 숙박 후기, 명동의 활기를 만끽하는 완벽한 위치 체....",
+   "link": "https://blog.naver.com/bed_dispatch/224384520300",
+   "date": "2026-08-27",
+   "source": "침대위평론",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "명동 숯불구이에서 즐기는 깔끔한 고기 한 끼",
+   "link": "https://blog.naver.com/triumph6681/224391805705",
+   "date": "2026-08-27",
+   "source": "BrandLabSeoul",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "명동 옷가게 오프숄더 성지 엠플레이그라운드 명동밀리오레점 쇼핑....",
+   "link": "https://blog.naver.com/heri0221/224391790876",
+   "date": "2026-08-27",
+   "source": "PoPo의 개인 블로그 :-)",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "아트래블 홈 호텔 명동 추천 쇼핑과 미식의 중심에서 경험한 완벽한....",
+   "link": "https://blog.naver.com/hotel_decoded/224385096155",
+   "date": "2026-08-27",
+   "source": "방한칸의여유",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "명동 수정사 개운템 원석팔찌 파워스톤 팔찌 구매후기",
+   "link": "https://blog.naver.com/ddrich888/224391704788",
+   "date": "2026-08-27",
+   "source": "티끌 모아 떵떵",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "26.8.명동 착한 구두",
+   "link": "https://blog.naver.com/hee--yaa/224391681822",
+   "date": "2026-08-27",
+   "source": "희야 스토리",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "명동에 생긴 한정선! 롯데백화점에서 만난 생과일 찹쌀떡 가격부터 ....",
+   "link": "https://blog.naver.com/khlove780503/224391253633",
+   "date": "2026-08-27",
+   "source": "가성비 Is Life",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "을지로 술집 선셋레코드, 신청곡과 함께한 분위기 좋은 데이트",
+   "link": "https://blog.naver.com/rocoberry_/224391630286",
+   "date": "2026-08-27",
+   "source": "땅뀰의 패션 트래블로드",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[명동역 맛집 곰탕] 자극적이지 않아 더 깊은 여운을 주는 돼지곰탕 ....",
+   "link": "https://blog.naver.com/dorajitoday/224391628880",
+   "date": "2026-08-27",
+   "source": "도라지의 맛집,여행 이야기",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 부모님 모시고 호캉스 덕수궁 명동 가까운 프레지던트 호텔 1....",
+   "link": "https://blog.naver.com/spirituallife100/224388877176",
+   "date": "2026-08-27",
+   "source": "소망아빠의 경제이야기",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "명동 맛집 다올 숯불구이 솔찍후기 생각보다 더 좋았던 곳이었음?",
+   "link": "https://blog.naver.com/pole23901/224391530457",
+   "date": "2026-08-27",
+   "source": "Lisa",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "명동 역사 이화영집터 윤선도집터 은성주점터 명동파출소",
+   "link": "https://blog.naver.com/taki_travelnote/224385756953",
+   "date": "2026-08-27",
+   "source": "탁이의 여행노트",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문 도매시장 사입 용어 1부 : 깔, 솔리드, 미송, 고미 뜻 쉽게 알....",
+   "link": "https://blog.naver.com/minocupid/224390882004",
+   "date": "2026-08-27",
+   "source": "대표가 직접 운영하는 사무공간, 오늘맑음공유오피스",
+   "kind": "블로그",
+   "tags": [
+    "도매시장"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[EP.15]광저우 도매시장 가이드]초보셀러를 위한 진마상가 최적 동선",
+   "link": "https://blog.naver.com/dinner_dance/224389814172",
+   "date": "2026-08-27",
+   "source": "한남동마케터 우렁각시",
+   "kind": "블로그",
+   "tags": [
+    "도매시장"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "70cm 틈새 수납장으로 공간을 살릴 수 있을까? 문앤트리 공방｜동대....",
+   "link": "https://blog.naver.com/veve13/224391458086",
+   "date": "2026-08-27",
+   "source": "김포목수 인테리어 부자목공쟁이",
+   "kind": "블로그",
+   "tags": [
+    "도매시장"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "친절은 무기다.",
+   "link": "https://blog.naver.com/indigofield/224391528423",
+   "date": "2026-08-27",
+   "source": "INDIGOFIELD",
+   "kind": "블로그",
+   "tags": [
+    "도매시장"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "창고 재고를 다른 곳으로 옮길 때｜성수동·동대문 대량 상품 화물....",
+   "link": "https://blog.naver.com/zimcargo/224391790115",
+   "date": "2026-08-27",
+   "source": "zimcargo님의 블로그",
+   "kind": "블로그",
+   "tags": [
+    "기업/산업"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문종합시장 로만쉐이드 커튼 원단으로 만드는 나만의 블라인드....",
+   "link": "https://blog.naver.com/wjsdhraks/224386618966",
+   "date": "2026-08-27",
+   "source": "동대문 린넨 커튼은? 디자인데코에서",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "길음동커튼 길음뉴타운 푸르지오 공간별 스타일링 꿀팁",
+   "link": "https://blog.naver.com/jbsrg43/224391627919",
+   "date": "2026-08-27",
+   "source": "동대문커튼집사랑커텐 무료방문실측견적",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "종부세 '12억 복원' 검토에 셈법 바뀐 집주인들",
+   "link": "http://www.inews24.com/view/1998893",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "원부자재/제조",
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "세제개편안 재검토에 서울 아파트 혼선…정책 번복 손실 구제 가능할까...",
+   "link": "https://lawtalknews.co.kr/article/0MDGZDNMC9QM",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "원부자재/제조",
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "민트&박하",
+   "link": "https://blog.naver.com/after84/224391882984",
+   "date": "2026-08-27",
+   "source": "중드를 덕질하는 공간과 개인적인 공간",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문종합시장 구경, 티니핑 영화, 쌍무지개 본 주말ㅋ",
+   "link": "https://blog.naver.com/yugoung33/224391726851",
+   "date": "2026-08-27",
+   "source": "하기 나름 ꒰ ´｡• ༝ •｡` ꒱",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "일상｜달맞이광장바베큐,동대문 종합시장 키캡,필동면옥 웨이팅에 ....",
+   "link": "https://blog.naver.com/hoo_hoo25/224391334780",
+   "date": "2026-08-27",
+   "source": "일하고 키우고 먹습니다",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울시 종로구 평창동 상권지역에 단독주택 매매",
+   "link": "https://blog.naver.com/jungssp/224391844513",
+   "date": "2026-08-27",
+   "source": "서울 강남 부동산 전문",
+   "kind": "블로그",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "종로구 상가권리금소송변호사 상담비용 변호사선임 수임료 권리금....",
+   "link": "https://blog.naver.com/tortoiseladle15/224391765883",
+   "date": "2026-08-27",
+   "source": "부동산전문 법무법인 로윈",
+   "kind": "블로그",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 종로구스토킹변호사 스토킹 경찰 조사 모의 시뮬레이션 경찰....",
+   "link": "https://blog.naver.com/diarymb/224391687643",
+   "date": "2026-08-27",
+   "source": "법무법인 에이시스",
+   "kind": "블로그",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 종로구특수강간변호사 특수강간 혐의 수사 단계별 맞춤 조력 ....",
+   "link": "https://blog.naver.com/diarymb/224391654006",
+   "date": "2026-08-27",
+   "source": "법무법인 에이시스",
+   "kind": "블로그",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "종로 생일 저녁 오마카세 맛집, 스시키마에 솔직 후기",
+   "link": "https://blog.naver.com/jolly_o/224388693938",
+   "date": "2026-08-27",
+   "source": "졸리, 맛있는건 행복하니까",
+   "kind": "블로그",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "종로구 관철동 상가매매 종각역 가까운 도심 핵심상권 건물",
+   "link": "https://blog.naver.com/sdjsr/224391165793",
+   "date": "2026-08-27",
+   "source": "J ONE 빌딩",
+   "kind": "블로그",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[경남 브리핑 모음(8월27일)] 진주시, ‘경남진주혁신도시 완성 시민결...",
+   "link": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202608262359194320483",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "길음역 미용실 프라이빗 분위기 꼼꼼한 시술 레이어드펌 후기",
+   "link": "https://blog.naver.com/everywhere_everythin/224391808038",
+   "date": "2026-08-27",
+   "source": "ღ하루취향ღ 맛집•여행•뷰티",
+   "kind": "블로그",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 성북구강제추행고소변호사 강제추행 피해 고소장 작성 조력 ....",
+   "link": "https://blog.naver.com/diarymb/224391718456",
+   "date": "2026-08-27",
+   "source": "법무법인 에이시스",
+   "kind": "블로그",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 성북구스토킹변호사 스토킹 혐의 합의 절차 대행 및 양형 조력....",
+   "link": "https://blog.naver.com/diarymb/224391682731",
+   "date": "2026-08-27",
+   "source": "법무법인 에이시스",
+   "kind": "블로그",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 성북구특수강간변호사 특수강간 중형 방어 위한 법리 검토 경....",
+   "link": "https://blog.naver.com/diarymb/224391645149",
+   "date": "2026-08-27",
+   "source": "법무법인 에이시스",
+   "kind": "블로그",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "돌려막기 임대로 160억 전세 사기… 法, 건물주에 징역 12년 선고",
+   "link": "https://www.segye.com/newsView/20260827510012?OutUrl=naver",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "월세 폭등·원룸 실종… ‘하숙’ 다시 뜬다",
+   "link": "https://www.munhwa.com/article/11612507?ref=naver",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27",
+   "sum_failed": true
+  },
+  {
+   "title": "대학생 울린 ‘동대문구 162억 전세사기’…50대 집주인 1심 징역 12년",
+   "link": "https://www.seoul.co.kr/news/society/law/2026/08/27/20260827500086?wlog_tag3=naver",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "민간 재건축·재개발 용적률 1.2배땐 4.3만호 추가·분담금 감소…‘사...",
+   "link": "https://biz.heraldcorp.com/article/10854012?ref=naver",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27",
+   "sum_failed": true
+  },
+  {
+   "title": "피해 규모 180억원인데…전세사기범 ‘징역 12년, 벌금 100만원’",
+   "link": "https://biz.heraldcorp.com/article/10854001?ref=naver",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27",
+   "sum_failed": true
+  },
+  {
+   "title": "용적률 300→360% 열리면 분담금 1억 할인?…‘사업성 계산서’ 고심 [부...",
+   "link": "https://biz.heraldcorp.com/article/10853830?ref=naver",
+   "date": "2026-08-27",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27",
+   "sum_failed": true
+  },
+  {
+   "title": "동대문부동산법률상담 전 정리할 계약 서류와 수임료 부담 줄이는 ....",
+   "link": "https://blog.naver.com/blessedshop91/224391812862",
+   "date": "2026-08-27",
+   "source": "로엘 법무법인 민사 전담팀",
+   "kind": "블로그",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "#여성복#데일리코디룩#동대문브이로그#출근룩#일상코디#daily#일상브이로그#26fw#패션#동대문도매#동대문여성복#도매의류#쇼핑몰추천#가을코디추천",
+   "link": "https://www.youtube.com/watch?v=Y4cw0JKCSb4",
+   "date": "2026-08-27",
+   "source": "공삼공팔",
+   "kind": "영상",
+   "tags": [
+    "패션"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/Y4cw0JKCSb4/hqdefault.jpg"
+  },
+  {
+   "title": "100% 순면 포켓 난방 셔츠 #여성의류 #줌마 #난방 #동대문고급의류도매 #동평화 #의류제작 #의류도매 #동대문 #자체제작 #여성",
+   "link": "https://www.youtube.com/watch?v=4ulQOanmugM",
+   "date": "2026-08-27",
+   "source": "루루",
+   "kind": "영상",
+   "tags": [
+    "패션"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/4ulQOanmugM/hqdefault.jpg"
+  },
+  {
+   "title": "8월27일 목요일  바이브 카결 무료배송 #동대문도매시장 #여름신상#3040 #5060 #미시의류 #중년여성의류#플리츠도매",
+   "link": "https://www.youtube.com/watch?v=v9mEz5yRgBI",
+   "date": "2026-08-27",
+   "source": "서비쌤",
+   "kind": "영상",
+   "tags": [
+    "도매시장"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/v9mEz5yRgBI/hqdefault.jpg"
+  },
+  {
+   "title": "8월27일 목요일 동대문여성의류 도매시장 구매대행#동대문여성의류도매#",
+   "link": "https://www.youtube.com/watch?v=PlhygRJHHds",
+   "date": "2026-08-27",
+   "source": "쪼대리",
+   "kind": "영상",
+   "tags": [
+    "도매시장"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/PlhygRJHHds/hqdefault.jpg"
+  },
+  {
+   "title": "이걸 소환한다고…? 🔮 | SDF D-70 #SDF #SDFD포럼 #SBS",
+   "link": "https://www.youtube.com/watch?v=yH-Yp1YdGxQ",
+   "date": "2026-08-27",
+   "source": "SBS D FORUM (SDF)",
+   "kind": "영상",
+   "tags": [
+    "DDP"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/yH-Yp1YdGxQ/hqdefault.jpg"
+  },
+  {
+   "title": "쇠틀을 깎는 대신, 틀 하나가 모양을 바꾸게 했습니다",
+   "link": "https://www.youtube.com/watch?v=yL7Mar-8ihc",
+   "date": "2026-08-27",
+   "source": "신비한 건설이야기",
+   "kind": "영상",
+   "tags": [
+    "DDP"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/yL7Mar-8ihc/hqdefault.jpg"
+  },
+  {
+   "title": "동대문 공원 아래, 성벽에 구멍이 뚫린 이유",
+   "link": "https://www.youtube.com/watch?v=7qhdUGNClus",
+   "date": "2026-08-27",
+   "source": "설명충",
+   "kind": "영상",
+   "tags": [
+    "DDP"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/7qhdUGNClus/hqdefault.jpg"
+  },
+  {
+   "title": "가을신상+전원무배🔥 #동대문 #여성의류 #수입의류 #쇼핑 #쇼핑라이브 #라이브쇼핑 #신발 #가방 #의류 #악세사리 #세일 #코디",
+   "link": "https://www.youtube.com/watch?v=PspMUdRqAjE",
+   "date": "2026-08-27",
+   "source": "순이샵",
+   "kind": "영상",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/PspMUdRqAjE/hqdefault.jpg"
+  },
+  {
+   "title": "❤️동대문옷❤️현장라이브❤️(8/27-2)",
+   "link": "https://www.youtube.com/watch?v=xiiyOV-62Ug",
+   "date": "2026-08-27",
+   "source": "에이봉봉마켓",
+   "kind": "영상",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/xiiyOV-62Ug/hqdefault.jpg"
+  },
+  {
+   "title": "아르헨티나의 동대문! 한인타운에서 💸10만원으로 쇼핑하려다 멘탈 털린 이유🤯",
+   "link": "https://www.youtube.com/watch?v=9X6zm47M7LY",
+   "date": "2026-08-27",
+   "source": "꽃송희 flowersong2",
+   "kind": "영상",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/9X6zm47M7LY/hqdefault.jpg"
+  },
+  {
+   "title": "꽃보다예쁜한미영꽃백숙 #창신동 맛집 #동대문 맛집 #건강한밥상 #데이트 #회식 #K healthy food",
+   "link": "https://www.youtube.com/watch?v=rvVLCrr9HxI",
+   "date": "2026-08-27",
+   "source": "꽃보다예쁜한미영꽃백숙",
+   "kind": "영상",
+   "tags": [
+    "F&B"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/rvVLCrr9HxI/hqdefault.jpg"
+  },
+  {
+   "title": "창신동 완구거리",
+   "link": "https://www.youtube.com/watch?v=U9MS5q4rAAc",
+   "date": "2026-08-27",
+   "source": "반복일상기록",
+   "kind": "영상",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/U9MS5q4rAAc/hqdefault.jpg"
+  },
+  {
+   "title": "경동시장 난리난 새우소금구이",
+   "link": "https://www.youtube.com/watch?v=8SSSTytXUc8",
+   "date": "2026-08-27",
+   "source": "전시회 제기본점",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/8SSSTytXUc8/hqdefault.jpg"
+  },
+  {
+   "title": "너, 혹시? 국내산 잣?",
+   "link": "https://www.youtube.com/watch?v=YsBngiLHa-c",
+   "date": "2026-08-27",
+   "source": "을지로화랑",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/YsBngiLHa-c/hqdefault.jpg"
+  },
+  {
+   "title": "서울 동대문 청량리 경동시장점 가오픈 여인숙 리모델링 #커피한약방 #경동시장카페 #청량리카페 #청량리핫플 #청량리가오픈 #을지로감성 #전통시장카페 #자개장",
+   "link": "https://www.youtube.com/watch?v=6iRtlZy-Bp8",
+   "date": "2026-08-27",
+   "source": "꾸준하게 J",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/6iRtlZy-Bp8/hqdefault.jpg"
+  },
+  {
+   "title": "미친 가성비 멋을 아는 언니들 지갑 열리게한 남대문시장 명품St 쇼핑 (고퀄 가을신상 양가죽 자켓 & 가디건)",
+   "link": "https://www.youtube.com/watch?v=zv-2sK66XX0",
+   "date": "2026-08-27",
+   "source": "찐투어 JJin Tour",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/zv-2sK66XX0/hqdefault.jpg"
+  },
+  {
+   "title": "동대문 종합시장 하마다시 폴리 2mm 컬러끈 의류부자재 경기상사",
+   "link": "https://www.youtube.com/watch?v=vsfBknYEojk",
+   "date": "2026-08-27",
+   "source": "동대문종합시장 경기상사",
+   "kind": "영상",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/vsfBknYEojk/hqdefault.jpg"
+  },
+  {
+   "title": "#동대문종합시장 #실바람섬유",
+   "link": "https://www.youtube.com/watch?v=0uhT6YpZj8E",
+   "date": "2026-08-27",
+   "source": "실바람TV",
+   "kind": "영상",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/0uhT6YpZj8E/hqdefault.jpg"
+  },
+  {
+   "title": "#139 서울시 종로구 누하동 경복궁역 역세권 서촌상권에 위치한 빌딩 #shorts #빌딩매매 #급매빌딩 #경복궁 #서촌 #꼬마빌딩",
+   "link": "https://www.youtube.com/watch?v=8_ZoqnrpXAk",
+   "date": "2026-08-27",
+   "source": "빌딩을보라",
+   "kind": "영상",
+   "tags": [
+    "행정/정책"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/8_ZoqnrpXAk/hqdefault.jpg"
+  },
+  {
+   "title": "NCT 무대의상 3000벌 풀린다…서울패션위크, 9월 서울 곳곳서 개막",
+   "link": "https://www.fnnews.com/news/202608271117239170",
+   "date": "2026-08-26",
+   "source": "파이낸셜뉴스",
+   "kind": "뉴스",
+   "tags": [
+    "DDP",
+    "패션"
+   ],
+   "thumbnail": "https://www.bing.com/th?id=ONUT.s8iWZb2o-tCEF-rbnDmxhg&pid=News",
+   "added": "2026-08-27"
+  },
+  {
+   "title": "가을 밤 DDP 222m 외벽이 빛난다… '서울라이트 DDP 2026 가을' 9월 개막",
+   "link": "https://kr.aving.net/news/articleView.html?idxno=1813701",
+   "date": "2026-08-26",
+   "source": "에이빙(AVING)",
+   "kind": "뉴스",
+   "tags": [
+    "DDP"
+   ],
+   "thumbnail": "https://www.bing.com/th?id=ONUT.lhZt5HHYa5MypEMZPm2PcA&pid=News",
+   "added": "2026-08-27"
+  },
+  {
+   "title": "미미작가 ‘WANTED’, K-아트×K-뷰티로 확장…DDP서 라라레서피와 협업",
+   "link": "https://www.ttlnews.com/news/articleView.html?idxno=3137507",
+   "date": "2026-08-26",
+   "source": "티티엘뉴스",
+   "kind": "뉴스",
+   "tags": [
+    "DDP",
+    "패션"
+   ],
+   "thumbnail": "https://www.bing.com/th?id=ONUT.v4L68xtSBBMA1ixLLr9jNA&pid=News",
+   "added": "2026-08-27",
+   "sum_failed": true
+  },
+  {
+   "title": "\"한국여행 필수템으로\"…글로벌 청년들, '명동 노페'서 지갑 열었다",
+   "link": "https://www.fnnews.com/news/202608271121381393",
+   "date": "2026-08-26",
+   "source": "파이낸셜뉴스",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "thumbnail": "https://www.bing.com/th?id=ONUT.ezjIthLZS7dBw2nh-b2x_Q&pid=News",
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울패션위크, NCT 활동의상 3000벌 '플리마켓'…\"수익금 전액 기부\"",
+   "link": "https://www.mt.co.kr/index.php/policy/2026/08/27/2026082709314277339",
+   "date": "2026-08-26",
+   "source": "머니투데이",
+   "kind": "뉴스",
+   "tags": [
+    "DDP",
+    "인근상권",
+    "패션"
+   ],
+   "thumbnail": "https://www.bing.com/th?id=ONUT.aEqW8jwgon2OpheQ95_6hA&pid=News",
+   "added": "2026-08-27"
+  },
+  {
+   "title": "에버엑스, Try Everything 2026서 원격재활 '에버엑스 리햅' 공개… \"병원 밖 회복 잇는다\"",
+   "link": "https://kr.aving.net/news/articleView.html?idxno=1813680",
+   "date": "2026-08-26",
+   "source": "에이빙(AVING)",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "thumbnail": "https://www.bing.com/th?id=ONUT.8yXrp-tYOQFUfzdBIHBY3w&pid=News",
+   "added": "2026-08-27"
+  },
+  {
+   "title": "외국인 관광객 몰리자 서울 상권 ‘활기’…명동 공실률 4.4%",
+   "link": "https://www.segye.com/newsView/20260826518554",
+   "date": "2026-08-26",
+   "source": "세계일보",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "thumbnail": "https://www.bing.com/th?id=ONUT.5JNdAGHk_Vicb-_w_7ozvQ&pid=News",
+   "added": "2026-08-27"
+  },
+  {
+   "title": "중구, 소상공인 창업아카데미 연다…상권분석·세무·AI 마케팅 교육",
+   "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5054939",
+   "date": "2026-08-26",
+   "source": "신아일보",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "thumbnail": "https://www.bing.com/th?id=ONUT.eo9YB6rPVFzrV1I7yTAegQ&pid=News",
+   "added": "2026-08-27",
+   "sum_failed": true
+  },
   {
    "title": "동대문 새벽 데이트 코스｜뉴뉴, 미미라인 악세사리 쇼핑부터 주차 ....",
    "link": "https://blog.naver.com/102-206/224390452562",
@@ -462,13 +2818,3135 @@
    "og_checked": true
   },
   {
+   "title": "서울 중구, 내달 10·11일 소상공인 창업·경영 교육",
+   "link": "https://www.siminilbo.co.kr/news/newsview.php?ncode=1160287879443470",
+   "date": "2026-08-26",
+   "source": "시민일보",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[핀포인트] [나인앤컴퍼니] 센터포인트성수 이전…마스턴운용 인연 '눈...",
+   "link": "https://news.dealsitetv.com/articles/175192",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "정보빈, 포멀한 패션으로 발산하는 미모 [포토]",
+   "link": "https://www.fnnews.com/news/202608262239096245",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "최은빈, 화려한 시스루 패션 [포토]",
+   "link": "https://www.fnnews.com/news/202608262157468415",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "영동 '베리와인 1168CS', 올해 최고의 우리술…충청권 6개 제품 수상",
+   "link": "https://www.daejonilbo.com/news/articleView.html?idxno=2296838",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "상인/단체",
+    "외국인",
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "엘리큐어 허브이오, ‘2026 서울뷰티위크’ 참가",
+   "link": "https://biz.chosun.com/industry/business_info/2026/08/26/JWUJI5I7ZVDEJMXHKQ522HTV5U/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "DDP",
+    "쇼핑/관광",
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "CJ온스타일·현대홈쇼핑, 베라왕 패션 컬렉션 진행...코스맥스와 단독상...",
+   "link": "http://www.wsobi.com/news/articleView.html?idxno=317059",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "쇼핑/관광",
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "K-패션, 日 오사카 교세라돔 사로잡다...키모우이, 간사이 컬렉션 2026 A...",
+   "link": "https://www.gukjenews.com/news/articleView.html?idxno=3675308",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "광주서 처음 열린 미스인터콘티넨탈코리아 탤런트 심사…한영진 1위",
+   "link": "https://www.sentv.co.kr/article/view/sentv202608260115",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "박수인, 2026 미스 어스 코리아 최고 타이틀 수상… 세계 미스 어스 도전",
+   "link": "http://www.joynews24.com/view/1998373",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "유니원커뮤니케이션즈, ‘2026 서울뷰티위크’ 성료",
+   "link": "https://www.sentv.co.kr/article/view/sentv202608260087",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[GJ포토+] 日 모델 요코카와 리정, '빠져들게 만드는 비주얼'(간사이 컬...",
+   "link": "https://www.gukjenews.com/news/articleView.html?idxno=3675285",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[GJ포토+] 日 모델 사와이 라이루, '당당한 걸크러시 매력'(간사이 컬렉...",
+   "link": "https://www.gukjenews.com/news/articleView.html?idxno=3675274",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[GJ포토+] 패션뷰티 인플루언서 김민지, '러블리 여신'(간사이 컬렉션 2...",
+   "link": "https://www.gukjenews.com/news/articleView.html?idxno=3675271",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[GJ포토+] 솔로지옥3 이진석, '여심 녹이는 멋스러움'(간사이 컬렉션 20...",
+   "link": "https://www.gukjenews.com/news/articleView.html?idxno=3675261",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[GJ포토+] 솔로지옥4 김정수, '존재감 뽐내는 카리스마'(간사이 컬렉션...",
+   "link": "https://www.gukjenews.com/news/articleView.html?idxno=3675257",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[GJ포토+] 아이멧유 유빈켈리, '시선 사로잡는 비주얼 여신'(간사이 컬렉...",
+   "link": "https://www.gukjenews.com/news/articleView.html?idxno=3675250",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[GJ포토+] 솔로지옥2 최종우, '훈훈한 매력남'(간사이 컬렉션 2026 키모우...",
+   "link": "https://www.gukjenews.com/news/articleView.html?idxno=3675173",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울브랜드굿즈 공모…'서울굿즈' 중소상공인 210곳 키운다",
+   "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065581786615483",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "홈쇼핑, TV 벗어나 오프라인 승부수",
+   "link": "http://www.smedaily.co.kr/news/articleView.html?idxno=362214",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "쇼핑/관광",
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "관악패션지원센터 건립으로 패션의류산업 육성해야",
+   "link": "https://blog.naver.com/gwanaksson/224391245154",
+   "date": "2026-08-26",
+   "source": "관악의 아들, 희망의 정치 정태웅의 블로그",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조",
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문역사문화공원이 외국 관광객에 인기있는 이유",
+   "link": "https://blog.naver.com/romancefantazy/224391174840",
+   "date": "2026-08-26",
+   "source": "유럽, 기억의 조각들",
+   "kind": "블로그",
+   "tags": [
+    "외국인",
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서점 추천",
+   "link": "https://blog.naver.com/jihoi7367/224391053572",
+   "date": "2026-08-26",
+   "source": "️",
+   "kind": "블로그",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문 DDP, 하향식 재개발",
+   "link": "https://blog.naver.com/michelle241312/224390909478",
+   "date": "2026-08-26",
+   "source": "｡･:*:･ﾟ✶･:*:･ﾟ",
+   "kind": "블로그",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "(뉴스인)DDP 런웨이 뜨겁게 달군 ‘2026 서울 패션 런웨이’…130여 모....",
+   "link": "https://blog.naver.com/kty7156/224390895734",
+   "date": "2026-08-26",
+   "source": "뉴스인 NEWSIN",
+   "kind": "블로그",
+   "tags": [
+    "DDP",
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[종로 쇼핑 코스 추천] 안녕인사동·광장시장부터 동대문 패션타운....",
+   "link": "https://blog.naver.com/littleprince04_/224390752585",
+   "date": "2026-08-26",
+   "source": "어린왕자님의블로그",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광",
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 중구유사강간죄변호사 유사강간 혐의 철저한 방어 전략",
+   "link": "https://blog.naver.com/uxmake/224390742547",
+   "date": "2026-08-26",
+   "source": "법무법인 에이시스",
+   "kind": "블로그",
+   "tags": [
+    "인근상권",
+    "패션",
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "꿈을 향한 열정, DDP 런웨이에서 꽃피우다… ‘2026 서울 패션 런웨이....",
+   "link": "https://blog.naver.com/hosunews/224390628800",
+   "date": "2026-08-26",
+   "source": "호수뉴스",
+   "kind": "블로그",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "K-뷰티부터 패션·공연·힐링까지, '뷰티풀라이프인서울' 방문기",
+   "link": "https://blog.naver.com/120seoulcall/224390615742",
+   "date": "2026-08-26",
+   "source": "서울시 120다산콜재단 공식 블로그",
+   "kind": "블로그",
+   "tags": [
+    "DDP",
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "신상 대박을 위한 2026 FW 패션 가이드 및 맞춤형 재고 관리법",
+   "link": "https://blog.naver.com/ssajugo/224390594246",
+   "date": "2026-08-26",
+   "source": "3PL SSAJUGO 싸주고",
+   "kind": "블로그",
+   "tags": [
+    "도매시장",
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 중구성폭행전문변호사 성폭행 피소 초기 경찰 출석 동행",
+   "link": "https://blog.naver.com/uxmake/224390489574",
+   "date": "2026-08-26",
+   "source": "법무법인 에이시스",
+   "kind": "블로그",
+   "tags": [
+    "인근상권",
+    "패션",
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "비만 치료제 열풍, 건기식으로 번졌다…제약바이오, 개별 인정형 원료 ...",
+   "link": "https://daily.hankooki.com/news/articleView.html?idxno=1399412",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "DDP",
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[동대문 데이트/DDP 전시] 키크니 특별전 막차 관람 후기  비 오는 날 ....",
+   "link": "https://blog.naver.com/jjyyun1503/224391403373",
+   "date": "2026-08-26",
+   "source": "나의 기록 보관함 : 천천히 채우는 중",
+   "kind": "블로그",
+   "tags": [
+    "DDP"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "DDP에 152개 기업, 48개국 바이어가 모였다 — 2026 서울뷰티위크가 증....",
+   "link": "https://blog.naver.com/ydihgroup/224391324525",
+   "date": "2026-08-26",
+   "source": "와이디그룹 공식 블로그",
+   "kind": "블로그",
+   "tags": [
+    "DDP",
+    "기업/산업",
+    "외국인"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문 DDP 키크니 전시회 후기 | 무료 주차 5시간 꿀팁 & 낙산공원 주....",
+   "link": "https://blog.naver.com/losoyoungve/224391197066",
+   "date": "2026-08-26",
+   "source": "쏘이의 기록 ☽︎︎꙳",
+   "kind": "블로그",
+   "tags": [
+    "DDP"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "필로디, DDP서 글로벌 바이어 만난다…15개국 넘어 K-뷰티 수출 확대",
+   "link": "https://blog.naver.com/jae12yam/224391152935",
+   "date": "2026-08-26",
+   "source": "☆ 그냥 저냥 ☆",
+   "kind": "블로그",
+   "tags": [
+    "DDP",
+    "기업/산업"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "DDP 런더핏 후기! FILA 러닝 서밋 전시부터 실전 런닝 기록까지 (AI러닝....",
+   "link": "https://blog.naver.com/lovingyou946-/224391024252",
+   "date": "2026-08-26",
+   "source": "JO ANNE's Lovely House",
+   "kind": "블로그",
+   "tags": [
+    "DDP"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문에서 다이어트를 시작한 날",
+   "link": "https://blog.naver.com/charls75/224390870623",
+   "date": "2026-08-26",
+   "source": "찰스인테크",
+   "kind": "블로그",
+   "tags": [
+    "DDP"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[아이들과 동대문 나들이] 눈물 콧물 쏙 뺀 키크니 특별전_ 동대문디....",
+   "link": "https://blog.naver.com/feb_29/224390853143",
+   "date": "2026-08-26",
+   "source": "너희와 함께 하는 매일이 여행이다.",
+   "kind": "블로그",
+   "tags": [
+    "DDP",
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "9월 DDP 웨인 티보 전시 기념! 현대카드 M몰 신규 에디션 오픈 (M포인....",
+   "link": "https://blog.naver.com/openedition/224390771851",
+   "date": "2026-08-26",
+   "source": "오픈에디션",
+   "kind": "블로그",
+   "tags": [
+    "DDP"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "DDP 외벽이 거대한 미술관으로, 서울라이트 11일간 무료",
+   "link": "https://blog.naver.com/pixpaper/224387839373",
+   "date": "2026-08-26",
+   "source": "페이퍼루킹",
+   "kind": "블로그",
+   "tags": [
+    "DDP"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[건축법 실무#67]동대문디자인플라자는 왜 건축법을 다 안 지켜도 될....",
+   "link": "https://blog.naver.com/916jyw/224390596396",
+   "date": "2026-08-26",
+   "source": "설계하는 사람",
+   "kind": "블로그",
+   "tags": [
+    "DDP"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[사사건건] ‘용산’ 대신 ‘탄천’ 제안…공급 충분할까?",
+   "link": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8646660&ref=A",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "수도요금 체납만 9억원?… 서울시, 장기체납 집중정리",
+   "link": "https://view.asiae.co.kr/article/2026082615274918523",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "쇼핑/관광",
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "“약국에서 화장품 산다”…더마 열풍에 뷰티 큐레이션 약국 급성장",
+   "link": "https://www.etnews.com/20260826000254",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "쇼핑/관광",
+    "외국인"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "신사업 발굴·판로 개척·수출 지원...홈쇼핑업계, '중기 상생' 보폭 넓...",
+   "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1721713",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[현장] PC방 안에 꾸며진 닌텐도 스위치 공간",
+   "link": "https://www.gamevu.co.kr/news/articleView.html?idxno=60201",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "GK네일 현대시티아울렛 동대문점 동대문 쇼핑과 함께 이용해본 네일....",
+   "link": "https://blog.naver.com/reoni321/224389997197",
+   "date": "2026-08-26",
+   "source": "하늘을 달리다..",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "경기도 교육청 성남도서관 영어 그림책 수업 후기 <K-컬처 잉글리시>",
+   "link": "https://blog.naver.com/jyoon0915/224391251614",
+   "date": "2026-08-26",
+   "source": "드림별의 나누고 싶은 이야기",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광",
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문_쇼핑_삼성마네킹_행어",
+   "link": "https://blog.naver.com/kto166313/224391229144",
+   "date": "2026-08-26",
+   "source": "Asset & Tax Lab",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[내돈내산] 동대문 창신동 완구거리 투어 & 동심쇼핑센터 구경, 치이....",
+   "link": "https://blog.naver.com/roso8513/224391124530",
+   "date": "2026-08-26",
+   "source": "돼니 하우스♥",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광",
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문 쇼핑몰 택배 발송, 주문량 늘어나면 어떻게 해야 할까? 포장....",
+   "link": "https://blog.naver.com/hozzangno1/224390982655",
+   "date": "2026-08-26",
+   "source": "쇼핑몰 창업 동대문 공유오피스 더제이",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[종로꽃시장 식물쇼핑] 작아서 오히려 알찬 ! 꽃 / 식물시장 동대문, ....",
+   "link": "https://blog.naver.com/hohoslo/224390870019",
+   "date": "2026-08-26",
+   "source": "호호슬로",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광",
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문종합시장 영업시간·가는법｜동대문역 9번 출구에서 D동 찾아....",
+   "link": "https://blog.naver.com/kjnavitextile/224390867768",
+   "date": "2026-08-26",
+   "source": "Kjnavi Textile",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광",
+    "원부자재/제조",
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문 현대시티아울렛 쌀국수맛집 까몬, 아이와 먹어본 메뉴와 주....",
+   "link": "https://blog.naver.com/mmmmbin/224390855280",
+   "date": "2026-08-26",
+   "source": "쪼니데이",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광",
+    "외국인"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[내돈내산]동대문 DDP 밥집｜델리커리 동대문DDP점 내돈내산 후기",
+   "link": "https://blog.naver.com/ummallzero/224390799954",
+   "date": "2026-08-26",
+   "source": "다다 블로그",
+   "kind": "블로그",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[내미림의 도시락] \"줄 안 서도 된다\"…동대문 닭한마리, 라면으로 옮겨...",
+   "link": "https://theviewers.co.kr/View.aspx?No=4200348",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[동대문 야경 맛집]서울 DDP 동대문역 맛집 추천 일월의제면소 흥인....",
+   "link": "https://blog.naver.com/worker_c/224391407030",
+   "date": "2026-08-26",
+   "source": "가성비 여행을 추구하는 여행자",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 동대문 쌀국수 맛집 가오관 가성비 좋은 점심식사",
+   "link": "https://blog.naver.com/n2u1_2x/224391377291",
+   "date": "2026-08-26",
+   "source": "❤️둘이서 여기저기 눈누난나❤️",
+   "kind": "블로그",
+   "tags": [
+    "F&B"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문 제기동 한신휴플러스 토탈인테리어 창호 샷시 교체",
+   "link": "https://blog.naver.com/homewindows/224390783179",
+   "date": "2026-08-26",
+   "source": "창문/단열 전문 머물고싶은집",
+   "kind": "블로그",
+   "tags": [
+    "기업/산업"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "2026 '원픽' 우리술 베일 벗었다…472개 제품 중 '베리와인1168CS' 대통령...",
+   "link": "http://www.newsfarm.co.kr/news/articleView.html?idxno=102118",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "외국인"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "K-뷰티 시장 출사표 던진 '닥터크림', 마스크팩 중심 유통망 확대",
+   "link": "https://www.job-post.co.kr/news/articleView.html?idxno=225184",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "외국인"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "막걸리·소주 아니었다…올해 최고 '우리술'은 포도와인",
+   "link": "https://www.edaily.co.kr/News/Read?newsId=03693286645551256&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "외국인"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[호텔가 이모저모] 롯데호텔앤리조트, 외국인 전용 패키지 출시 外",
+   "link": "https://www.slist.kr/news/articleView.html?idxno=761434",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "외국인",
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "정부 주최 우리술 품평회…‘베리와인1168CS’ 대통령상 수상",
+   "link": "https://www.busan.com/view/busan/view.php?code=2026082610371641913",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "외국인"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[르포] ‘서울뷰티위크’ 몰린 해외 바이어들 “K-뷰티, 전세계서 통해...",
+   "link": "https://biz.heraldcorp.com/article/10852248?ref=naver",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "외국인"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 토요코인 동대문1호점 영등포점 조식 주차정보",
+   "link": "https://blog.naver.com/bogoikna/224390889142",
+   "date": "2026-08-26",
+   "source": "맛집 찾아 여기저기",
+   "kind": "블로그",
+   "tags": [
+    "외국인"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "2026-08-24 BTS",
+   "link": "https://blog.naver.com/inmuk/224390751411",
+   "date": "2026-08-26",
+   "source": "사설보존하기",
+   "kind": "블로그",
+   "tags": [
+    "외국인"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[성수역] 동대문엽기떡볶이 성수점",
+   "link": "https://blog.naver.com/double_chocolate/224390735937",
+   "date": "2026-08-26",
+   "source": "소소한 blog",
+   "kind": "블로그",
+   "tags": [
+    "외국인"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "JW메리어트동대문스퀘어서울 타볼로24 뷔페 | 평일런치메뉴 | 창신동....",
+   "link": "https://blog.naver.com/ne-rin/224391353342",
+   "date": "2026-08-26",
+   "source": "노는게 제일 조아",
+   "kind": "블로그",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문 완구거리 아이랑 가보니, 필통 하나 찾다가 반나절 걸린 이....",
+   "link": "https://blog.naver.com/danranfamily/224391335841",
+   "date": "2026-08-26",
+   "source": "단란이네 님의 블로그",
+   "kind": "블로그",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "일상의 기쁨 / 창신동완구거리",
+   "link": "https://blog.naver.com/8406051119/224391151696",
+   "date": "2026-08-26",
+   "source": "일상의 기쁨",
+   "kind": "블로그",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동묘맛집 동묘가라지 산봉우리피자·봉골레파스타 수제맥주 후기",
+   "link": "https://blog.naver.com/hara2005/224390917839",
+   "date": "2026-08-26",
+   "source": "라라의 별별리뷰",
+   "kind": "블로그",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "아이와 함께 추억 만들기! 없는 게 없는 동대문 문구완구거리 득템 ....",
+   "link": "https://blog.naver.com/showmegoods/224390346454",
+   "date": "2026-08-26",
+   "source": "showmegoods님의 블로그",
+   "kind": "블로그",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문역 24시간 한식 노포맛집 추천메뉴, 솔직후기[유정식당]",
+   "link": "https://blog.naver.com/xuaniilsang/224390554218",
+   "date": "2026-08-26",
+   "source": "보물섬",
+   "kind": "블로그",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "말랑이 왁뿌 키캡 슬랑이 성지동대문 문구완구거리 ✏️ 종류/분위....",
+   "link": "https://blog.naver.com/lovely-wife/224390551579",
+   "date": "2026-08-26",
+   "source": "다둥이맘with쉬운살림",
+   "kind": "블로그",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동묘 말랑이 동대문 창신동 문구거리 내돈내산 저렴한 점심 맛집 빵....",
+   "link": "https://blog.naver.com/ss_124/224390537054",
+   "date": "2026-08-26",
+   "source": "인프제의 일상 블로그",
+   "kind": "블로그",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문 시장 맛집 창신동매운족발｜반반족발 주먹밥 조합 내돈내산....",
+   "link": "https://blog.naver.com/yon0v0/224391090361",
+   "date": "2026-08-26",
+   "source": "별이 내리는 잠 못 이루는 밤에",
+   "kind": "블로그",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "#2 콩국수 먹고 도넛 사고 장난감 구경한 서울 한 바퀴｜하계동 → ....",
+   "link": "https://blog.naver.com/wynterbit/224390949154",
+   "date": "2026-08-26",
+   "source": "WYNTERLOG",
+   "kind": "블로그",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "국립어린이과학관 주차 예약 빛놀이터 천체투영관 방문 후기❤️",
+   "link": "https://blog.naver.com/morningapple6/224390869273",
+   "date": "2026-08-26",
+   "source": "셍로그, 행복은 지금 여기에.",
+   "kind": "블로그",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동묘 완구거리 말랑이 투어 아이와 주말 방문 후기부터 구경 꿀팁까....",
+   "link": "https://blog.naver.com/shr11130/224390748750",
+   "date": "2026-08-26",
+   "source": "주간득템 매주 만나는 알뜰 쇼핑과 맛집, 나들이",
+   "kind": "블로그",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동묘 완구거리 주차장 및 공영주차장 요금 꿀팁: 성동공고 vs 동묘주....",
+   "link": "https://blog.naver.com/nomadbro9/224390649078",
+   "date": "2026-08-26",
+   "source": "노마드브로스의 슬기로운 여가생활",
+   "kind": "블로그",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "아이랑 단둘이 지하철타고 데이트 - 고속터미널 가볼만한곳 빛의정....",
+   "link": "https://blog.naver.com/dearttoli/224391254522",
+   "date": "2026-08-26",
+   "source": "▶똘이와 함께하는 모든순간◀",
+   "kind": "블로그",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문종합시장 5층 악세사리상가 주말오후 아이와 함께 자가용으....",
+   "link": "https://blog.naver.com/yiinfo/224390708034",
+   "date": "2026-08-26",
+   "source": "침착이의 일상다반사",
+   "kind": "블로그",
+   "tags": [
+    "완구/트렌드",
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문 파라코드 32사 4mm 키링 매듭 컬러끈 의류부자재 경기상사",
+   "link": "https://blog.naver.com/kyungkisangsa/224389707943",
+   "date": "2026-08-26",
+   "source": "경기상사 의류부자재/끈/벨크로/탄성로프/금속철팁",
+   "kind": "블로그",
+   "tags": [
+    "완구/트렌드",
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[소비자가 뽑은 참 좋은 브랜드-CJ대한통운] 주 7일 '매일오네'로 배송 ...",
+   "link": "http://www.consumernews.co.kr/news/articleView.html?idxno=762392",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "코맥스 7개월 시험대…경동나비엔, 스마트홈 전략 갈림길",
+   "link": "https://www.sentv.co.kr/article/view/sentv202608260117",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "'예쁘다' 신라호텔 기프트, 로코노미 프리미엄화",
+   "link": "http://www.sportsq.co.kr/news/articleView.html?idxno=497879",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "보일러업계 '게임 체인저' 히트펌프 시장 공략 사활",
+   "link": "https://www.newspim.com/news/view/20260826000779",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "李정부 히트펌프 판 키우자…삼성·LG도 ‘발맞춰 뛴다’",
+   "link": "https://www.ekn.kr/web/view.php?key=20260826026226633",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "청량리 시그니처, 전농동에 556세대 공급… 59~84㎡ 중소형 중심 구성",
+   "link": "https://www.dt.co.kr/article/12080274?ref=naver",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "260826",
+   "link": "https://blog.naver.com/happyaluminium/224391367305",
+   "date": "2026-08-26",
+   "source": "알고",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울한방진흥센터",
+   "link": "https://blog.naver.com/dotaesook59/224391358735",
+   "date": "2026-08-26",
+   "source": "소풍같은 인생",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "남자어르신께서 위장이 약하다며 옻닭을 드신다고 합니다.",
+   "link": "https://blog.naver.com/yoyangteacher/224391240292",
+   "date": "2026-08-26",
+   "source": "행복한사람",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "시판사골곰탕. 순대내장으로  만든  뚝딱 순대국",
+   "link": "https://blog.naver.com/k196406/224391171534",
+   "date": "2026-08-26",
+   "source": "토토맘아내 엄마가 아닌 나를 찾아가는 나당당일상",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "경동시장목통증한의원 추나치료 굳어진 근육을 부드럽게 이완하기",
+   "link": "https://blog.naver.com/uamstore/224391168477",
+   "date": "2026-08-26",
+   "source": "uamstore님의 블로그",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[청량리 경동시장 맛집]좋은 한우는 칼질에서 갈립니다",
+   "link": "https://blog.naver.com/wodnrl90/224381662250",
+   "date": "2026-08-26",
+   "source": "왕도숯불갈비",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "청량리 안동집 국시 국수",
+   "link": "https://blog.naver.com/araua/224391061037",
+   "date": "2026-08-26",
+   "source": "회기주짓수 Just Jiu Jitsu",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 재래시장  경동시장 견과류 사러 갔다가 장보기까지 제대로 서....",
+   "link": "https://blog.naver.com/chfhrqoa53/224391018657",
+   "date": "2026-08-26",
+   "source": "빨간우산의 오늘 하루",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "종로5가 부산횟집 회덮밥 내돈내산 후기 — 세운상가 골목 노포 점....",
+   "link": "https://blog.naver.com/hardball61/224390737976",
+   "date": "2026-08-26",
+   "source": "찬호만세의 알뜰한 생활",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "BTS 정국 생일, LA·일본·서울서 글로벌 팬 서포트 물결",
+   "link": "https://www.topstarnews.net/news/articleView.html?idxno=16174599",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "을지로·명동 출퇴근 5분 …풀옵션 투룸 최소 4주부터 단기 계약",
+   "link": "https://realty.chosun.com/site/data/html_dir/2026/08/26/2026082602719.html",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권",
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[금융계 7월 동향] 우리금융, 생산적·포용금융 본격 가동···사회적 가...",
+   "link": "http://www.wsobi.com/news/articleView.html?idxno=317052",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "을지로 백골뱅이탕, 방송 소개를 계기로 본 메뉴의 역사·조리법·영....",
+   "link": "https://blog.naver.com/miscknow_on/224391230940",
+   "date": "2026-08-26",
+   "source": "잡지식",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[오늘N 명동 게장맛집] 서울 중구 함초간장게장 명동역 을지로입구....",
+   "link": "https://blog.naver.com/syooo222/224390588693",
+   "date": "2026-08-26",
+   "source": "아주 보통의 하루დ 맛집",
+   "kind": "블로그",
+   "tags": [
+    "인근상권",
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 중구음주운전2회변호사 상습 음주운전 방어 위한 변호인 입회",
+   "link": "https://blog.naver.com/uxmake/224390530433",
+   "date": "2026-08-26",
+   "source": "법무법인 에이시스",
+   "kind": "블로그",
+   "tags": [
+    "인근상권",
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "신당동맛집 국수에 취하맨 100% 제주 돼지고기로 만든 깔끔하고 진한....",
+   "link": "https://blog.naver.com/siljidang/224391390508",
+   "date": "2026-08-26",
+   "source": "실지당 : 실행하자 지금 당장",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "신당역 맛집 직화장인 신당본점｜직접 구워주는 힙당동 고기집(자....",
+   "link": "https://blog.naver.com/mjk409/224391011955",
+   "date": "2026-08-26",
+   "source": "오늘의 우리",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[신당맛집]불향 가득 품은 극강의 매운맛으로 입소문 난 ‘짚뿔닭발....",
+   "link": "https://blog.naver.com/coca7575/224390578465",
+   "date": "2026-08-26",
+   "source": "세상은 넓고 갈 시간이 부족하네",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[패션·잡화 트렌드] 뷰오리, 배우 정채연과 함께한 9월호 화보 공개 外",
+   "link": "https://www.ibabynews.com/news/articleView.html?idxno=154010",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[게임스컴 2026] 데브인리밋 정규민 대표 “아케이드 시장으로 K-POP 체험...",
+   "link": "https://game.donga.com/123989/",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "K뷰티, 히트상품으로 내수시장도 잡는다",
+   "link": "https://www.meconomynews.com/news/articleView.html?idxno=200915",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "외국인 손님 70% 달하자…롯데호텔, 교통부터 쇼핑까지 ‘원스톱’ 혜택",
+   "link": "https://www.mk.co.kr/article/12137160",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "미술 거장부터 K-POP 신인까지… 신세계, '쇼핑 그 이상의 공간' 만든다",
+   "link": "https://www.newscj.com/news/articleView.html?idxno=3427911",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "옛 '인천의 명동' 신포동, 다시 살아날까…원도심에 부는 재생 바람",
+   "link": "https://www.ngonews.kr/news/articleView.html?idxno=236406",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "\"고객의 시간을 잡아라\"…신세계그룹, '프리즈 서울'에 예술 공간 확장",
+   "link": "https://www.peoplewatch.co.kr/article/view/ppw202608260009",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "한국의 멋 담았다…롯데호텔앤리조트, 외국인 대상 '트래블 패스' 패키...",
+   "link": "http://www.yonhapnewstv.co.kr/news/AKR202608261804359ec",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "롯데호텔, 투숙객 10명 중 7명이 외국인…교통·쇼핑·관광 묶어 'K여행...",
+   "link": "https://www.joongangenews.com/news/articleView.html?idxno=542800",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[2금융 뉴스브리핑] 농협 NH콕뱅크 가입자 1400만명 돌파",
+   "link": "https://www.asiatime.co.kr/article/20260826500410",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "외국인 소비 살아나자 서울 상권도 회복...평균 공실률 8.5%",
+   "link": "https://www.m-economynews.com/news/article.html?no=70132",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권",
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "‘강달러’에 外관광객 지갑 열자 명동거리 공실률 ‘뚝’",
+   "link": "https://www.edaily.co.kr/News/Read?newsId=04257446645551256&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[서울] 명동보쌈 명동밥집, 양재옥 롯데백화점 본점",
+   "link": "https://blog.naver.com/mandarany_/224391329241",
+   "date": "2026-08-26",
+   "source": "데일리 시온",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[서울] 명동 신상 디저트 명동 대형카페, 유요거트 명동본점",
+   "link": "https://blog.naver.com/mandarany_/224391316576",
+   "date": "2026-08-26",
+   "source": "데일리 시온",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[0260531 나홀로 도쿄②] 하라주쿠, 오모테산도, 시부야",
+   "link": "https://blog.naver.com/boogiepop721/224391297553",
+   "date": "2026-08-26",
+   "source": "일상기록",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "명동 Sunshine Guesthouse 숙박 후기, 활기 넘치는 명동 중심부에서 만난 ....",
+   "link": "https://blog.naver.com/rest_archive/224378979145",
+   "date": "2026-08-26",
+   "source": "베개여행",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 호텔 추천 2곳 명동과 시청 근처 시티뷰 숙소",
+   "link": "https://blog.naver.com/hcool8/224391218626",
+   "date": "2026-08-26",
+   "source": "주의은총",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "ZARA 자라 가을 신상 명동 옷쇼핑하기 좋은 곳",
+   "link": "https://blog.naver.com/eblovebr0915/224391190668",
+   "date": "2026-08-26",
+   "source": "빛나는 하루의 정리",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "LV 더 플레이스 서울 - 신세계백화점 본점 더리저브 루이비통 매장 (....",
+   "link": "https://blog.naver.com/lina_mhyg/224391157254",
+   "date": "2026-08-26",
+   "source": "리나의 문화여정(MHYG)",
+   "kind": "블로그",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[단단+부동산] 을지로7가 APM플레이스 오피스텔 1동 40/23㎡ 매매(11/12....",
+   "link": "https://blog.naver.com/police6952/224391108345",
+   "date": "2026-08-26",
+   "source": "단단+(02-744-8249)공인중개사사무소",
+   "kind": "블로그",
+   "tags": [
+    "도매시장"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "‘Beyond Visuals’ 헤럴드디자인라운지 2026 개최",
+   "link": "https://biz.heraldcorp.com/article/10852801?ref=naver",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[if.interview] 'K-컬처 다음은 K-스포츠'...데이터로 미래를 그리는 '플...",
+   "link": "https://www.fourfourtwo.co.kr/news/articleView.html?idxno=96938",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "원부자재/제조",
+    "패션"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[오늘의 주요일정] 정치·정부 (27일, 목)",
+   "link": "http://www.queen.co.kr/news/articleView.html?idxno=462325",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문엽기떡볶이 ㅣ 요즘 푹 빠진 ‘로제떡볶이 착한맛’ 내돈내....",
+   "link": "https://blog.naver.com/yuyudaily/224390815671",
+   "date": "2026-08-26",
+   "source": "유유일상 ღ",
+   "kind": "블로그",
+   "tags": [
+    "기업/산업"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "최화정 픽, 동대문종합시장 B동 유럽 빈티지 패브릭 맛집 <닷하우스8....",
+   "link": "https://blog.naver.com/yiinfo/224391204046",
+   "date": "2026-08-26",
+   "source": "침착이의 일상다반사",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "요즘 왜 다들 동대문종합시장 다시 갈까?? 최화정 우래옥부터 빈티....",
+   "link": "https://blog.naver.com/ms_choice/224391123211",
+   "date": "2026-08-26",
+   "source": "요즘 왜, 이게 좋을까?",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "다이어리 북커버 만들기 _미싱",
+   "link": "https://blog.naver.com/smartmary/224391021698",
+   "date": "2026-08-26",
+   "source": "sese_diary",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "최화정 동대문 종합시장 가방 만든 매장 닷하우스 방문 가이드 및 ....",
+   "link": "https://blog.naver.com/hwshhw/224390697175",
+   "date": "2026-08-26",
+   "source": "올리브의 슬기로운 정보 생활",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "간절기 골프 조끼 준비한 동대문기능성원단 UV차단원단 속건원단 아....",
+   "link": "https://blog.naver.com/cherrytok119/224390672061",
+   "date": "2026-08-26",
+   "source": "달콤한 체리씨",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "소창 행주로 주방을 깔끔하게! 추천 제품 모음",
+   "link": "https://blog.naver.com/q165eh0utigbug1kx/224390671667",
+   "date": "2026-08-26",
+   "source": "쇼핑하우스",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문시장에서 원단을 찾고 계신다면? 공주상회",
+   "link": "https://blog.naver.com/ekkom/224390646664",
+   "date": "2026-08-26",
+   "source": "공주상회 ::: 원단 전문 가게 :::",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "가을 바람막이 샘플 만든 동대문기능성원단 UV차단원단 속건원단 아....",
+   "link": "https://blog.naver.com/doramian/224390645636",
+   "date": "2026-08-26",
+   "source": "반딧불최콩이",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "래미안 도곡 카운티 입주 커튼, 공간마다 다르게 완성한 맞춤 인테....",
+   "link": "https://blog.naver.com/ehdeoans55/224390640815",
+   "date": "2026-08-26",
+   "source": "동대문커텐 동대문블라인드 GJ텍스타일",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "의자 방석 만들기",
+   "link": "https://blog.naver.com/ylang0ylang/224390518026",
+   "date": "2026-08-26",
+   "source": "ylang0ylang의 블로그",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 동대문구 전농로 빌라 지하1~2층 곰방",
+   "link": "https://blog.naver.com/kiss0667/224391099733",
+   "date": "2026-08-26",
+   "source": "이프로 곰방양중님의 블로그",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문종합시장 부자재상가 근처 맛집 새마을식당 동대문점 후기",
+   "link": "https://blog.naver.com/thsqkfcjdruf/224390931711",
+   "date": "2026-08-26",
+   "source": "조금은내멋대로",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "\"부랴부랴 집 팔았는데, 어쩌라고\"…서울 집주인들 '대혼란' [시장톡]",
+   "link": "https://www.hankyung.com/article/2026082631556",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "원부자재/제조",
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "욕조-고시원부터 세제까지…내놨다 뒤집는 주거정책에 청년 신뢰 '흔들...",
+   "link": "https://www.newspim.com/news/view/20260826000919",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "원부자재/제조",
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "임대주택사업 관심 많다던 KKR, 서울 3개 자산 통매각... ‘세금’이 발...",
+   "link": "https://biz.chosun.com/stock/market_trend/2026/08/27/3RPZCTIYHRCTDA3TBQKVWQTUAY/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "원부자재/제조",
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "윤판오 서울 중구의회 의장 “이름보다 시스템 남기겠다…권한 갖고 제...",
+   "link": "https://www.asiatoday.co.kr/kn/view.php?key=20260826001723055",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "원부자재/제조",
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "고객 니즈 발빠른 실천…변화 이끄는 기업의 힘",
+   "link": "https://www.hankyung.com/article/2026082631961",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "“서울시청에서 체력 측정하세요”…손목닥터9988 1000 포인트 지급",
+   "link": "https://www.edaily.co.kr/News/Read?newsId=03404646645551256&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "새롭게 단장한 니트채널에 다녀왔어요",
+   "link": "https://blog.naver.com/kiti0126/224391250764",
+   "date": "2026-08-26",
+   "source": "Lovely Knitter",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "임산부의 동대문 꼬마방 주말/공휴일 방문기!",
+   "link": "https://blog.naver.com/dairyfairyyoyo/224391045754",
+   "date": "2026-08-26",
+   "source": "멋쟁이블로그",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[공릉풍림아이원] 따뜻 분위기와 정돈된 느낌의 커튼인테리어 _ 동....",
+   "link": "https://blog.naver.com/gyerim_curtain/224391013603",
+   "date": "2026-08-26",
+   "source": "계림커텐(gyerim_curtain)",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문 꼬마방 가격인상 이후 8월 방문•구매후기 | 쎄실상사에서 ....",
+   "link": "https://blog.naver.com/k_iiiiiim/224391012241",
+   "date": "2026-08-26",
+   "source": "D_log ٩(๑❛ᴗ❛๑)۶",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "종로온누리상품권약국 동대문 제신약국 ft.루테인 아스타잔틴 영양....",
+   "link": "https://blog.naver.com/papayaslush/224390822799",
+   "date": "2026-08-26",
+   "source": "blue and yellow",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문 커튼시장 하늘장식 린넨커튼 암막커튼 블라인드 가격 내돈....",
+   "link": "https://blog.naver.com/tpfk8382/224390775587",
+   "date": "2026-08-26",
+   "source": "쎌델리",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[서울 종로] 동대문 카페 추천 이스트만 흥인지문 뷰 (feat.밤엔 술집....",
+   "link": "https://blog.naver.com/mimic_copynote/224390753696",
+   "date": "2026-08-26",
+   "source": "미믹의 카피노트",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "아이와 함께 보물찾기! 동대문종합시장 액세서리상가에서 특별한 ....",
+   "link": "https://blog.naver.com/showmegoods/224390344825",
+   "date": "2026-08-26",
+   "source": "showmegoods님의 블로그",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문종합시장 맛집 추억의 야채빵 아침간식부터 서울돈까스 점심....",
+   "link": "https://blog.naver.com/vivnalee/224389824706",
+   "date": "2026-08-26",
+   "source": "연희동 나나의 여행 이야기",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문 종합시장 볼꾸 / 거꾸 평일 방문 후기",
+   "link": "https://blog.naver.com/parublog/224390531069",
+   "date": "2026-08-26",
+   "source": "paru 's blog",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 창신동 봉제공장 임가공업체 - 여성의류 아름패션",
+   "link": "https://blog.naver.com/rivi_221201/224390868289",
+   "date": "2026-08-26",
+   "source": "여성의류 브랜드 리비(RIVI)",
+   "kind": "블로그",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "새벽에 불나면 속수무책?…‘고질병’ 화재 위험 여전한 전통시장",
+   "link": "https://www.kukinews.com/article/view/kuk202608260133",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "상인/단체"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[오늘의 주요일정]사회(8월27일 목요일)",
+   "link": "https://www.newsis.com/view/NISX20260826_0003764255",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "상인/단체"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "유찬종 종로구청장 \"세운4구역 정비사업 TF 꾸려 유산 보존과 도심 개발...",
+   "link": "https://www.hankookilbo.com/news/article/A2026082615490002193?did=NA",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "윤선희 서울시의원 “역사·문화 지키면서 주민 재산권·주거환경도 보...",
+   "link": "https://www.kmib.co.kr/article/view.asp?arcid=9000006375&cp=nv",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "'백범의 소원'을 되새기다",
+   "link": "https://www.kidshankook.kr/news/articleView.html?idxno=18071",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "인사동",
+   "link": "https://blog.naver.com/vallva/224391294863",
+   "date": "2026-08-26",
+   "source": "절곡툴",
+   "kind": "블로그",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "70억~ 종로구 충신동 1호선 종로5가역 역세권 꼬마빌딩 매매 ~ 4차선 ....",
+   "link": "https://blog.naver.com/kumkico/224389346624",
+   "date": "2026-08-26",
+   "source": "빌딩연구원",
+   "kind": "블로그",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 종로구 샐러디 양도양수, 월매출 4,100만 고매출 창업",
+   "link": "https://blog.naver.com/sforce102/224390574238",
+   "date": "2026-08-26",
+   "source": "20년 경력 스마일 창업",
+   "kind": "블로그",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "매출 줄고 빚까지 버겁다면…소상공인 무료 상담 전국서 열린다",
+   "link": "https://biz.sbs.co.kr/article_hub/20000330983?division=NAVER",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울시약사회, 전현희 의원에 국회 계류 약사 현안 법률안 입법 촉구서...",
+   "link": "https://www.pharmnews.com/news/articleView.html?idxno=305867",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "중기부, 전국 14개 지역서 '소상공인 경영위기 극복 상담회'",
+   "link": "https://www.namdonews.com/news/articleView.html?idxno=921249",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "\"여기가 K뷰티 놀이터\" 美 MZ 사로잡은 올리브영",
+   "link": "https://www.mk.co.kr/article/12136858",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[프라임피플] 강철호 부산 동구청장① \"해수부는 시작…북항을 해양산업...",
+   "link": "http://www.newsprime.co.kr/news/article.html?no=745241",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "빚 안고 버티는 소상공인들…정부, 자금·채무·폐업 상담 한자리서 푼...",
+   "link": "https://www.ppss.kr/news/articleView.html?idxno=307389",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "소상공인 68% \"빚 안고 폐업\"…경영 위기 극복 위해 전문가 나선다",
+   "link": "https://www.news1.kr/industry/sb-founded/6269535",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "앳홈 '미닉스', 롯데백화점 본점 입점…“오프라인 유통망 확대”",
+   "link": "https://www.etnews.com/20260826000050",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[광화문 카페 커피] 센터커피 | 시청 블루리본 카페 맛",
+   "link": "https://blog.naver.com/dazzlinggeni/224390672015",
+   "date": "2026-08-26",
+   "source": "다즐링지니 아카이브",
+   "kind": "블로그",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "서울 중구 컴포즈커피, 실제 양도양수 시세와 창업비용은 어느 정도....",
+   "link": "https://blog.naver.com/rladudals505/224390583192",
+   "date": "2026-08-26",
+   "source": "헤럴드창업",
+   "kind": "블로그",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "\"성공보다 시행착오에서 배운다\"…성북구 주민자치회장단, 충주 현장 찾...",
+   "link": "https://www.job-post.co.kr/news/articleView.html?idxno=225137",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[디마일스튜디오]성북구고깃집인테리어_맛을 경험하기 전, 고객은 ....",
+   "link": "https://blog.naver.com/de_mile/224391135802",
+   "date": "2026-08-26",
+   "source": "de_mile님의 블로그",
+   "kind": "블로그",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "'월세 300만 원'에 짓눌린 서울 직장인…월급 33%가 주거비로 샌다",
+   "link": "https://www.thepublic.kr/news/articleView.html?idxno=316255",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "개강이요? 제가요? 왜요? 대학생 '한숨' [이슈크래커]",
+   "link": "https://www.etoday.co.kr/news/view/2618310",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "재개발 8개월 앞당긴다는데···\"우리 구역은 왜 그대로\"",
+   "link": "https://www.sisajournal-e.com/news/articleView.html?idxno=423310",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "‘20억 이하 매물’ 쏠림 조짐…비거주1주택 세 부담 완화 영향",
+   "link": "https://www.munhwa.com/article/11612237?ref=naver",
+   "date": "2026-08-26",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문부동산변호사 부동산 분쟁 해결과 주의사항",
+   "link": "https://blog.naver.com/fdjk05612/224390994997",
+   "date": "2026-08-26",
+   "source": "매일로펌 부동산팀",
+   "kind": "블로그",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "100% 순면 포켓 난방 셔츠 #여성의류 #줌마 #난방 #동대문고급의류도매 #동평화 #의류제작 #동대문 #의류도매 #자체제작 #미시 #미시룩",
+   "link": "https://www.youtube.com/watch?v=DuAoS2V6KKI",
+   "date": "2026-08-26",
+   "source": "루루",
+   "kind": "영상",
+   "tags": [
+    "패션"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/DuAoS2V6KKI/hqdefault.jpg"
+  },
+  {
+   "title": "📣8/26일 방송  주문폭주 상품 자세한설명 라이브방송  참고하세요 #빅사이즈 #40대50대60대여성의류 #중년여성패션코디 #동대문여성의류도매 #큰옷 #광저우도매 #옷잘입는중년",
+   "link": "https://www.youtube.com/watch?v=_VYuoVsYdS0",
+   "date": "2026-08-26",
+   "source": "엠디스타일",
+   "kind": "영상",
+   "tags": [
+    "패션"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/_VYuoVsYdS0/hqdefault.jpg"
+  },
+  {
+   "title": "호랑이상점 동대문의류판매방송 본계정 라이브 스트리밍 중",
+   "link": "https://www.youtube.com/watch?v=CU5L6ugIj0g",
+   "date": "2026-08-26",
+   "source": "호랑이상점 동대문의류판매방송 본계정",
+   "kind": "영상",
+   "tags": [
+    "패션"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/CU5L6ugIj0g/hqdefault.jpg"
+  },
+  {
+   "title": "호랑이상점 동대문의류판매방송 본계정 라이브 스트리밍 중",
+   "link": "https://www.youtube.com/watch?v=cuJRDWc1w2c",
+   "date": "2026-08-26",
+   "source": "호랑이상점 동대문의류판매방송 본계정",
+   "kind": "영상",
+   "tags": [
+    "패션"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/cuJRDWc1w2c/hqdefault.jpg"
+  },
+  {
+   "title": "햇살 언니8월 26일#가을패션 #바바리  #동대문의류 #패션 #30대패션 #40대패션 #50대패션 #패피 #가을코디#의류라방#신상추천 #원피스 #블라우스추천 #데일리룩 #체형커버",
+   "link": "https://www.youtube.com/watch?v=oQgm90FDXOU",
+   "date": "2026-08-26",
+   "source": "햇살언니 처럼",
+   "kind": "영상",
+   "tags": [
+    "패션"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/oQgm90FDXOU/hqdefault.jpg"
+  },
+  {
+   "title": "[💃8/26] 옷 잘 입는 여자들의 채널 다드레스✨ #가을신상 #40대패션 #50대패션",
+   "link": "https://www.youtube.com/watch?v=7lkX9x-YlhU",
+   "date": "2026-08-26",
+   "source": "다드레스",
+   "kind": "영상",
+   "tags": [
+    "패션"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/7lkX9x-YlhU/hqdefault.jpg"
+  },
+  {
+   "title": "❤️동대문옷❤️현장라이브❤️(8/26-2",
+   "link": "https://www.youtube.com/watch?v=KByhyJPMsuo",
+   "date": "2026-08-26",
+   "source": "에이봉봉마켓",
+   "kind": "영상",
+   "tags": [
+    "패션"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/KByhyJPMsuo/hqdefault.jpg"
+  },
+  {
+   "title": "Seoul Fashion Haul | 2nd hand designer shopping (Chanel, Prada & mere) + lokale brands | TRY ON!",
+   "link": "https://www.youtube.com/watch?v=cuMZECTPvco",
+   "date": "2026-08-26",
+   "source": "Cecilia Demant",
+   "kind": "영상",
+   "tags": [
+    "쇼핑/관광",
+    "인근상권",
+    "패션"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/cuMZECTPvco/hqdefault.jpg"
+  },
+  {
+   "title": "8월26일 수요일 2부  바이브 카결 무료배송 #동대문도매시장 #여름신상#3040 #5060 #미시의류 #중년여성의류#플리츠도매",
+   "link": "https://www.youtube.com/watch?v=Yhzzfngljec",
+   "date": "2026-08-26",
+   "source": "서비쌤",
+   "kind": "영상",
+   "tags": [
+    "도매시장"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/Yhzzfngljec/hqdefault.jpg"
+  },
+  {
+   "title": "8월26일 가을 옷장 준비끝? 동대문 도매시장 신상 대공개!",
+   "link": "https://www.youtube.com/watch?v=Q2pXXoWaoiA",
+   "date": "2026-08-26",
+   "source": "루마레",
+   "kind": "영상",
+   "tags": [
+    "도매시장",
+    "원부자재/제조"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/Q2pXXoWaoiA/hqdefault.jpg"
+  },
+  {
+   "title": "[2026 FW] 동대문 사장님 필수 시청! 중국 핑후 패딩 도매시장 핫한 매장 QR 공개 & 최저가 물류 대행 #shorts",
+   "link": "https://www.youtube.com/watch?v=ubVeHqDTvaY",
+   "date": "2026-08-26",
+   "source": "광저우고인물 GZOG",
+   "kind": "영상",
+   "tags": [
+    "기업/산업",
+    "도매시장"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/ubVeHqDTvaY/hqdefault.jpg"
+  },
+  {
+   "title": "4만 5천 장이 전부 다른데, 한 장처럼 보이는 DDP 외벽 #shorts",
+   "link": "https://www.youtube.com/watch?v=O0pwr-ld9TE",
+   "date": "2026-08-26",
+   "source": "역사건축 비밀사전",
+   "kind": "영상",
+   "tags": [
+    "DDP"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/O0pwr-ld9TE/hqdefault.jpg"
+  },
+  {
+   "title": "세계가 못한다는 걸 한국 건설사가 해내다. 똑같은 게 하나도 없는 외벽을 어떻게 만들까",
+   "link": "https://www.youtube.com/watch?v=aOOCJrvnnD4",
+   "date": "2026-08-26",
+   "source": "이유 있는 설계",
+   "kind": "영상",
+   "tags": [
+    "DDP"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/aOOCJrvnnD4/hqdefault.jpg"
+  },
+  {
+   "title": "서울실시간 DDP라이브 Live Cam I \"Dongdaemun design Plaza\", Seoul, Korea I 동대문디자인플라자 동대문사입 서울여행명소 동대문가볼만한곳",
+   "link": "https://www.youtube.com/watch?v=XoG5NaGspmM",
+   "date": "2026-08-26",
+   "source": "GiGAeyesliveTV City View",
+   "kind": "영상",
+   "tags": [
+    "DDP",
+    "도매시장"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/XoG5NaGspmM/hqdefault_live.jpg"
+  },
+  {
+   "title": "서울 한복판에 우주선이 내려앉았습니다",
+   "link": "https://www.youtube.com/watch?v=2sl0-A_-ObA",
+   "date": "2026-08-26",
+   "source": "은근히놀라운이야기",
+   "kind": "영상",
+   "tags": [
+    "DDP"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/2sl0-A_-ObA/hqdefault.jpg"
+  },
+  {
+   "title": "100 순면 포켓 난방 #여성의류 #동대문고급의류도매 #동평화 #줌마 #미시룩 #난방 #여성",
+   "link": "https://www.youtube.com/watch?v=vYjXJ6dew1U",
+   "date": "2026-08-26",
+   "source": "루루",
+   "kind": "영상",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/vYjXJ6dew1U/hqdefault.jpg"
+  },
+  {
+   "title": "20260826👚특별할인👚라이브 쇼핑채널",
+   "link": "https://www.youtube.com/watch?v=pc3jCOg-fsI",
+   "date": "2026-08-26",
+   "source": "바로옷장 | 패션라이브",
+   "kind": "영상",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/pc3jCOg-fsI/hqdefault.jpg"
+  },
+  {
+   "title": "평택언니와♡ 동대문가을쇼핑 🍁",
+   "link": "https://www.youtube.com/watch?v=WaWEtmanG4Q",
+   "date": "2026-08-26",
+   "source": "평택언니👚 옷가게",
+   "kind": "영상",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/WaWEtmanG4Q/hqdefault.jpg"
+  },
+  {
+   "title": "이마트 월계점 넉넉하게 쉬었다가 또 쇼핑하세요 #스타필드월계 #스타필드마켓 #스타벅스스타필드마켓",
+   "link": "https://www.youtube.com/watch?v=x5ysPK4t2QQ",
+   "date": "2026-08-26",
+   "source": "빌리브영",
+   "kind": "영상",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/x5ysPK4t2QQ/hqdefault.jpg"
+  },
+  {
+   "title": "빽가게 ;} 동대문   창고대방출...#가격실화 #창고대방출  #가격파괴 #남녀공용 #창고라방 #초초특가방송 #특가쎄일",
+   "link": "https://www.youtube.com/watch?v=sCQS0TbQQBY",
+   "date": "2026-08-26",
+   "source": "빽가게",
+   "kind": "영상",
+   "tags": [
+    "쇼핑/관광"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/sCQS0TbQQBY/hqdefault.jpg"
+  },
+  {
+   "title": "Beautiful Shopping 🛍️ mall in Korea 🇰🇷💜#seoul#southkorea#korea",
+   "link": "https://www.youtube.com/watch?v=VBsCPvcAAL8",
+   "date": "2026-08-26",
+   "source": "Journey Vibes",
+   "kind": "영상",
+   "tags": [
+    "쇼핑/관광",
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/VBsCPvcAAL8/hqdefault.jpg"
+  },
+  {
+   "title": "군자동 주민이 소개하는 요즘 핫한 군자 맛집 top5",
+   "link": "https://www.youtube.com/watch?v=-zRHXQIqwvw",
+   "date": "2026-08-26",
+   "source": "맛집 탐구가 마틴",
+   "kind": "영상",
+   "tags": [
+    "F&B"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/-zRHXQIqwvw/hqdefault.jpg"
+  },
+  {
+   "title": "경동시장에서 소문난 국내산 게장 무한리필",
+   "link": "https://www.youtube.com/watch?v=Pi1uxaEwzSc",
+   "date": "2026-08-26",
+   "source": "청량리 꽃게장집",
+   "kind": "영상",
+   "tags": [
+    "F&B",
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/Pi1uxaEwzSc/hqdefault.jpg"
+  },
+  {
+   "title": "로컬 인정한 동대문 참치맛집 TOP3",
+   "link": "https://www.youtube.com/watch?v=35Zrz74-xMg",
+   "date": "2026-08-26",
+   "source": "동대문 가이드",
+   "kind": "영상",
+   "tags": [
+    "F&B"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/35Zrz74-xMg/hqdefault.jpg"
+  },
+  {
+   "title": "동대문 곱도리탕 맛집 원가 생각 안하는 사장님",
+   "link": "https://www.youtube.com/watch?v=R85hUSzFDTY",
+   "date": "2026-08-26",
+   "source": "77년생 곱도리전골식당 동대문점",
+   "kind": "영상",
+   "tags": [
+    "F&B"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/R85hUSzFDTY/hqdefault.jpg"
+  },
+  {
+   "title": "왁스픽 서울 5대 평양냉면 맛집 투어🍽️서북면옥, 진미평양냉면, 태천면옥, 평양면옥, 우래옥",
+   "link": "https://www.youtube.com/watch?v=FLLQqTm0bh0",
+   "date": "2026-08-26",
+   "source": "혜리가 왁스 [WAX]",
+   "kind": "영상",
+   "tags": [
+    "F&B"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/FLLQqTm0bh0/hqdefault.jpg"
+  },
+  {
+   "title": "강남 찐 커피맛집 모음",
+   "link": "https://www.youtube.com/watch?v=O0TwI4dkgWY",
+   "date": "2026-08-26",
+   "source": "카페핀즈",
+   "kind": "영상",
+   "tags": [
+    "F&B"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/O0TwI4dkgWY/hqdefault.jpg"
+  },
+  {
+   "title": "나혼자 동대문🤟 #shorts #동대문 #뉴뉴 #동대문데이트 #브이로그",
+   "link": "https://www.youtube.com/watch?v=PdAzqZtZ3P8",
+   "date": "2026-08-26",
+   "source": "이마루 マル",
+   "kind": "영상",
+   "tags": [
+    "F&B",
+    "도매시장"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/PdAzqZtZ3P8/hqdefault.jpg"
+  },
+  {
+   "title": "#사대분식 #어린이대공원역맛집 #세종대맛집 #군자동맛집 #어린이대공원맛집 유연석 단골집으로도 유명. 아닌..소세지섞어찌개라는 메뉴가 메인이다 맛있는녀석들도 맛있게 먹고간 집 👍",
+   "link": "https://www.youtube.com/watch?v=irL8uQGLk8Q",
+   "date": "2026-08-26",
+   "source": "미탐장 metamjang",
+   "kind": "영상",
+   "tags": [
+    "F&B"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/irL8uQGLk8Q/hqdefault.jpg"
+  },
+  {
+   "title": "유튜브 최초공개! 장안동 찐 가맥맛집 #노포맛집 #장안동  #야장",
+   "link": "https://www.youtube.com/watch?v=g5vNrlWDxz0",
+   "date": "2026-08-26",
+   "source": "우연히만나다",
+   "kind": "영상",
+   "tags": [
+    "F&B"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/g5vNrlWDxz0/hqdefault.jpg"
+  },
+  {
+   "title": "📍중구 광희동2가 [외국인관광 도시민박업 운영 검토 매물]  #꼬마빌딩 #부동산 #건물매매",
+   "link": "https://www.youtube.com/watch?v=rud1jGJogLs",
+   "date": "2026-08-26",
+   "source": "빌딩온 매물추천",
+   "kind": "영상",
+   "tags": [
+    "외국인"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/rud1jGJogLs/hqdefault.jpg"
+  },
+  {
+   "title": "한국인도 잘 모르는 외국인들의 서울 여행 코스 | 송림수제화",
+   "link": "https://www.youtube.com/watch?v=h_8nfL4fE_4",
+   "date": "2026-08-26",
+   "source": "송림수제화",
+   "kind": "영상",
+   "tags": [
+    "외국인"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/h_8nfL4fE_4/hqdefault.jpg"
+  },
+  {
+   "title": "외국인 고객님 컬러와 컷 영상편집 감솨 #동대문마제스티바버샵",
+   "link": "https://www.youtube.com/watch?v=qfhNw0Z-oBk",
+   "date": "2026-08-26",
+   "source": "머리하는 이건쌤",
+   "kind": "영상",
+   "tags": [
+    "외국인"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/qfhNw0Z-oBk/hqdefault.jpg"
+  },
+  {
+   "title": "동대문 문구,장남감 골목 #동대문 #쇼츠 #하루일상 #장난감 #문구골목 #shorts #서울여행",
+   "link": "https://www.youtube.com/watch?v=eWe5yjgtEyM",
+   "date": "2026-08-26",
+   "source": "오르막언니",
+   "kind": "영상",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/eWe5yjgtEyM/hqdefault.jpg"
+  },
+  {
+   "title": "운명의 말랑이를 찾아서.. 늙크크의 창신동 완구거리 플렉스!",
+   "link": "https://www.youtube.com/watch?v=IWIjHE0HUWI",
+   "date": "2026-08-26",
+   "source": "호비시 Hobbishi Travel",
+   "kind": "영상",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/IWIjHE0HUWI/hqdefault.jpg"
+  },
+  {
+   "title": "8월 26일 동묘 팡파레 말랑이",
+   "link": "https://www.youtube.com/watch?v=8ub11BC6Ejo",
+   "date": "2026-08-26",
+   "source": "우미우미𑁦𐬀𑁦",
+   "kind": "영상",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/8ub11BC6Ejo/hqdefault.jpg"
+  },
+  {
+   "title": "동대문 파라코드 32사 4mm 키링 매듭 컬러끈 의류부자재 경기상사",
+   "link": "https://www.youtube.com/watch?v=-OkKKCYklJg",
+   "date": "2026-08-26",
+   "source": "동대문종합시장 경기상사",
+   "kind": "영상",
+   "tags": [
+    "완구/트렌드",
+    "원부자재/제조"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/-OkKKCYklJg/hqdefault.jpg"
+  },
+  {
+   "title": "소국토 광장시장부터 잠실ㄱㄱ 미션환영 #나는동탁",
+   "link": "https://www.youtube.com/watch?v=MjUwxiM6xb4",
+   "date": "2026-08-26",
+   "source": "나는동탁imdongtak",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/MjUwxiM6xb4/hqdefault.jpg"
+  },
+  {
+   "title": "What foreigners say you MUST eat at Gwangjang Market 🇰🇷",
+   "link": "https://www.youtube.com/watch?v=MJRnIdR2aUE",
+   "date": "2026-08-26",
+   "source": "외국인저장소",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/MJRnIdR2aUE/hqdefault.jpg"
+  },
+  {
+   "title": "광장시장 상인, \"음식 재사용 어디까지 가능할까?\" AI가 내놓은 답은? [특별취재팀 기자의 취재썰]",
+   "link": "https://www.youtube.com/watch?v=cdaJ227Fmxk",
+   "date": "2026-08-26",
+   "source": "채널A News",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/cdaJ227Fmxk/hqdefault.jpg"
+  },
+  {
+   "title": "임대료 제일 싼 재래시장 2층에 스타벅스랑 호스텔이 들어온 이유 (죽은 공간이 돈이 되는 법)",
+   "link": "https://www.youtube.com/watch?v=9q89GuTWfgw",
+   "date": "2026-08-26",
+   "source": "K_stay물결",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/9q89GuTWfgw/hqdefault.jpg"
+  },
+  {
+   "title": "고소한 육회와 꼬마김밥과의 신박한 어울림!종로 광장시장 통큰누이네육회빈대떡.#육회 #꼬마김밥 #빈대떡 #종로 #광장시장 #kfood #koreanfood #seoul #서울맛집",
+   "link": "https://www.youtube.com/watch?v=j28m1z6lpP0",
+   "date": "2026-08-26",
+   "source": "30초먹거리",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/j28m1z6lpP0/hqdefault.jpg"
+  },
+  {
+   "title": "희귀한 돼지부속 안주의 성지",
+   "link": "https://www.youtube.com/watch?v=vwlqj_m79bc",
+   "date": "2026-08-26",
+   "source": "푸디폴리오 FOODIE FOLIO",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/vwlqj_m79bc/hqdefault.jpg"
+  },
+  {
+   "title": "메뉴판 1000원 써놓고 '물값 바가지' 논란  #뉴스A라이브 #채널A",
+   "link": "https://www.youtube.com/watch?v=J0ar7loODLM",
+   "date": "2026-08-26",
+   "source": "채널A News",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/J0ar7loODLM/hqdefault.jpg"
+  },
+  {
+   "title": "쓰레기통 뒤져 꺼낸 얼음컵 재사용한 광장시장 노점",
+   "link": "https://www.youtube.com/watch?v=YDg9vorsjCs",
+   "date": "2026-08-26",
+   "source": "아고라즈 agorazㅣ이슈 브리핑",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/YDg9vorsjCs/hqdefault.jpg"
+  },
+  {
+   "title": "@❤️☀️🇩🇪🇰🇷 일주일에 두번 있는 광장시장 ( Marktplatz in Wiesbaden)👍😁🌸🍎🍓🍆🌶🫑🥦🥕",
+   "link": "https://www.youtube.com/watch?v=eJ8PVFsH-7E",
+   "date": "2026-08-26",
+   "source": "NY서장미꽃",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/eJ8PVFsH-7E/hqdefault.jpg"
+  },
+  {
+   "title": "외국인은 물 1500원 광장시장 물값 논란 채널A #shorts #DLAB #ashorts",
+   "link": "https://www.youtube.com/watch?v=3vO2Ux8pbfo",
+   "date": "2026-08-26",
+   "source": "채널A News",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/3vO2Ux8pbfo/hqdefault.jpg"
+  },
+  {
+   "title": "경동시장   방금 깨진 수박 단돈2천원ㅎ",
+   "link": "https://www.youtube.com/watch?v=IQyZuuCriOI",
+   "date": "2026-08-26",
+   "source": "청춘찐",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/IQyZuuCriOI/hqdefault.jpg"
+  },
+  {
+   "title": "활꽃게 Kg 12,000원,  망고복숭아  박스 만원,  서울에서 이런 가격을",
+   "link": "https://www.youtube.com/watch?v=v0XUEWnpJG8",
+   "date": "2026-08-26",
+   "source": "상원리옹TV",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/v0XUEWnpJG8/hqdefault.jpg"
+  },
+  {
+   "title": "경동시장  마음대로 골라 3팩에 5천원?",
+   "link": "https://www.youtube.com/watch?v=4GGJu8VuMDU",
+   "date": "2026-08-26",
+   "source": "청춘찐",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/4GGJu8VuMDU/hqdefault.jpg"
+  },
+  {
+   "title": "지금이 제철! 경동시장·청량리청과물시장 햇사과·복숭아 시세는? 힐링여행",
+   "link": "https://www.youtube.com/watch?v=xEvE_rN8Ssw",
+   "date": "2026-08-26",
+   "source": "hope 힐링여행",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/xEvE_rN8Ssw/hqdefault.jpg"
+  },
+  {
+   "title": "순대구조대(청량리 경동시장) + 제우스 오만의신 대기방",
+   "link": "https://www.youtube.com/watch?v=dylLQ7tasyc",
+   "date": "2026-08-26",
+   "source": "알제제RJJ",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/dylLQ7tasyc/hqdefault.jpg"
+  },
+  {
+   "title": "2026년 8월 26일",
+   "link": "https://www.youtube.com/watch?v=p5HirZpTeDg",
+   "date": "2026-08-26",
+   "source": "픽인사이드 Peek Inside",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/p5HirZpTeDg/hqdefault.jpg"
+  },
+  {
+   "title": "만약 청계천이 복원되지 않았다면?",
+   "link": "https://www.youtube.com/watch?v=6skiql8GR9A",
+   "date": "2026-08-26",
+   "source": "정비소:정치와비즈니스소식",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/6skiql8GR9A/hqdefault.jpg"
+  },
+  {
+   "title": "청계천 이야기ㅣ사진으로 보는 1880년대부터 현재까지&조선시대 청계천 관리하기",
+   "link": "https://www.youtube.com/watch?v=osXSP4JLWc4",
+   "date": "2026-08-26",
+   "source": "대한여지도 Korean Geographic",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/osXSP4JLWc4/hqdefault.jpg"
+  },
+  {
+   "title": "청계천을 사이에 두고 엇갈린 운면, 세운4구역  vs 5-1-3구역 #세운4구역 #세운5-1-3구역 #세운상가",
+   "link": "https://www.youtube.com/watch?v=dLe4i3duBM4",
+   "date": "2026-08-26",
+   "source": "미소경매",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/dLe4i3duBM4/hqdefault.jpg"
+  },
+  {
+   "title": "브라질 인기 유튜버 모니카 와 남사친이 한국 명동에 첫발을 디딘 순간! 12층 다이소와 K-치킨에 완전히 심쿵해버린 리얼한 반응!",
+   "link": "https://www.youtube.com/watch?v=1SGsVYTpDfI",
+   "date": "2026-08-26",
+   "source": "세상 이야기",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/1SGsVYTpDfI/hqdefault.jpg"
+  },
+  {
+   "title": "#music #lifeisbutadream #seoulnightview",
+   "link": "https://www.youtube.com/watch?v=oRLuQLY01JM",
+   "date": "2026-08-26",
+   "source": "SOLO TRAVEL vlogs",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/oRLuQLY01JM/hqdefault.jpg"
+  },
+  {
+   "title": "[#14 vlog] 남대문시장 │가보고싶었던 꽃시장│말랑이│가메골 만두 │숭례문 파수의식│수학경시대회 마중나가기 │ 가족 브이로그 │엄마의 기록",
+   "link": "https://www.youtube.com/watch?v=Mts2ooSj71Q",
+   "date": "2026-08-26",
+   "source": "혜혜네 hyehyene",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/Mts2ooSj71Q/hqdefault.jpg"
+  },
+  {
+   "title": "나혼자 남대문 쇼핑 🥣✨ 이쁜거 와방많은 액세사리 도매 • 가메골손왕만두 • 호떡 • 그릇 도매상가 쇼핑 • 갈치 골목",
+   "link": "https://www.youtube.com/watch?v=pob3Rpm3yEw",
+   "date": "2026-08-26",
+   "source": "김소보",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/pob3Rpm3yEw/hqdefault.jpg"
+  },
+  {
+   "title": "남대문에서 그릇쇼핑하기🛒",
+   "link": "https://www.youtube.com/watch?v=V33O83g4T3M",
+   "date": "2026-08-26",
+   "source": "지빵",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/V33O83g4T3M/hqdefault.jpg"
+  },
+  {
+   "title": "명동 K-패션 쇼핑의 성지! 반셀✨",
+   "link": "https://www.youtube.com/watch?v=PFwsUvcoTdg",
+   "date": "2026-08-26",
+   "source": "반셀",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/PFwsUvcoTdg/hqdefault.jpg"
+  },
+  {
+   "title": "명동까지 간 이유 외국인들도 줄서서 먹는 부대찌개 #명동맛집 #남기남부대찌개 #명동부대찌개 #명동점심 #명동데이트",
+   "link": "https://www.youtube.com/watch?v=O1T5-_qzSDE",
+   "date": "2026-08-26",
+   "source": "제임스꿍이",
+   "kind": "영상",
+   "tags": [
+    "인근상권"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/O1T5-_qzSDE/hqdefault.jpg"
+  },
+  {
+   "title": "8월 27일 중국 광저우 의류 도매시장 구매대행 신상 358컷",
+   "link": "https://www.youtube.com/watch?v=gSG0AABFBtg",
+   "date": "2026-08-26",
+   "source": "광저우 의류도매시장 구매대행 신상 옷씨 otssi",
+   "kind": "영상",
+   "tags": [
+    "도매시장"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/gSG0AABFBtg/hqdefault.jpg"
+  },
+  {
+   "title": "애슐리 앙쯔깐루 #애슐리 #디저트 #중국 #망고 #자몽 #ashley #mango #dessert #pomelo #sago #yogurt #요거트 #요거트아이스크림 #디저트",
+   "link": "https://www.youtube.com/watch?v=SmCUJgrnJ5I",
+   "date": "2026-08-26",
+   "source": "혜혜",
+   "kind": "영상",
+   "tags": [
+    "기업/산업"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/SmCUJgrnJ5I/hqdefault.jpg"
+  },
+  {
+   "title": "국내산 100% 풍기인견 특가세일?",
+   "link": "https://www.youtube.com/watch?v=OqGZzxF7Ruk",
+   "date": "2026-08-26",
+   "source": "청춘찐",
+   "kind": "영상",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/OqGZzxF7Ruk/hqdefault.jpg"
+  },
+  {
+   "title": "인견이 이렇게 예쁘면 반칙 아닌가?",
+   "link": "https://www.youtube.com/watch?v=J4RhJdN2iC0",
+   "date": "2026-08-26",
+   "source": "청춘찐",
+   "kind": "영상",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/J4RhJdN2iC0/hqdefault.jpg"
+  },
+  {
+   "title": "케주얼한 유명브랜드 티셔츠 너무 싸다",
+   "link": "https://www.youtube.com/watch?v=fdCIVv7moLk",
+   "date": "2026-08-26",
+   "source": "청춘찐",
+   "kind": "영상",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/fdCIVv7moLk/hqdefault.jpg"
+  },
+  {
+   "title": "바람이 솔솔  시원한 인견 스커트가 이가격이라고?",
+   "link": "https://www.youtube.com/watch?v=sKCpdPTY3ww",
+   "date": "2026-08-26",
+   "source": "청춘찐",
+   "kind": "영상",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/sKCpdPTY3ww/hqdefault.jpg"
+  },
+  {
+   "title": "퀄리티 최고의 고급 가디건 너무 싸다",
+   "link": "https://www.youtube.com/watch?v=H38K8Y6AgZ8",
+   "date": "2026-08-26",
+   "source": "청춘찐",
+   "kind": "영상",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/H38K8Y6AgZ8/hqdefault.jpg"
+  },
+  {
+   "title": "오늘의 반짝임✨️ 동대문 데이트 💖 #everb #에버비 #모자클립 #사장로그 #초보사장",
+   "link": "https://www.youtube.com/watch?v=OEgZm8SUdCE",
+   "date": "2026-08-26",
+   "source": "에버비(EVER.B)",
+   "kind": "영상",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/OEgZm8SUdCE/hqdefault.jpg"
+  },
+  {
+   "title": "가을신상  가즈아 ~ 동대문시장 신상 투어라이브         #신상 #특가 #동대문 #라이브방송 #믿고사는왕언니 #득템 #휴가룩",
+   "link": "https://www.youtube.com/watch?v=k1SHex81EfI",
+   "date": "2026-08-26",
+   "source": "믿고사는 왕언니",
+   "kind": "영상",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/k1SHex81EfI/hqdefault.jpg"
+  },
+  {
+   "title": "상미언니 동대문 라이브 방송",
+   "link": "https://www.youtube.com/watch?v=wRd1oCPgXec",
+   "date": "2026-08-26",
+   "source": "상미언니",
+   "kind": "영상",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/wRd1oCPgXec/hqdefault.jpg"
+  },
+  {
+   "title": "메이커 제품이 이렇게 싸다고?",
+   "link": "https://www.youtube.com/watch?v=d3gM_0hDmcM",
+   "date": "2026-08-26",
+   "source": "청춘찐",
+   "kind": "영상",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/d3gM_0hDmcM/hqdefault.jpg"
+  },
+  {
+   "title": "손님이 몰려와도 정신만 차리면 스몰톡도 가능!",
+   "link": "https://www.youtube.com/watch?v=DLaTAxsjEFc",
+   "date": "2026-08-26",
+   "source": "가나상사 CANA : The first miracle in 동대문",
+   "kind": "영상",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/DLaTAxsjEFc/hqdefault.jpg"
+  },
+  {
+   "title": "|8월12일| 🚈서울당일치기 1편 #서울#동대문종합시장#키캡만들기",
+   "link": "https://www.youtube.com/watch?v=rhVzR-JIWms",
+   "date": "2026-08-26",
+   "source": "아기삐야기",
+   "kind": "영상",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/rhVzR-JIWms/hqdefault.jpg"
+  },
+  {
+   "title": "#139 서울시 종로구 누하동 경복궁역 역세권 서촌상권에 위치한 빌딩",
+   "link": "https://www.youtube.com/watch?v=gqTPpr6wBz4",
+   "date": "2026-08-26",
+   "source": "빌딩을보라",
+   "kind": "영상",
+   "tags": [
+    "행정/정책"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/gqTPpr6wBz4/hqdefault.jpg"
+  },
+  {
+   "title": "동대문 아파트 신고가 또 터졌다! 한신·쌍용·신동아 주요 3곳 가격 총정리",
+   "link": "https://www.youtube.com/watch?v=eAtSwLm6IWk",
+   "date": "2026-08-26",
+   "source": "프리미엄관리자",
+   "kind": "영상",
+   "tags": [
+    "행정/정책"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/eAtSwLm6IWk/hqdefault.jpg"
+  },
+  {
    "title": "130여 모델이 수놓은 DDP 런웨이… ‘2026 서울 패션 런웨이’ 성황리 개최",
    "link": "https://www.sisamagazine.co.kr/news/articleView.html?idxno=529038",
    "date": "2026-08-25",
    "source": "시사매거진",
    "kind": "뉴스",
    "tags": [
-    "DDP"
+    "DDP",
+    "패션"
    ],
    "thumbnail": "https://www.bing.com/th?id=ONUT.vwaRr2TxPc7PCRqE02t33A&pid=News",
    "added": "2026-08-26"
@@ -556,12 +6034,181 @@
    "sum_failed": true
   },
   {
+   "title": "2026 서울뷰티위크 무대선 스타트업 9곳은?",
+   "link": "https://startuprecipe.co.kr/archives/5831141",
+   "date": "2026-08-25",
+   "source": "startuprecipe",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-26",
+   "thumbnail": "https://i0.wp.com/startuprecipe.co.kr/wp-content/uploads/2026/08/20260825_BEAUTYWEEK2026-6.jpg?fit=1600%2C1067&ssl=1",
+   "og_checked": true
+  },
+  {
+   "title": "서울디자인재단, 제2회 서울 브랜드 굿즈 공모…210개 선정",
+   "link": "https://www.munhwa.com/article/11612053?ref=naver",
+   "date": "2026-08-25",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "DDP",
+    "패션"
+   ],
+   "added": "2026-08-26",
+   "thumbnail": "https://wimg.munhwa.com/news/cms/2026/08/26/news-p.v1.20260826.fdf4dd73174b4ee097224296a63893fa_R.jpg",
+   "og_checked": true,
+   "sum_failed": true
+  },
+  {
+   "title": "[NC포토] 윤지인, '2026 미스 어스' 축하하러 왔어요",
+   "link": "https://www.nc.press/news/articleView.html?idxno=624700",
+   "date": "2026-08-25",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "DDP",
+    "패션"
+   ],
+   "added": "2026-08-26",
+   "thumbnail": "https://cdn.nc.press/news/photo/202608/624700_855170_5121.jpg",
+   "og_checked": true,
+   "sum_failed": true
+  },
+  {
+   "title": "[fn 이사람] \"위기를 기회로… 교복 넘어 라이프스타일 브랜드 도약\"",
+   "link": "https://www.fnnews.com/news/202608251856286316",
+   "date": "2026-08-25",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "도매시장",
+    "원부자재/제조",
+    "패션"
+   ],
+   "added": "2026-08-26",
+   "thumbnail": "https://image.fnnews.com/resource/media/image/2026/08/25/202608251856299725_e.jpg",
+   "og_checked": true
+  },
+  {
+   "title": "코로나 이전 수준 완전 훌쩍 넘겼다… 한국 관광객 수 1위 찍은 '뜻밖의...",
+   "link": "https://www.wikitree.co.kr/articles/1154790",
+   "date": "2026-08-25",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "상인/단체",
+    "쇼핑/관광",
+    "외국인",
+    "인근상권",
+    "패션",
+    "행정/정책"
+   ],
+   "added": "2026-08-26",
+   "thumbnail": "https://cdnweb01.wikitree.co.kr/webdata/editor/202608/25/img_20260825142341_218b157c.jpg",
+   "og_checked": true
+  },
+  {
+   "title": "오현택 더엔진 대표 \"스쿨룩스 교복에서 벗어나 라이프스타일 브랜드로...",
+   "link": "https://www.fnnews.com/news/202608250834596678",
+   "date": "2026-08-25",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "도매시장",
+    "원부자재/제조",
+    "패션"
+   ],
+   "added": "2026-08-26",
+   "thumbnail": "https://image.fnnews.com/resource/media/image/2026/08/24/202608240903196114_e.jpg",
+   "og_checked": true
+  },
+  {
+   "title": "[유통소식] 갤러리아百, 피아제 '아우라' 국내 첫 선",
+   "link": "http://www.4th.kr/news/articleView.html?idxno=2116830",
+   "date": "2026-08-25",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "F&B",
+    "도매시장",
+    "상인/단체",
+    "쇼핑/관광",
+    "완구/트렌드",
+    "원부자재/제조",
+    "인근상권",
+    "패션",
+    "행정/정책"
+   ],
+   "added": "2026-08-26",
+   "thumbnail": "https://cdn.4th.kr/news/thumbnail/202608/2116830_214667_3410_v150.jpg",
+   "og_checked": true,
+   "sum_failed": true
+  },
+  {
+   "title": "미술부터 패션까지… 가을 유통가 '취향 공략'",
+   "link": "https://www.pressman.kr/news/articleView.html?idxno=103316",
+   "date": "2026-08-25",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-26",
+   "thumbnail": "https://cdn.pressman.kr/news/photo/202608/103316_95215_4249.jpg",
+   "og_checked": true,
+   "sum_failed": true
+  },
+  {
+   "title": "켈리신, 서울패션위크서 '새로운 존재감' 펼친다",
+   "link": "http://www.ktnews.com/news/articleView.html?idxno=147916",
+   "date": "2026-08-25",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "패션"
+   ],
+   "added": "2026-08-26",
+   "thumbnail": "http://www.ktnews.com/news/thumbnail/202608/147916_129072_1111_v150.jpg",
+   "og_checked": true
+  },
+  {
+   "title": "[기자수첩] 1천200만 환호 품은 44년 '야구 성지'…잠실야구장, 그 마지...",
+   "link": "https://www.youthdaily.co.kr/news/article.html?no=225673",
+   "date": "2026-08-25",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "DDP"
+   ],
+   "added": "2026-08-26",
+   "thumbnail": "https://www.youthdaily.co.kr/data/photos/20260835/art_17876380516046_1b8b90.jpg",
+   "og_checked": true
+  },
+  {
+   "title": "[유통가 NOW] 깨끗한나라, 이랜드 킴스클럽, 에이블리, 우아한형제들, N...",
+   "link": "https://www.ekn.kr/web/view.php?key=20260826024236417",
+   "date": "2026-08-25",
+   "source": "네이버",
+   "kind": "뉴스",
+   "tags": [
+    "DDP",
+    "쇼핑/관광"
+   ],
+   "added": "2026-08-26",
+   "thumbnail": "https://www.ekn.kr/mnt/file/202608/news-p.v1.20260825.a38d1e7be4ff43d3a7d61d2d861a5579_R.jpg",
+   "og_checked": true,
+   "sum_failed": true
+  },
+  {
    "title": "추석 호캉스 노보텔 앰배서더 동대문 루프탑 수영장 온수풀 후기",
    "link": "https://blog.naver.com/spirituallife100/224388423224",
    "date": "2026-08-25",
    "source": "소망아빠의 경제이야기",
    "kind": "블로그",
    "tags": [
+    "쇼핑/관광",
     "완구/트렌드",
     "인근상권",
     "패션"
@@ -1008,146 +6655,6 @@
    "og_checked": true
   },
   {
-   "title": "2026 서울뷰티위크 무대선 스타트업 9곳은?",
-   "link": "https://startuprecipe.co.kr/archives/5831141",
-   "date": "2026-08-25",
-   "source": "startuprecipe",
-   "kind": "뉴스",
-   "tags": [
-    "패션"
-   ],
-   "added": "2026-08-26",
-   "thumbnail": "https://i0.wp.com/startuprecipe.co.kr/wp-content/uploads/2026/08/20260825_BEAUTYWEEK2026-6.jpg?fit=1600%2C1067&ssl=1",
-   "og_checked": true
-  },
-  {
-   "title": "서울디자인재단, 제2회 서울 브랜드 굿즈 공모…210개 선정",
-   "link": "https://www.munhwa.com/article/11612053?ref=naver",
-   "date": "2026-08-25",
-   "source": "네이버",
-   "kind": "뉴스",
-   "tags": [
-    "DDP",
-    "패션"
-   ],
-   "added": "2026-08-26",
-   "thumbnail": "https://wimg.munhwa.com/news/cms/2026/08/26/news-p.v1.20260826.fdf4dd73174b4ee097224296a63893fa_R.jpg",
-   "og_checked": true,
-   "sum_failed": true
-  },
-  {
-   "title": "[NC포토] 윤지인, '2026 미스 어스' 축하하러 왔어요",
-   "link": "https://www.nc.press/news/articleView.html?idxno=624700",
-   "date": "2026-08-25",
-   "source": "네이버",
-   "kind": "뉴스",
-   "tags": [
-    "DDP",
-    "패션"
-   ],
-   "added": "2026-08-26",
-   "thumbnail": "https://cdn.nc.press/news/photo/202608/624700_855170_5121.jpg",
-   "og_checked": true,
-   "sum_failed": true
-  },
-  {
-   "title": "[fn 이사람] \"위기를 기회로… 교복 넘어 라이프스타일 브랜드 도약\"",
-   "link": "https://www.fnnews.com/news/202608251856286316",
-   "date": "2026-08-25",
-   "source": "네이버",
-   "kind": "뉴스",
-   "tags": [
-    "도매시장",
-    "원부자재/제조",
-    "패션"
-   ],
-   "added": "2026-08-26",
-   "thumbnail": "https://image.fnnews.com/resource/media/image/2026/08/25/202608251856299725_e.jpg",
-   "og_checked": true
-  },
-  {
-   "title": "코로나 이전 수준 완전 훌쩍 넘겼다… 한국 관광객 수 1위 찍은 '뜻밖의...",
-   "link": "https://www.wikitree.co.kr/articles/1154790",
-   "date": "2026-08-25",
-   "source": "네이버",
-   "kind": "뉴스",
-   "tags": [
-    "상인/단체",
-    "쇼핑/관광",
-    "외국인",
-    "인근상권",
-    "패션",
-    "행정/정책"
-   ],
-   "added": "2026-08-26",
-   "thumbnail": "https://cdnweb01.wikitree.co.kr/webdata/editor/202608/25/img_20260825142341_218b157c.jpg",
-   "og_checked": true
-  },
-  {
-   "title": "오현택 더엔진 대표 \"스쿨룩스 교복에서 벗어나 라이프스타일 브랜드로...",
-   "link": "https://www.fnnews.com/news/202608250834596678",
-   "date": "2026-08-25",
-   "source": "네이버",
-   "kind": "뉴스",
-   "tags": [
-    "도매시장",
-    "원부자재/제조",
-    "패션"
-   ],
-   "added": "2026-08-26",
-   "thumbnail": "https://image.fnnews.com/resource/media/image/2026/08/24/202608240903196114_e.jpg",
-   "og_checked": true
-  },
-  {
-   "title": "[유통소식] 갤러리아百, 피아제 '아우라' 국내 첫 선",
-   "link": "http://www.4th.kr/news/articleView.html?idxno=2116830",
-   "date": "2026-08-25",
-   "source": "네이버",
-   "kind": "뉴스",
-   "tags": [
-    "F&B",
-    "도매시장",
-    "상인/단체",
-    "쇼핑/관광",
-    "완구/트렌드",
-    "원부자재/제조",
-    "인근상권",
-    "패션",
-    "행정/정책"
-   ],
-   "added": "2026-08-26",
-   "thumbnail": "https://cdn.4th.kr/news/thumbnail/202608/2116830_214667_3410_v150.jpg",
-   "og_checked": true,
-   "sum_failed": true
-  },
-  {
-   "title": "미술부터 패션까지… 가을 유통가 '취향 공략'",
-   "link": "https://www.pressman.kr/news/articleView.html?idxno=103316",
-   "date": "2026-08-25",
-   "source": "네이버",
-   "kind": "뉴스",
-   "tags": [
-    "패션"
-   ],
-   "added": "2026-08-26",
-   "thumbnail": "https://cdn.pressman.kr/news/photo/202608/103316_95215_4249.jpg",
-   "og_checked": true,
-   "sum_failed": true
-  },
-  {
-   "title": "켈리신, 서울패션위크서 '새로운 존재감' 펼친다",
-   "link": "http://www.ktnews.com/news/articleView.html?idxno=147916",
-   "date": "2026-08-25",
-   "source": "네이버",
-   "kind": "뉴스",
-   "tags": [
-    "패션"
-   ],
-   "added": "2026-08-26",
-   "thumbnail": "http://www.ktnews.com/news/thumbnail/202608/147916_129072_1111_v150.jpg",
-   "og_checked": true
-  },
-  {
    "title": "DDP 런더핏 친환경 허니콤보드 입체 포토존 '스포츠웨이브 게이트'",
    "link": "https://blog.naver.com/green_works_/224389871501",
    "date": "2026-08-25",
@@ -1289,34 +6796,6 @@
    ],
    "added": "2026-08-26",
    "og_checked": true
-  },
-  {
-   "title": "[기자수첩] 1천200만 환호 품은 44년 '야구 성지'…잠실야구장, 그 마지...",
-   "link": "https://www.youthdaily.co.kr/news/article.html?no=225673",
-   "date": "2026-08-25",
-   "source": "네이버",
-   "kind": "뉴스",
-   "tags": [
-    "DDP"
-   ],
-   "added": "2026-08-26",
-   "thumbnail": "https://www.youthdaily.co.kr/data/photos/20260835/art_17876380516046_1b8b90.jpg",
-   "og_checked": true
-  },
-  {
-   "title": "[유통가 NOW] 깨끗한나라, 이랜드 킴스클럽, 에이블리, 우아한형제들, N...",
-   "link": "https://www.ekn.kr/web/view.php?key=20260826024236417",
-   "date": "2026-08-25",
-   "source": "네이버",
-   "kind": "뉴스",
-   "tags": [
-    "DDP",
-    "쇼핑/관광"
-   ],
-   "added": "2026-08-26",
-   "thumbnail": "https://www.ekn.kr/mnt/file/202608/news-p.v1.20260825.a38d1e7be4ff43d3a7d61d2d861a5579_R.jpg",
-   "og_checked": true,
-   "sum_failed": true
   },
   {
    "title": "DDP서 세계시장 두드린 파우(FAU)… 바이어·소비자 모두 잡았다",
@@ -1804,7 +7283,8 @@
    "source": "어디를 가볼까 ٩( ᐛ )و",
    "kind": "블로그",
    "tags": [
-    "F&B"
+    "F&B",
+    "인근상권"
    ],
    "added": "2026-08-26"
   },
@@ -1860,7 +7340,8 @@
    "source": "개똥별이네집",
    "kind": "블로그",
    "tags": [
-    "F&B"
+    "F&B",
+    "도매시장"
    ],
    "added": "2026-08-26"
   },
@@ -2493,6 +7974,7 @@
    "source": "하린이네",
    "kind": "블로그",
    "tags": [
+    "쇼핑/관광",
     "인근상권"
    ],
    "added": "2026-08-26"
@@ -3378,7 +8860,8 @@
    "source": "klon202612님의 블로그",
    "kind": "블로그",
    "tags": [
-    "원부자재/제조"
+    "원부자재/제조",
+    "인근상권"
    ],
    "added": "2026-08-26"
   },
@@ -3653,6 +9136,7 @@
    "source": "네이버",
    "kind": "뉴스",
    "tags": [
+    "쇼핑/관광",
     "행정/정책"
    ],
    "added": "2026-08-26"
@@ -3710,6 +9194,7 @@
    "source": "꺼내쇼핑",
    "kind": "영상",
    "tags": [
+    "쇼핑/관광",
     "패션"
    ],
    "og_checked": true,
@@ -3737,6 +9222,9 @@
    "source": "호랑이상점 동대문의류판매방송 본계정",
    "kind": "영상",
    "tags": [
+    "도매시장",
+    "쇼핑/관광",
+    "원부자재/제조",
     "패션"
    ],
    "og_checked": true,
@@ -3856,19 +9344,6 @@
    "thumbnail": "https://i.ytimg.com/vi/6ZYMFCYTvYw/hqdefault_live.jpg"
   },
   {
-   "title": "8월25일 횐요일  바이브 카결 무료배송 #동대문도매시장 #여름신상#3040 #5060 #미시의류 #중년여성의류#플리츠도매",
-   "link": "https://www.youtube.com/watch?v=uZCVyCTEaes",
-   "date": "2026-08-25",
-   "source": "서비쌤",
-   "kind": "영상",
-   "tags": [
-    "도매시장"
-   ],
-   "og_checked": true,
-   "added": "2026-08-26",
-   "thumbnail": "https://i.ytimg.com/vi/uZCVyCTEaes/hqdefault.jpg"
-  },
-  {
    "title": "춘매샵#전품목 #19000원#동대문시장#청평화도매#",
    "link": "https://www.youtube.com/watch?v=jQ_ZQJmzslM",
    "date": "2026-08-25",
@@ -3974,19 +9449,6 @@
    "thumbnail": "https://i.ytimg.com/vi/t_P792a80So/hqdefault.jpg"
   },
   {
-   "title": "DDP에 불 좀 켜봤거든요… 그랬더니!!✨ | 서울라이트 ddp 2026 가을",
-   "link": "https://www.youtube.com/watch?v=KSBVwXD-O1M",
-   "date": "2026-08-25",
-   "source": "서울디자인재단",
-   "kind": "영상",
-   "tags": [
-    "DDP"
-   ],
-   "og_checked": true,
-   "added": "2026-08-26",
-   "thumbnail": "https://i.ytimg.com/vi/KSBVwXD-O1M/hqdefault.jpg"
-  },
-  {
    "title": "DDP부터 잠실까지?👗이 번 서울패션위크가 역대급인 이유✨ #패션 #서울패션위크 #shorts",
    "link": "https://www.youtube.com/watch?v=xQuCgNdAPwE",
    "date": "2026-08-25",
@@ -4045,8 +9507,14 @@
    "source": "EMiRi",
    "kind": "영상",
    "tags": [
+    "F&B",
+    "도매시장",
     "쇼핑/관광",
-    "인근상권"
+    "완구/트렌드",
+    "외국인",
+    "원부자재/제조",
+    "인근상권",
+    "행정/정책"
    ],
    "og_checked": true,
    "added": "2026-08-26",
@@ -4059,7 +9527,8 @@
    "source": "평택언니👚 옷가게",
    "kind": "영상",
    "tags": [
-    "쇼핑/관광"
+    "쇼핑/관광",
+    "패션"
    ],
    "og_checked": true,
    "added": "2026-08-26",
@@ -4098,7 +9567,8 @@
    "source": "솔직한 리뷰언니 아리라이프",
    "kind": "영상",
    "tags": [
-    "쇼핑/관광"
+    "쇼핑/관광",
+    "패션"
    ],
    "og_checked": true,
    "added": "2026-08-26",
@@ -4509,19 +9979,6 @@
    "thumbnail": "https://i.ytimg.com/vi/0DfC0uPzsOA/hqdefault.jpg"
   },
   {
-   "title": "아들에게 쫓겨나 노숙하던 할머니가 경동시장에서 인생을 역전한 사연",
-   "link": "https://www.youtube.com/watch?v=dxwPc4_DheE",
-   "date": "2026-08-25",
-   "source": "세상 살아보니",
-   "kind": "영상",
-   "tags": [
-    "인근상권"
-   ],
-   "og_checked": true,
-   "added": "2026-08-26",
-   "thumbnail": "https://i.ytimg.com/vi/dxwPc4_DheE/hqdefault.jpg"
-  },
-  {
    "title": "자연산 고들빼기 경동시장 #고들빼기 #경동시장  #건강한먹거리 #제철음식 #건강정보",
    "link": "https://www.youtube.com/watch?v=fIWJv0cH7HE",
    "date": "2026-08-25",
@@ -4754,6 +10211,32 @@
    "og_checked": true,
    "added": "2026-08-26",
    "thumbnail": "https://i.ytimg.com/vi/XDE6CZhKW90/hqdefault.jpg"
+  },
+  {
+   "title": "8월25일 횐요일  바이브 카결 무료배송 #동대문도매시장 #여름신상#3040 #5060 #미시의류 #중년여성의류#플리츠도매",
+   "link": "https://www.youtube.com/watch?v=uZCVyCTEaes",
+   "date": "2026-08-25",
+   "source": "서비쌤",
+   "kind": "영상",
+   "tags": [
+    "도매시장"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/uZCVyCTEaes/hqdefault.jpg"
+  },
+  {
+   "title": "\"저기 한국인들 하는것좀 보세요\" 서울 DDP 처음 방문한 네덜란드 여성 예상못한 한국인 난폭함에 경악한 이유",
+   "link": "https://www.youtube.com/watch?v=sTXpTLObwnI",
+   "date": "2026-08-25",
+   "source": "한국을 본 세계",
+   "kind": "영상",
+   "tags": [
+    "DDP"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/sTXpTLObwnI/hqdefault.jpg"
   },
   {
    "title": "\"생산량 10분의 1토막\"...확산되는 골목상권 공동화 [벼랑 끝에 선 자영업자 (중)]",
@@ -5191,7 +10674,8 @@
    "source": "✶⋆YUN'S ARCHIVE⋆✶",
    "kind": "블로그",
    "tags": [
-    "F&B"
+    "F&B",
+    "외국인"
    ],
    "added": "2026-08-24",
    "og_checked": true
@@ -6206,7 +11690,8 @@
    "source": "네이버",
    "kind": "뉴스",
    "tags": [
-    "쇼핑/관광"
+    "쇼핑/관광",
+    "인근상권"
    ],
    "added": "2026-08-25"
   },
@@ -6400,7 +11885,8 @@
    "source": "Amy the World",
    "kind": "블로그",
    "tags": [
-    "F&B"
+    "F&B",
+    "원부자재/제조"
    ],
    "added": "2026-08-25"
   },
@@ -8826,20 +14312,6 @@
    "thumbnail": "https://i.ytimg.com/vi/GNJUxJCCd9Y/hqdefault_live.jpg"
   },
   {
-   "title": "남여공용 보세의류 #쇼핑 #패션 #라이브",
-   "link": "https://www.youtube.com/watch?v=WyrD51Dknq0",
-   "date": "2026-08-24",
-   "source": "꺼내쇼핑",
-   "kind": "영상",
-   "tags": [
-    "쇼핑/관광",
-    "패션"
-   ],
-   "og_checked": true,
-   "added": "2026-08-25",
-   "thumbnail": "https://i.ytimg.com/vi/WyrD51Dknq0/hqdefault.jpg"
-  },
-  {
    "title": "#동대문 #소매 #대형 #패션 #쇼핑 #투어 #판매 #몰 #쇼핑몰 #위치",
    "link": "https://www.youtube.com/watch?v=72lih7226uo",
    "date": "2026-08-24",
@@ -8939,19 +14411,6 @@
    "thumbnail": "https://i.ytimg.com/vi/Mm0xlLyaTT4/hqdefault_live.jpg"
   },
   {
-   "title": "8월25일 횐요일  바이브 카결 무료배송 #동대문도매시장 #여름신상#3040 #5060 #미시의류 #중년여성의류#플리츠도매",
-   "link": "https://www.youtube.com/watch?v=x0COVKGPr_Y",
-   "date": "2026-08-24",
-   "source": "서비쌤",
-   "kind": "영상",
-   "tags": [
-    "도매시장"
-   ],
-   "og_checked": true,
-   "added": "2026-08-25",
-   "thumbnail": "https://i.ytimg.com/vi/x0COVKGPr_Y/hqdefault_live.jpg"
-  },
-  {
    "title": "8월25일 화요일 동대문여성의류 도매시장 구매대행#동대문여성의류도매#",
    "link": "https://www.youtube.com/watch?v=9Qo23sM5ams",
    "date": "2026-08-24",
@@ -9018,26 +14477,6 @@
    "og_checked": true,
    "added": "2026-08-25",
    "thumbnail": "https://i.ytimg.com/vi/6BjGWvV4XRE/hqdefault.jpg"
-  },
-  {
-   "title": "ソウル・聖水(ソンス)に爆誕！ムシンサメガストア【韓国旅行】",
-   "link": "https://www.youtube.com/watch?v=k8KRUgTMok8",
-   "date": "2026-08-24",
-   "source": "ニコレナ- 日伊夫婦のアジア・コスパ最高・カップル旅",
-   "kind": "영상",
-   "tags": [
-    "F&B",
-    "도매시장",
-    "쇼핑/관광",
-    "완구/트렌드",
-    "외국인",
-    "원부자재/제조",
-    "인근상권",
-    "행정/정책"
-   ],
-   "og_checked": true,
-   "added": "2026-08-25",
-   "thumbnail": "https://i.ytimg.com/vi/k8KRUgTMok8/hqdefault.jpg"
   },
   {
    "title": "서울 쇼핑 나선 일본인, 옷부터 소품까지",
@@ -9171,19 +14610,6 @@
    "og_checked": true,
    "added": "2026-08-25",
    "thumbnail": "https://i.ytimg.com/vi/D6QjTTQi7yI/hqdefault.jpg"
-  },
-  {
-   "title": "꽃보다예쁜한미영꽃백숙 #창신동 맛집 #동대문 맛집 #건강한밥상 #데이트 #회식 #K healthy food",
-   "link": "https://www.youtube.com/watch?v=Fd3ON-4OiIM",
-   "date": "2026-08-24",
-   "source": "꽃보다예쁜한미영꽃백숙",
-   "kind": "영상",
-   "tags": [
-    "F&B"
-   ],
-   "og_checked": true,
-   "added": "2026-08-25",
-   "thumbnail": "https://i.ytimg.com/vi/Fd3ON-4OiIM/hqdefault.jpg"
   },
   {
    "title": "#다래나무손두부 #광나루역맛집 #광장동맛집 #아차산맛집 허영만의 백반기행에 나온 맛집저번엔 청국장정식을 먹었어서이번엔 오징어두부두루치기 거기다 보리밥 나물 건강해진 느낌 좋다 👍",
@@ -9745,19 +15171,6 @@
    "thumbnail": "https://i.ytimg.com/vi/pvelu4BXJBA/hqdefault.jpg"
   },
   {
-   "title": "호랑이상점 동대문의류판매방송 본계정 라이브 스트리밍 중",
-   "link": "https://www.youtube.com/watch?v=v_gQcI7lA9g",
-   "date": "2026-08-24",
-   "source": "호랑이상점 동대문의류판매방송 본계정",
-   "kind": "영상",
-   "tags": [
-    "도매시장"
-   ],
-   "og_checked": true,
-   "added": "2026-08-26",
-   "thumbnail": "https://i.ytimg.com/vi/v_gQcI7lA9g/hqdefault.jpg"
-  },
-  {
    "title": "#동대문 #시장 #완벽 #가이드 #지도 #맵 #약도 #두타 #밀리오레 #평화 #시장 #신평화 #남평화 #동평화 #제일평화 #청평화 #종합 #apm #광희 #원단 #부자재 #디오트",
    "link": "https://www.youtube.com/watch?v=zk-N2IrL2uw",
    "date": "2026-08-24",
@@ -9777,6 +15190,7 @@
    "source": "한눈경제",
    "kind": "영상",
    "tags": [
+    "도매시장",
     "원부자재/제조"
    ],
    "og_checked": true,
@@ -9795,6 +15209,32 @@
    "og_checked": true,
    "added": "2026-08-26",
    "thumbnail": "https://i.ytimg.com/vi/KHBlxAOFWHQ/hqdefault.jpg"
+  },
+  {
+   "title": "호랑이상점 동대문의류판매방송 본계정 라이브 스트리밍 중",
+   "link": "https://www.youtube.com/watch?v=v_gQcI7lA9g",
+   "date": "2026-08-24",
+   "source": "호랑이상점 동대문의류판매방송 본계정",
+   "kind": "영상",
+   "tags": [
+    "도매시장"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/v_gQcI7lA9g/hqdefault.jpg"
+  },
+  {
+   "title": "[강실장 심층분석] 동대문구 아파트 예상낙찰가, 맞힙니다 · 종합 82점 #Shorts",
+   "link": "https://www.youtube.com/watch?v=OLz6NNAkEO8",
+   "date": "2026-08-24",
+   "source": "경매레이더_3TV",
+   "kind": "영상",
+   "tags": [
+    "행정/정책"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/OLz6NNAkEO8/hqdefault.jpg"
   },
   {
    "title": "필로디, DDP서 글로벌 바이어 만난다…15개국 넘어 K-뷰티 수출 확대",
@@ -10221,6 +15661,7 @@
    "kind": "블로그",
    "tags": [
     "쇼핑/관광",
+    "완구/트렌드",
     "인근상권"
    ],
    "added": "2026-08-23",
@@ -10514,7 +15955,9 @@
    "source": "네이버",
    "kind": "뉴스",
    "tags": [
-    "DDP"
+    "DDP",
+    "외국인",
+    "패션"
    ],
    "added": "2026-08-24"
   },
@@ -10755,7 +16198,9 @@
    "source": "은은한 하루",
    "kind": "블로그",
    "tags": [
-    "쇼핑/관광"
+    "쇼핑/관광",
+    "원부자재/제조",
+    "인근상권"
    ],
    "added": "2026-08-24"
   },
@@ -12595,20 +18040,6 @@
    "thumbnail": "https://i.ytimg.com/vi/nnNnqTogfR8/hqdefault.jpg"
   },
   {
-   "title": "평택언니와♡ 동대문가을쇼핑 🍁",
-   "link": "https://www.youtube.com/watch?v=9ODzWZoWN8A",
-   "date": "2026-08-23",
-   "source": "평택언니👚 옷가게",
-   "kind": "영상",
-   "tags": [
-    "쇼핑/관광",
-    "패션"
-   ],
-   "og_checked": true,
-   "added": "2026-08-24",
-   "thumbnail": "https://i.ytimg.com/vi/9ODzWZoWN8A/hqdefault.jpg"
-  },
-  {
    "title": "#동대문 #패션 #시장  #바이어라운지",
    "link": "https://www.youtube.com/watch?v=O0YgqNAYeNQ",
    "date": "2026-08-23",
@@ -12620,20 +18051,6 @@
    "og_checked": true,
    "added": "2026-08-24",
    "thumbnail": "https://i.ytimg.com/vi/O0YgqNAYeNQ/hqdefault.jpg"
-  },
-  {
-   "title": "동대문도매 아리라이프 아리언니 라이브방송 라이브쇼핑방송 완판녀",
-   "link": "https://www.youtube.com/watch?v=aBKEbEUyJpk",
-   "date": "2026-08-23",
-   "source": "솔직한 리뷰언니 아리라이프",
-   "kind": "영상",
-   "tags": [
-    "쇼핑/관광",
-    "패션"
-   ],
-   "og_checked": true,
-   "added": "2026-08-24",
-   "thumbnail": "https://i.ytimg.com/vi/aBKEbEUyJpk/hqdefault.jpg"
   },
   {
    "title": "가을 신상! 다리 길어 보이는 호주머니 치마   #fashion #가성비룩 #ootd #여성의류#동대문#동대문라이브방송#신상의류#의류라방#라이브방송#오키도키",
@@ -12808,19 +18225,6 @@
    "og_checked": true,
    "added": "2026-08-24",
    "thumbnail": "https://i.ytimg.com/vi/yoIoLyW8RFw/hqdefault.jpg"
-  },
-  {
-   "title": "상미언니 동대문 가을 신상 라이브 방송",
-   "link": "https://www.youtube.com/watch?v=AEukowlazWM",
-   "date": "2026-08-23",
-   "source": "상미언니",
-   "kind": "영상",
-   "tags": [
-    "쇼핑/관광"
-   ],
-   "og_checked": true,
-   "added": "2026-08-24",
-   "thumbnail": "https://i.ytimg.com/vi/AEukowlazWM/hqdefault.jpg"
   },
   {
    "title": "I went to the dentist in Seoul + twelve and lots of shopping #diml #seoul",
@@ -13729,6 +19133,19 @@
    "thumbnail": "https://i.ytimg.com/vi/-gozD6blsnY/hqdefault.jpg"
   },
   {
+   "title": "동대문 신고가 터졌다! 동서울한양·힐스테이트 이번 달 얼마까지 갔나",
+   "link": "https://www.youtube.com/watch?v=fNhls4g1eAY",
+   "date": "2026-08-23",
+   "source": "프리미엄관리자",
+   "kind": "영상",
+   "tags": [
+    "행정/정책"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/fNhls4g1eAY/hqdefault.jpg"
+  },
+  {
    "title": "[소통광장-촉감완구]③ '14세 이상' 뒤에 숨은 '말랑이'…아이 안전 누가 책임지나",
    "link": "https://www.newspost.kr/news/articleView.html?idxno=225069",
    "date": "2026-08-22",
@@ -14321,7 +19738,8 @@
    "source": "한남동마케터 우렁각시",
    "kind": "블로그",
    "tags": [
-    "기업/산업"
+    "기업/산업",
+    "도매시장"
    ],
    "added": "2026-08-22",
    "og_checked": true
@@ -14704,7 +20122,8 @@
    "source": "먹짱이 될거야",
    "kind": "블로그",
    "tags": [
-    "F&B"
+    "F&B",
+    "인근상권"
    ],
    "added": "2026-08-23"
   },
@@ -14782,6 +20201,7 @@
    "source": "Polaris",
    "kind": "블로그",
    "tags": [
+    "DDP",
     "F&B"
    ],
    "added": "2026-08-23"
@@ -16095,22 +21515,6 @@
    "thumbnail": "https://i.ytimg.com/vi/uQBondoQD5k/hqdefault.jpg"
   },
   {
-   "title": "호랑이상점 동대문의류판매방송 본계정 라이브 스트리밍 중",
-   "link": "https://www.youtube.com/watch?v=BV6GY0Nwgc4",
-   "date": "2026-08-22",
-   "source": "호랑이상점 동대문의류판매방송 본계정",
-   "kind": "영상",
-   "tags": [
-    "도매시장",
-    "쇼핑/관광",
-    "원부자재/제조",
-    "패션"
-   ],
-   "og_checked": true,
-   "added": "2026-08-23",
-   "thumbnail": "https://i.ytimg.com/vi/BV6GY0Nwgc4/hqdefault.jpg"
-  },
-  {
    "title": "제일평화시장 4탄, 여름 막바지 시즌오프 세일! 알짜배기 매장 4곳 공개 #제일평화시장 #동대문쇼핑  #여름시즌오프 #4060패션",
    "link": "https://www.youtube.com/watch?v=340iaMZOOPQ",
    "date": "2026-08-22",
@@ -17013,6 +22417,19 @@
    "thumbnail": "https://i.ytimg.com/vi/gkaCviZZlTI/hqdefault.jpg"
   },
   {
+   "title": "'종로3가의 몰락한 진짜 이유' 사람들이 사라진게 아니라 이동했다. 하루 3만 5천명 다른 곳에서 돈을 쓴다고!? #자영업폐업 #종로3가",
+   "link": "https://www.youtube.com/watch?v=1AKNGmOMMDI",
+   "date": "2026-08-22",
+   "source": "경제콘서트",
+   "kind": "영상",
+   "tags": [
+    "행정/정책"
+   ],
+   "og_checked": true,
+   "added": "2026-08-26",
+   "thumbnail": "https://i.ytimg.com/vi/1AKNGmOMMDI/hqdefault.jpg"
+  },
+  {
    "title": "8월22일 토요일 바이브 카결 무료배송 #동대문도매시장 #여름신상#3040 #5060 #미시의류 #중년여성의류#플리츠도매",
    "link": "https://www.youtube.com/watch?v=CBprh0aiVa4",
    "date": "2026-08-22",
@@ -17022,7 +22439,7 @@
     "도매시장"
    ],
    "og_checked": true,
-   "added": "2026-08-26",
+   "added": "2026-08-27",
    "thumbnail": "https://i.ytimg.com/vi/CBprh0aiVa4/hqdefault.jpg"
   },
   {
@@ -17035,21 +22452,21 @@
     "도매시장"
    ],
    "og_checked": true,
-   "added": "2026-08-26",
+   "added": "2026-08-27",
    "thumbnail": "https://i.ytimg.com/vi/VfQLLYRcPTo/hqdefault.jpg"
   },
   {
-   "title": "'종로3가의 몰락한 진짜 이유' 사람들이 사라진게 아니라 이동했다. 하루 3만 5천명 다른 곳에서 돈을 쓴다고!? #자영업폐업 #종로3가",
-   "link": "https://www.youtube.com/watch?v=1AKNGmOMMDI",
+   "title": "[강실장 심층분석] 동대문구 아파트, 지금 얼마면 낙찰? · 종합 86점 #Shorts",
+   "link": "https://www.youtube.com/watch?v=KqMn_ppKb3U",
    "date": "2026-08-22",
-   "source": "경제콘서트",
+   "source": "경매레이더_3TV",
    "kind": "영상",
    "tags": [
     "행정/정책"
    ],
    "og_checked": true,
-   "added": "2026-08-26",
-   "thumbnail": "https://i.ytimg.com/vi/1AKNGmOMMDI/hqdefault.jpg"
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/KqMn_ppKb3U/hqdefault.jpg"
   },
   {
    "title": "유통·호텔업계, 외국인 잡을 치트키 '리모델링'…‘핫플 경쟁’ 치열",
@@ -25992,6 +31409,17 @@
    "added": "2026-08-22"
   },
   {
+   "title": "여봉무 종로구의회 의장, \"합리적 재개발 추진\" 포부",
+   "link": "https://news.dlive.kr/news/articleView.html?idxno=26934",
+   "date": "2026-08-20",
+   "source": "news.dlive",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
+  },
+  {
    "title": "패션중심 😉 동대문현장 라이브방송 812",
    "link": "https://www.youtube.com/watch?v=jiJNpW8owxM",
    "date": "2026-08-20",
@@ -27000,32 +32428,6 @@
    "thumbnail": "https://i.ytimg.com/vi/ez2MXXc65MM/hqdefault.jpg"
   },
   {
-   "title": "FM Wang Yi in Seoul:China-ROK relations have entered a track of improvement and development.",
-   "link": "https://www.youtube.com/watch?v=UsirjxnYREc",
-   "date": "2026-08-20",
-   "source": "Media Day Daily",
-   "kind": "영상",
-   "tags": [
-    "기업/산업"
-   ],
-   "og_checked": true,
-   "added": "2026-08-26",
-   "thumbnail": "https://i.ytimg.com/vi/UsirjxnYREc/hqdefault.jpg"
-  },
-  {
-   "title": "경기 광주시 추자동 대형 물류창고 급매｜토지698평, 연면적1,313평· 6차선대로변 광고효과 최고, 쇼룸 전시장,사옥최고, 계획관리지역 [공인중개사 한남수TV](26-156)",
-   "link": "https://www.youtube.com/watch?v=F9yS0NPXtSs",
-   "date": "2026-08-20",
-   "source": "공장파트너 공인중개사 (한남수TV)",
-   "kind": "영상",
-   "tags": [
-    "기업/산업"
-   ],
-   "og_checked": true,
-   "added": "2026-08-26",
-   "thumbnail": "https://i.ytimg.com/vi/F9yS0NPXtSs/hqdefault.jpg"
-  },
-  {
    "title": "지금 가장 핫한 서울 상권 TOP 10 🔥 (당신의 원픽은?) #쇼츠 #상권분석 #서울핫플",
    "link": "https://www.youtube.com/watch?v=uLzgsYeArZ0",
    "date": "2026-08-20",
@@ -27037,6 +32439,45 @@
    "og_checked": true,
    "added": "2026-08-26",
    "thumbnail": "https://i.ytimg.com/vi/uLzgsYeArZ0/hqdefault.jpg"
+  },
+  {
+   "title": "FM Wang Yi in Seoul:China-ROK relations have entered a track of improvement and development.",
+   "link": "https://www.youtube.com/watch?v=UsirjxnYREc",
+   "date": "2026-08-20",
+   "source": "Media Day Daily",
+   "kind": "영상",
+   "tags": [
+    "기업/산업"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/UsirjxnYREc/hqdefault.jpg"
+  },
+  {
+   "title": "\"XX, 중국이랑은 비교가 안돼잖아\" 중국에서만 활동하던 러시아모델 서울 뒷골목 3분 걷고 경악한 이유",
+   "link": "https://www.youtube.com/watch?v=68leOMyk_yY",
+   "date": "2026-08-20",
+   "source": "고민금지",
+   "kind": "영상",
+   "tags": [
+    "기업/산업"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/68leOMyk_yY/hqdefault.jpg"
+  },
+  {
+   "title": "경기 광주시 추자동 대형 물류창고 급매｜토지698평, 연면적1,313평· 6차선대로변 광고효과 최고, 쇼룸 전시장,사옥최고, 계획관리지역 [공인중개사 한남수TV](26-156)",
+   "link": "https://www.youtube.com/watch?v=F9yS0NPXtSs",
+   "date": "2026-08-20",
+   "source": "공장파트너 공인중개사 (한남수TV)",
+   "kind": "영상",
+   "tags": [
+    "기업/산업"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/F9yS0NPXtSs/hqdefault.jpg"
   },
   {
    "title": "백남준·유영국 작품 미디어아트로...'서울라이트 DDP 2026 가을' 개최",
@@ -31684,17 +37125,30 @@
    "thumbnail": "https://i.ytimg.com/vi/ryLRVQqgXZs/hqdefault.jpg"
   },
   {
-   "title": "동대문의류도매시장 #왕체리 #동대문의류 #서비쌤 #신상의류#가방#건강 식품",
-   "link": "https://www.youtube.com/watch?v=iXbLkjadsGo",
+   "title": "세운4구역개발되면,을지로3가상권은어떻게달라질가?? #쇼츠",
+   "link": "https://www.youtube.com/watch?v=Oj18S6z65bo",
    "date": "2026-08-19",
-   "source": "왕체리",
+   "source": "행복한보물이야기",
    "kind": "영상",
    "tags": [
-    "도매시장"
+    "인근상권"
    ],
    "og_checked": true,
-   "added": "2026-08-26",
-   "thumbnail": "https://i.ytimg.com/vi/iXbLkjadsGo/hqdefault.jpg"
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/Oj18S6z65bo/hqdefault.jpg"
+  },
+  {
+   "title": "서울 방어력이 끝판왕인 이유, 중국, 북한도 절대 못 뚫는다 (조한범 박사)",
+   "link": "https://www.youtube.com/watch?v=ZcX20n5WLvk",
+   "date": "2026-08-19",
+   "source": "리얼경제TV",
+   "kind": "영상",
+   "tags": [
+    "기업/산업"
+   ],
+   "og_checked": true,
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/ZcX20n5WLvk/hqdefault.jpg"
   },
   {
    "title": "\"도대체 한국에 뭐가 있길래 아이들이 이렇게 미쳐버린 거야?!\" 중국보다 한국이 좋다는 독일 세 아이, 17개국 여행 후 또 서울을 택하자 부모까지 뒤집어진 이유",
@@ -31706,7 +37160,7 @@
     "기업/산업"
    ],
    "og_checked": true,
-   "added": "2026-08-26",
+   "added": "2026-08-27",
    "thumbnail": "https://i.ytimg.com/vi/bdGlYzIYKlY/hqdefault.jpg"
   },
   {
@@ -31719,7 +37173,7 @@
     "기업/산업"
    ],
    "og_checked": true,
-   "added": "2026-08-26",
+   "added": "2026-08-27",
    "thumbnail": "https://i.ytimg.com/vi/fcLGptlXBeg/hqdefault.jpg"
   },
   {
@@ -36449,56 +41903,17 @@
    "thumbnail": "https://i.ytimg.com/vi/Ouw33BNxFLY/hqdefault.jpg"
   },
   {
-   "title": "[서울시립대 GO-UOS 해외탐방] 선전4GO팀 중국 선전 브이로그",
-   "link": "https://www.youtube.com/watch?v=qB_Ze91p2Gg",
+   "title": "중국 연태(옌타이) 여행 vlog.🇨🇳 1박 2일 나홀로 여행 | 고량주로 유명한 연태의 찐 특산품은 사실 사과와 와인이에요 | 노동절(5/1) 연휴로 어딜가나 사람이 그득그득🥲",
+   "link": "https://www.youtube.com/watch?v=Qgt9GeIS6zY",
    "date": "2026-08-18",
-   "source": "하동현",
+   "source": "우니 Wooni",
    "kind": "영상",
    "tags": [
     "기업/산업"
    ],
    "og_checked": true,
-   "added": "2026-08-26",
-   "thumbnail": "https://i.ytimg.com/vi/qB_Ze91p2Gg/hqdefault.jpg"
-  },
-  {
-   "title": "해외에서도 주방뱅크로 견학! 중국 식품회사에서 오신 대표님",
-   "link": "https://www.youtube.com/watch?v=9-TcSXrPE9E",
-   "date": "2026-08-18",
-   "source": "주방뱅크",
-   "kind": "영상",
-   "tags": [
-    "기업/산업"
-   ],
-   "og_checked": true,
-   "added": "2026-08-26",
-   "thumbnail": "https://i.ytimg.com/vi/9-TcSXrPE9E/hqdefault.jpg"
-  },
-  {
-   "title": "해외에서도 주방뱅크로 견학! 중국 식품회사에서 오신 대표님",
-   "link": "https://www.youtube.com/watch?v=3ZFGbnh8h70",
-   "date": "2026-08-18",
-   "source": "주방의참견",
-   "kind": "영상",
-   "tags": [
-    "기업/산업"
-   ],
-   "og_checked": true,
-   "added": "2026-08-26",
-   "thumbnail": "https://i.ytimg.com/vi/3ZFGbnh8h70/hqdefault.jpg"
-  },
-  {
-   "title": "해외에서도 주방뱅크로 견학! 중국 식품회사에서 오신 대표님",
-   "link": "https://www.youtube.com/watch?v=C_HSm3yObSg",
-   "date": "2026-08-18",
-   "source": "주방의참견",
-   "kind": "영상",
-   "tags": [
-    "기업/산업"
-   ],
-   "og_checked": true,
-   "added": "2026-08-26",
-   "thumbnail": "https://i.ytimg.com/vi/C_HSm3yObSg/hqdefault.jpg"
+   "added": "2026-08-27",
+   "thumbnail": "https://i.ytimg.com/vi/Qgt9GeIS6zY/hqdefault.jpg"
   },
   {
    "title": "남양주 물류센터의 유령이라 불리는 의문의 지게차 기사...📦 대기업 비자금을 털어 서민들에게 뿌린 현대판 임꺽정의 충격적인 정체! (소름주의)",
@@ -36510,7 +41925,7 @@
     "기업/산업"
    ],
    "og_checked": true,
-   "added": "2026-08-26",
+   "added": "2026-08-27",
    "thumbnail": "https://i.ytimg.com/vi/jx7hT59M0S8/hqdefault.jpg"
   },
   {
@@ -40604,19 +46019,6 @@
    "og_checked": true,
    "added": "2026-08-25",
    "thumbnail": "https://i.ytimg.com/vi/AX4-xnQA8Xk/hqdefault.jpg"
-  },
-  {
-   "title": "서울 한강 또난리났다! CNN 다큐 초대박! '중국이 최고'라던 중국 생태학자, 서울의 한강 생태계, 말똥가리에 화들짝! 큰 고니 무리에 참회의 눈물 [해외감동사연]",
-   "link": "https://www.youtube.com/watch?v=I2M-U3-xG9k",
-   "date": "2026-08-17",
-   "source": "aweezey420",
-   "kind": "영상",
-   "tags": [
-    "기업/산업"
-   ],
-   "og_checked": true,
-   "added": "2026-08-26",
-   "thumbnail": "https://i.ytimg.com/vi/I2M-U3-xG9k/hqdefault.jpg"
   },
   {
    "title": "디자인마이애미 서울, 전시 넘어 거래의 장으로…'컬렉터블 페어' 확대",
@@ -51529,7 +56931,7 @@
     "기업/산업"
    ],
    "og_checked": true,
-   "added": "2026-08-26",
+   "added": "2026-08-27",
    "thumbnail": "https://i.ytimg.com/vi/iaZjV14K-ps/hqdefault.jpg"
   },
   {
@@ -55957,7 +61359,7 @@
     "원부자재/제조"
    ],
    "og_checked": true,
-   "added": "2026-08-26",
+   "added": "2026-08-27",
    "thumbnail": "https://i.ytimg.com/vi/1Um-y2fLyUY/hqdefault.jpg"
   },
   {
@@ -62555,19 +67957,6 @@
    "og_checked": true,
    "added": "2026-08-17",
    "thumbnail": "https://i.ytimg.com/vi/LuobcLQRDFY/hqdefault.jpg"
-  },
-  {
-   "title": "#비담한복 #아시아오픈런웨이서울 #한복패션쇼 #동대문디자인플라자 #한복디자이너 #한복컬렉션 #작품한복 #한복모델 #디자이너윤미애 #광주한복 #광주한복대여 #광주한복맞춤",
-   "link": "https://www.youtube.com/watch?v=EkwosN92VHg",
-   "date": "2026-08-12",
-   "source": "흥진이",
-   "kind": "영상",
-   "tags": [
-    "패션"
-   ],
-   "og_checked": true,
-   "added": "2026-08-26",
-   "thumbnail": "https://i.ytimg.com/vi/EkwosN92VHg/hqdefault.jpg"
   },
   {
    "title": "전남 무안 초당노인요양병원장례식장 장례화환 조화오브제 장례식....",
@@ -112677,19 +118066,6 @@
    "og_checked": true,
    "added": "2026-08-06",
    "thumbnail": "https://i.ytimg.com/vi/RgHxAToquEY/hqdefault.jpg"
-  },
-  {
-   "title": "동대문에서 기분 상해본 기억, 다들 한 번쯤 있으실 겁니다",
-   "link": "https://www.youtube.com/watch?v=s30K71blbWA",
-   "date": "2026-08-05",
-   "source": "똑똑한 경제학",
-   "kind": "영상",
-   "tags": [
-    "도매시장"
-   ],
-   "og_checked": true,
-   "added": "2026-08-06",
-   "thumbnail": "https://i.ytimg.com/vi/s30K71blbWA/hqdefault.jpg"
   },
   {
    "title": "8월5일 쑨데렐라 동대문  도매 라이브 방송#동대문의류#도매#고퀄블라우스#원피스#자켓#니트#방송#겨울신상#여성의류#라이브#가성비룩#가디건#코트#핸드메이드#스커트#여성슬랙스#바지",
@@ -228254,6 +233630,17 @@
    "added": "2026-08-13"
   },
   {
+   "title": "광장시장, 이번엔 '쓰레기통 얼음' 재사용 논란… 사장 \"지시한 적 없어\" 해명",
+   "link": "https://www.fnnews.com/news/202605030835179341",
+   "date": "2026-05-03",
+   "source": "파이낸셜뉴스",
+   "kind": "뉴스",
+   "tags": [
+    "인근상권"
+   ],
+   "added": "2026-08-27"
+  },
+  {
    "title": "손에 쥐는 장난감 ‘말랑이’ 2030 인기",
    "link": "https://www.hankookilbo.com/news/article/A2026042215300003719",
    "date": "2026-05-01",
@@ -232530,6 +237917,17 @@
     "기업/산업"
    ],
    "added": "2026-08-20"
+  },
+  {
+   "title": "종로 귀금속 거리 상권, 일평균 유동인구 18만명 기록",
+   "link": "https://biz.heraldcorp.com/article/2214866",
+   "date": "2020-01-24",
+   "source": "헤럴드경제",
+   "kind": "뉴스",
+   "tags": [
+    "행정/정책"
+   ],
+   "added": "2026-08-27"
   },
   {
    "title": "공유 작업실 열고, AI로 패션 경향 분석…동대문 키우는 스타트업들",
@@ -243358,6 +248756,42 @@
    "added": "2026-08-26"
   },
   {
+   "title": "대중교통(동대문역 4번 출구) 이용 추천! #어린이날선물 #창신동문구완구시장 #창신동완구거리 #승진완구 #어린이날 #장난감 #어린이선물 #레고...",
+   "link": "https://pup-post-phinf.pstatic.net/MjAyNjA1MDFfMTky/MDAxNzc3NjM3NTE1ODU2.ANmQI9NGK2DmvdJAxYT2a3IC-86UwONB2uVFSCh_EtIg.UrIQv7EP7zCTMeIT2UWVA9eKybPLY3vQPhD8eEJ9NzIg.JPEG/POST_IMAGE_ENCODING_20260501_211154_244.jpg",
+   "date": "",
+   "source": "네이버 이미지",
+   "kind": "이미지",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "thumbnail": "https://search.pstatic.net/common/?type=b150&src=https%3A%2F%2Fpup-post-phinf.pstatic.net%2FMjAyNjA1MDFfMTky%2FMDAxNzc3NjM3NTE1ODU2.ANmQI9NGK2DmvdJAxYT2a3IC-86UwONB2uVFSCh_EtIg.UrIQv7EP7zCTMeIT2UWVA9eKybPLY3vQPhD8eEJ9NzIg.JPEG%2FPOST_IMAGE_ENCODING_20260501_211154_244.jpg",
+   "added": "2026-08-27"
+  },
+  {
+   "title": "끈끈이볼 스퀴즈 피젯 토이 볼 스퀴시 도매상가 스트레스 주물럭 젤리볼 장난감 말랑이 찐득볼 : 트랜디 컬렉터",
+   "link": "https://shop-phinf.pstatic.net/20211012_291/1634032830507tRow9_PNG/100383_0.png",
+   "date": "",
+   "source": "네이버 이미지",
+   "kind": "이미지",
+   "tags": [
+    "완구/트렌드"
+   ],
+   "thumbnail": "https://search.pstatic.net/common/?type=b150&src=https%3A%2F%2Fshop-phinf.pstatic.net%2F20211012_291%2F1634032830507tRow9_PNG%2F100383_0.png",
+   "added": "2026-08-27"
+  },
+  {
+   "title": "펄 꽃 키링 동대문부자재상가 키링만들기 : 앤쥬얼리 동대문종합시장",
+   "link": "https://shop-phinf.pstatic.net/20220804_66/1659605120319Y0E8c_JPEG/100209_1.jpg",
+   "date": "",
+   "source": "네이버 이미지",
+   "kind": "이미지",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "thumbnail": "https://search.pstatic.net/common/?type=b150&src=https%3A%2F%2Fshop-phinf.pstatic.net%2F20220804_66%2F1659605120319Y0E8c_JPEG%2F100209_1.jpg",
+   "added": "2026-08-27"
+  },
+  {
    "title": "2026년 8월 동대문 도매시장 여름휴가 및 배송안내",
    "link": "http://cafe.naver.com/ttoksun2/8665093",
    "date": "",
@@ -246623,11 +252057,66 @@
     "원부자재/제조"
    ],
    "added": "2026-08-26"
+  },
+  {
+   "title": "중국 구매대행 어디서 해야 할까? 광저우 현지 사입대행 GDmall",
+   "link": "https://cafe.naver.com/pms12/72943",
+   "date": "",
+   "source": "[ 내부자 ] 사업/창업/자영업/영업/도매/유통/부업/투잡/재테크",
+   "kind": "커뮤니티",
+   "tags": [
+    "도매시장"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "[할인이벤트] 동대문 공유오피스 1인 20만원대｜쇼핑몰 창업·미입주택배 OK ....",
+   "link": "https://cafe.naver.com/kig/19606597",
+   "date": "",
+   "source": "ㆍ피터팬의 좋은방 구하기ㆍ",
+   "kind": "커뮤니티",
+   "tags": [
+    "도매시장"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "네스홈 원단 동대문 어디가야하나요?",
+   "link": "https://cafe.naver.com/nesshome/354549",
+   "date": "",
+   "source": "네스홈 - 대한민국 No.1 리빙&디자인 아트패브릭",
+   "kind": "커뮤니티",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "원단 구경.. 사구 싶은 마음... 참을 수 없서요..",
+   "link": "https://cafe.naver.com/ggong2/1109705",
+   "date": "",
+   "source": "+:♡ 미싱으로 옷만들기 ♡:+",
+   "kind": "커뮤니티",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
+  },
+  {
+   "title": "동대문 부자재상가 4시30분쯤 가면 넘 늦을까요?",
+   "link": "https://cafe.naver.com/skybluezw4rh/14841800",
+   "date": "",
+   "source": "맘이베베 (핫딜, 육아, 놀이)",
+   "kind": "커뮤니티",
+   "tags": [
+    "원부자재/제조"
+   ],
+   "added": "2026-08-27"
   }
  ],
  "trend": {
-  "start": "2026-02-23",
-  "end": "2026-08-24",
+  "start": "2026-02-25",
+  "end": "2026-08-26",
   "unit": "week",
   "groups": [
    {
@@ -246739,7 +252228,7 @@
      },
      {
       "p": "2026-08-24",
-      "v": 0.79545
+      "v": 2.29181
      }
     ]
    },
@@ -246852,7 +252341,7 @@
      },
      {
       "p": "2026-08-24",
-      "v": 1.09472
+      "v": 3.03608
      }
     ]
    },
@@ -246965,7 +252454,7 @@
      },
      {
       "p": "2026-08-24",
-      "v": 1.06523
+      "v": 3.04042
      }
     ]
    },
@@ -247078,7 +252567,7 @@
      },
      {
       "p": "2026-08-24",
-      "v": 0.03122
+      "v": 0.08501
      }
     ]
    },
@@ -247191,7 +252680,7 @@
      },
      {
       "p": "2026-08-24",
-      "v": 4.96703
+      "v": 14.42314
      }
     ]
    }
@@ -247231,252 +252720,252 @@
  "archives": [],
  "ch_seen": {
   "UC7uDyFIqExDnfXAIZqumFrQ": [
+   "o4OcwHj4xRk",
+   "DBGF50tw2DM",
+   "SEDNR8_KdZk",
+   "csJj9mgbocc",
+   "DjLHELeJvlk",
+   "ofz30GQv1UM",
+   "Ubc4cpWsEFE",
+   "x2oZ2-8-TWc",
+   "PuRjVqCy5rE",
+   "_liAv9l2VGU",
+   "lbPh1XrctVI",
+   "zTXnJQSoRnk",
+   "SaORBjV030Q",
+   "4dd2CvigfZk",
+   "MuZCBRk0Rz0",
+   "L04Nufj4F_0",
+   "XcbH3VjSlb8",
+   "qjcQdMHyCKQ",
+   "sG2Jyuy3ORw",
+   "0QCRrZhGm8k",
+   "u9oJugPsfM0",
+   "nmZ4tHcYgPw",
+   "R83TMMilG3U",
+   "iAGiCuLK98o",
+   "Tti56Xj965A",
+   "fdyhGP1dJlg",
+   "zJFmE8BrIyU",
+   "Zs-S2ZjfN0M",
+   "TGYpx9FNzeI",
+   "hizerIzVQxI",
+   "xJuws0jl1TY",
+   "1zoyuycjziQ",
+   "2RIUp-5rcK4",
+   "j97T1vnt9qQ",
+   "yFgGpT-8dYM",
+   "mgUmmmZfXr8",
+   "5QEjNToAq1k",
+   "LileAMVE7v8",
+   "GXAzS2PzAtw",
+   "MKWROeA4Haw",
+   "zhweq-BwiAI",
+   "EVYObfm4nuI",
+   "gauj3Jz2H3o",
+   "U_PK9ovzNL4",
+   "5LmCjKpoBFc",
+   "7NJUsjUCmNE",
+   "871FIxurfl8",
+   "qxFdWQjSK0o",
+   "jTQI_IcL3sk",
+   "l-9popZjQoE",
+   "Sk-rh4qiHZY",
+   "QGmY7b9C3ko",
+   "fPDeYbx7uck",
+   "lVu1snTbB1s",
+   "tbsIBfcIFsE",
+   "I0qsDkKLbrc",
+   "0nnI6wfehoE",
+   "s15loG1-XRg",
+   "1tf85j25BEc",
+   "yidO9v60P2Q",
+   "sw1y8V5VoLo",
+   "BrqSOphrmBs",
+   "Ax_UI6LCdbg",
+   "Ufd1Alyu6r4",
+   "DGnL_UiSDAE",
+   "834a7gFJFEw",
+   "Ad-VWkbih1c",
+   "iE2D-b_Jm5o",
+   "cKHAOspfVbI",
+   "bCip2Ra2r08",
+   "ulK6zYTdSmY",
+   "Ml6nXM6dt7I",
+   "fRfgBMtakEA",
+   "0feh1buqaA4",
+   "7LK-udy2lm8",
+   "14XFAyZf20o",
+   "60-dzij6W9s",
+   "5d23OxeG8H0",
+   "f_QKeI1Q6Vs",
+   "nv22sqsKxwE",
+   "bcPWwtq2VGw",
+   "LDrxiuzxgAg",
+   "Jz3HruOfGgs",
+   "T-8J-sB7TrA",
+   "XhJ4EXNjz3U",
+   "0P84rsGpNMk",
+   "fU0Pto8hzZ0",
+   "Yg4DFv_6KDU",
+   "KxgX6qVbUOI",
+   "puqoAC8u-7M",
+   "p4WcwQBqq8g",
+   "JDKp_V88XYk",
+   "BQzLa2tm1HM",
+   "5wZCYZ6D_CM",
+   "RVQbF4SV8YM",
+   "sgjCEhg9S5w",
+   "bhZj4LTySn8",
+   "6VO71ApWG0w",
+   "iobLkupVSPg",
+   "2q7wPB0E1rU",
+   "LM8aa2wkQy4",
+   "GYUhRwRqoQQ",
+   "t6lvDWYYJCM",
+   "emsmfXg6QXY",
+   "la2achIV-pw",
+   "PlJkbslwRFc",
+   "e2i67iJWOV8",
+   "JzqTrwWuZwc",
+   "VCcHizKK3gc",
+   "D0j3bCWjZSg",
+   "65E9JsYNZAo",
+   "r7uBD_OPsUw",
+   "mjckHnc-DaU",
+   "TZjpVZsW5lc",
+   "MkJiqrZNvKk",
+   "61K98Y9r1hs",
+   "EO_7aY6Fx64",
+   "CNPu-ljxa2I",
+   "zhlclyze9Mk",
+   "Un-x7spFH1A",
+   "-z9lfahw_OM",
+   "UGdtSO2EDWk",
+   "MlK-4JoYZkM",
+   "38pARUnpY2k",
+   "4BP0mfw6sA8",
+   "2wydrIOwfww",
    "ofD_WiR1Lb8",
-   "ZZeIKzuhzvE",
+   "QNvYSpLrWOo",
+   "aVqem0-DaSA",
+   "M12LIOQBBHY",
+   "GcinspV6ur0",
+   "n9qhXb-CPpk",
+   "qM5Xja02rcQ",
+   "J2p4li82Fdg",
+   "HNtQqHBchfk",
+   "kneMTq6ZrYE",
+   "tJ_EU4C4VrA",
+   "4KlIkwgD1dY",
+   "XhppzRRqPfo",
+   "zcoHeUZ_cwY",
+   "uW6IWXKDImU",
+   "ha7gmsStumE",
+   "CBHYYM_DlqQ",
+   "ZPmljkOcrfk",
+   "X-gPfOZuMlA",
+   "IPFp_p_e3fw",
+   "HajKWns7W3Q",
+   "Tcw-1D4emLw",
+   "Zm19HrPSOgY",
+   "uJLqYB8npDc",
+   "LCH0tfU5NR4",
+   "eEogHSVR4kI",
+   "6BQyFWI4D_8",
+   "ADQ8JQs_E_Y",
    "nuNYOLMvOdQ",
    "SKjLNX4MlWQ",
-   "J2p4li82Fdg",
-   "0sI6OViakto",
-   "Tti56Xj965A",
-   "90LGNJU9O2s",
-   "W2xm5RLl6Fk",
-   "neMQ36BFWBM",
-   "_liAv9l2VGU",
-   "aAhTlRva9C0",
-   "XhJ4EXNjz3U",
-   "XhppzRRqPfo",
-   "8M0vxZxBmM0",
-   "HNtQqHBchfk",
-   "kfl7ufDvCGw",
-   "EVYObfm4nuI",
-   "smWsilXQI5o",
-   "kneMTq6ZrYE",
-   "TZjpVZsW5lc",
-   "jKAACmX1Zs0",
-   "0nnI6wfehoE",
-   "BrqSOphrmBs",
-   "s15loG1-XRg",
-   "871FIxurfl8",
-   "savCL0QapPY",
-   "61K98Y9r1hs",
-   "Gl1RmDAkFX4",
-   "kXU9mUH4D14",
-   "MlK-4JoYZkM",
-   "zcoHeUZ_cwY",
-   "DGnL_UiSDAE",
-   "sw1y8V5VoLo",
-   "sMROV2GD3nk",
-   "eJk1UBrmhyk",
-   "WpZVjc9oOD0",
-   "4CB5OAgUSEw",
-   "JSWd0JJsRQ8",
-   "9hXWJNm9jmM",
-   "U_PK9ovzNL4",
-   "qM5Xja02rcQ",
-   "GB6kiB0Skzs",
-   "PlJkbslwRFc",
-   "bcPWwtq2VGw",
-   "kQ7gpOSPx0k",
-   "m1WUJETaI2U",
-   "zTXnJQSoRnk",
-   "Sk-rh4qiHZY",
-   "4KlIkwgD1dY",
-   "csJj9mgbocc",
-   "jdZMyWp7AGA",
-   "pXcmGISYY-k",
-   "nAZI8_ZfnV0",
-   "Yg4DFv_6KDU",
-   "1zoyuycjziQ",
-   "n9qhXb-CPpk",
-   "hizerIzVQxI",
-   "rlsYICnqbdg",
-   "gauj3Jz2H3o",
-   "puqoAC8u-7M",
-   "5QEjNToAq1k",
-   "qjcQdMHyCKQ",
-   "zJFmE8BrIyU",
-   "CBHYYM_DlqQ",
-   "VfTdHCOuYSc",
-   "7BcWJnlEwus",
-   "OL7fLkeu5zs",
-   "ESOmOZbYyTE",
-   "r7uBD_OPsUw",
-   "wpPHZRu8DLM",
-   "f_QKeI1Q6Vs",
-   "emsmfXg6QXY",
-   "lVu1snTbB1s",
-   "5LfHR5Tk4oQ",
-   "MuZCBRk0Rz0",
-   "P_2NjFbff-4",
-   "Ax_UI6LCdbg",
-   "tJ_EU4C4VrA",
-   "pA-5RJDo0QQ",
-   "lbPh1XrctVI",
-   "iAGiCuLK98o",
-   "65E9JsYNZAo",
-   "cKHAOspfVbI",
-   "2qfilJWwSAo",
-   "tbsIBfcIFsE",
-   "Ufd1Alyu6r4",
-   "r6Wpj0PnST8",
-   "DTACkuikegc",
-   "1KzqwOOBXNU",
-   "uW6IWXKDImU",
-   "rF-gTMYG4ac",
-   "uJLqYB8npDc",
-   "SEDNR8_KdZk",
-   "0pMzj8_apc4",
-   "zpsa3vGWNJY",
-   "x2oZ2-8-TWc",
-   "zhlclyze9Mk",
-   "CNPu-ljxa2I",
-   "SaORBjV030Q",
-   "0P0Ut_p0jMI",
-   "m96KwSkrVgg",
-   "OPHHjwRjqlM",
-   "BQzLa2tm1HM",
-   "iobLkupVSPg",
-   "VHWIXjbdvRU",
-   "qxFdWQjSK0o",
-   "6VO71ApWG0w",
-   "l-9popZjQoE",
-   "kouj1y733Bg",
-   "uI_IphTG170",
-   "PwvWx1sxIUk",
-   "nmZ4tHcYgPw",
-   "kc-5Vy95nsA",
-   "LileAMVE7v8",
-   "UGdtSO2EDWk",
-   "DjLHELeJvlk",
-   "-z9lfahw_OM",
-   "Phncs3QMbvM",
-   "N7rbvpWeZ58",
-   "wck9GsV6NbU",
-   "v0SEIamuEV0",
-   "ofz30GQv1UM",
-   "la2achIV-pw",
-   "pCH00PFjkRk",
-   "834a7gFJFEw",
    "YhAImersjLA",
-   "1t7OoVE6trE",
-   "NMIirFE7ZnI",
-   "I0drrpFQ0FU",
-   "7LK-udy2lm8",
-   "7NJUsjUCmNE",
-   "Zs-S2ZjfN0M",
-   "ha7gmsStumE",
-   "Jz3HruOfGgs",
-   "ctmEeUpYeO8",
-   "I0qsDkKLbrc",
-   "JDKp_V88XYk",
-   "N_4uxvTTPak",
-   "GXAzS2PzAtw",
-   "DBGF50tw2DM",
-   "7N-LdZpmqYg",
-   "yFgGpT-8dYM",
-   "14XFAyZf20o",
-   "ZPmljkOcrfk",
-   "q6elX8sWom0",
-   "kMcWrgULFh4",
-   "6j3zFH4SSbs",
-   "8pluhxHmXeM",
-   "Ad-VWkbih1c",
-   "kUKMJUOocb0",
-   "HajKWns7W3Q",
-   "t6lvDWYYJCM",
-   "Tcw-1D4emLw",
-   "0P84rsGpNMk",
-   "Ml6nXM6dt7I",
-   "Ubc4cpWsEFE",
-   "tJ-Pgb7Sn0s",
-   "EO_7aY6Fx64",
-   "RVQbF4SV8YM",
-   "tJnGdx7Oqms",
+   "pA-5RJDo0QQ",
    "kDf8A4tG03s",
-   "TGYpx9FNzeI",
-   "kAfi9LstnvU",
-   "jTQI_IcL3sk",
-   "sgjCEhg9S5w",
-   "j97T1vnt9qQ",
-   "JDcbc9yugwU",
-   "7_dQ4Z_nhNQ",
-   "KxgX6qVbUOI",
-   "60-dzij6W9s",
-   "4BP0mfw6sA8",
-   "nv22sqsKxwE",
-   "38pARUnpY2k",
-   "MkJiqrZNvKk",
-   "mjckHnc-DaU",
-   "fU0Pto8hzZ0",
-   "R83TMMilG3U",
-   "0feh1buqaA4",
-   "fdyhGP1dJlg",
-   "7rGpkqWjD8w",
-   "L04Nufj4F_0",
-   "X-gPfOZuMlA",
-   "GcinspV6ur0",
-   "e2i67iJWOV8",
-   "xkHT95lnDF4",
-   "XcbH3VjSlb8",
-   "LDrxiuzxgAg",
-   "sG2Jyuy3ORw",
-   "6BQyFWI4D_8",
-   "xJuws0jl1TY",
-   "R1F5LbffssM",
-   "5wZCYZ6D_CM",
-   "1tf85j25BEc",
-   "PuRjVqCy5rE",
-   "mgUmmmZfXr8",
-   "u9oJugPsfM0",
-   "myJF-m8JvoE",
-   "yIC6b3D9Wlc",
+   "wck9GsV6NbU",
+   "rlsYICnqbdg",
+   "4CB5OAgUSEw",
+   "zpsa3vGWNJY",
    "X20vjtQNmB4",
-   "IPFp_p_e3fw",
-   "LCH0tfU5NR4",
-   "upLK9k2ZNnQ",
-   "-eAJXA_RfIk",
-   "JzqTrwWuZwc",
-   "PSWJNdKLElA",
-   "LGq97HwiSOU",
-   "QNvYSpLrWOo",
-   "p4WcwQBqq8g",
-   "iE2D-b_Jm5o",
-   "Zm19HrPSOgY",
-   "eEogHSVR4kI",
-   "2wydrIOwfww",
-   "MKWROeA4Haw",
-   "5LmCjKpoBFc",
-   "zhweq-BwiAI",
-   "4dd2CvigfZk",
-   "ulK6zYTdSmY",
-   "5d23OxeG8H0",
-   "M12LIOQBBHY",
-   "M8YKVSYxB6M",
-   "yidO9v60P2Q",
-   "pDytnfdRG1c",
-   "LM8aa2wkQy4",
-   "T-8J-sB7TrA",
-   "2RIUp-5rcK4",
-   "gA5E0V-Tuvs",
-   "D0j3bCWjZSg",
-   "ADQ8JQs_E_Y",
-   "bCip2Ra2r08",
-   "Un-x7spFH1A",
+   "PwvWx1sxIUk",
    "kFBsXdte5QY",
-   "2q7wPB0E1rU",
-   "GYUhRwRqoQQ",
-   "bhZj4LTySn8",
+   "jKAACmX1Zs0",
+   "WpZVjc9oOD0",
    "xkzNxNYFsls",
-   "VCcHizKK3gc",
-   "fRfgBMtakEA",
-   "LbGlqmMINSA",
-   "3GObwU5ZDBo",
-   "o4OcwHj4xRk",
-   "0QCRrZhGm8k",
-   "fPDeYbx7uck",
+   "yIC6b3D9Wlc",
+   "rF-gTMYG4ac",
+   "5LfHR5Tk4oQ",
+   "ESOmOZbYyTE",
+   "neMQ36BFWBM",
+   "sMROV2GD3nk",
+   "DTACkuikegc",
+   "pXcmGISYY-k",
+   "0P0Ut_p0jMI",
+   "I0drrpFQ0FU",
+   "VHWIXjbdvRU",
+   "7rGpkqWjD8w",
+   "m96KwSkrVgg",
+   "tJnGdx7Oqms",
+   "-eAJXA_RfIk",
+   "ZZeIKzuhzvE",
+   "eJk1UBrmhyk",
+   "kfl7ufDvCGw",
+   "q6elX8sWom0",
+   "uI_IphTG170",
+   "kc-5Vy95nsA",
+   "90LGNJU9O2s",
+   "7_dQ4Z_nhNQ",
+   "W2xm5RLl6Fk",
+   "JDcbc9yugwU",
+   "6j3zFH4SSbs",
+   "Gl1RmDAkFX4",
+   "kAfi9LstnvU",
+   "GB6kiB0Skzs",
+   "P_2NjFbff-4",
+   "v0SEIamuEV0",
+   "7N-LdZpmqYg",
+   "0sI6OViakto",
+   "aAhTlRva9C0",
+   "OL7fLkeu5zs",
+   "NMIirFE7ZnI",
+   "8pluhxHmXeM",
+   "kouj1y733Bg",
+   "smWsilXQI5o",
+   "2qfilJWwSAo",
+   "N_4uxvTTPak",
+   "1KzqwOOBXNU",
+   "R1F5LbffssM",
+   "8M0vxZxBmM0",
+   "9hXWJNm9jmM",
+   "Phncs3QMbvM",
+   "kQ7gpOSPx0k",
    "EPgBziRVxak",
-   "QGmY7b9C3ko",
-   "aVqem0-DaSA"
+   "nAZI8_ZfnV0",
+   "wpPHZRu8DLM",
+   "0pMzj8_apc4",
+   "upLK9k2ZNnQ",
+   "r6Wpj0PnST8",
+   "1t7OoVE6trE",
+   "gA5E0V-Tuvs",
+   "m1WUJETaI2U",
+   "pCH00PFjkRk",
+   "tJ-Pgb7Sn0s",
+   "kMcWrgULFh4",
+   "kXU9mUH4D14",
+   "ctmEeUpYeO8",
+   "myJF-m8JvoE",
+   "3GObwU5ZDBo",
+   "xkHT95lnDF4",
+   "savCL0QapPY",
+   "jdZMyWp7AGA",
+   "M8YKVSYxB6M",
+   "pDytnfdRG1c",
+   "PSWJNdKLElA",
+   "JSWd0JJsRQ8",
+   "LGq97HwiSOU",
+   "LbGlqmMINSA",
+   "OPHHjwRjqlM",
+   "N7rbvpWeZ58",
+   "kUKMJUOocb0",
+   "7BcWJnlEwus",
+   "VfTdHCOuYSc"
   ]
  },
  "fortune": {
